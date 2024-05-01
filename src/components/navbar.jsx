@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineUser } from 'react-icons/ai';
 import data from "../lib/data.json";
 
 export const Navbar = ({color}) => {
