@@ -1,0 +1,28 @@
+{
+    "url_navbar" : [
+        {
+            "url" : "/",
+            "title" : "Home"
+        },
+        {
+            "url" : "/about",
+            "title" : "About"
+        },
+        {
+            "url" : "/services",
+            "title" : "Services"
+        },
+        {
+            "url" : "/projects",
+            "title" : "Projects"
+        },
+        {
+            "url" : "/specialties",
+            "title" : "Specialties"
+        },
+        {
+            "url" : "/contact",
+            "title" : "Contact"
+        }
+    ]
+}
