@@ -1,28 +1,75 @@
 {
-    "url_navbar" : [
+    "url_navbar": [
         {
-            "url" : "/",
-            "title" : "Home"
+            "url": "/",
+            "title": "Home"
         },
         {
-            "url" : "/about",
-            "title" : "About"
+            "url": "/services",
+            "title": "Services"
         },
         {
-            "url" : "/services",
-            "title" : "Services"
+            "url": "/projects",
+            "title": "Projects"
         },
         {
-            "url" : "/projects",
-            "title" : "Projects"
+            "url": "/specialties",
+            "title": "Specialties"
         },
         {
-            "url" : "/specialties",
-            "title" : "Specialties"
+            "url": "/about",
+            "title": "About"
         },
         {
-            "url" : "/contact",
-            "title" : "Contact"
+            "url": "/contact",
+            "title": "Contact"
+        }
+    ],
+    "contect_services": [
+        {
+            "title": "Steel",
+            "description": "Description of steel roofing service...",
+            "img": "/pexels-ajaybhargavguduru-977526.jpg"
+        },
+        {
+            "title": "Roofing",
+            "description": "Description of steel roofing service...",
+            "img": "/pexels-steffen-coonan-1005786-2098624.jpg"
+        },
+        {
+            "title": "Bathrooms",
+            "description": "Description of bathroom remodeling service...",
+            "img": "/pexels-jworks1124-342800.jpg"
+        },
+        {
+            "title": "Kitchen",
+            "description": "Description of kitchen remodeling service...",
+            "img": "/pexels-level23media-3016430.jpg"
+        },
+        {
+            "title": "Doors",
+            "description": "Description of door installation service...",
+            "img": "/pexels-mikey-dabro-293966-1002669.jpg"
+        },
+        {
+            "title": "Decks",
+            "description": "Description of deck construction service...",
+            "img": "/pexels-mikael-blomkvist-8961401.jpg"
+        },
+        {
+            "title": "Home Addition",
+            "description": "Description of home addition service...",
+            "img": "/pexels-reneasmussen-3990359.jpg"
+        },
+        {
+            "title": "Siding",
+            "description": "Description of siding installation service...",
+            "img": "/pexels-magda-ehlers-pexels-960137.jpg"
+        },
+        {
+            "title": "Windows",
+            "description": "Description of window replacement service...",
+            "img": "/pexels-expect-best-79873-323781.jpg"
         }
     ]
 }

@@ -1,105 +1,84 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const contentSpec = () => {
   return (
     <>
-      <section className="text-gray-600 body-font mt-10">
+      <section className="bg-spec text-gray3600 body-font mt-10">
         <div className="lg:w-5/6 px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                Pitchfork Kickstarter Taxidermy
+          <div className="flex flex-wrap content-bg w-full mb-20 bg-slate-200 p-5 rounded-lg">
+            <div className="lg:w-1/4 w-full mb-6 lg:mb-0">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+                Specialties
               </h1>
-              <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+              <div className="h-1 w-20 bg-green-400 rounded"></div>
             </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            <p className="lg:w-2/3 w-full leading-relaxed text-gray-300">
               Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
               gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven&apos; heard of them man bun deep jianbing selfies heirloom prism
-              food truck ugh squid celiac humblebrag.
+              haven&apos; heard of them man bun deep jianbing selfies heirloom
+              prism food truck ugh squid celiac humblebrag.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="content-bg p-6 rounded-lg">
                 <Image
-                width={500}
-                height={500}
+                  width={500}
+                  height={500}
                   className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="/606x366.png"
+                  src="/pexels-lucky-3592812-5374862.jpg"
                   alt="content"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
+                <h3 className="tracking-widest text-green-400 text-xs font-medium title-font">
+                <Link href='/specialties/comercialcabinetry'>Reed more...</Link>
                 </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Chichen Itza
+                <h2 className="text-lg text-white font-medium title-font mb-4">
+                  Comercial cabinetry
                 </h2>
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-base text-gray-300 ">
                   Fingerstache flexitarian street art 8-bit waistcoat.
                   Distillery hexagon disrupt edison bulbche.
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="content-bg p-6 rounded-lg">
                 <Image
-                
-                width={500}
-                height={500}
+                  width={500}
+                  height={500}
                   className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="/606x366.png"
+                  src="/pexels-monica-803908.jpg"
                   alt="content"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
+                <h3 className="tracking-widest text-green-400 text-xs font-medium title-font">
+                <Link href='/specialties/tile'>Reed more...</Link>
                 </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Colosseum Roma
+                <h2 className="text-lg text-white font-medium title-font mb-4">
+                  Tile
                 </h2>
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-base text-gray-300 ">
                   Fingerstache flexitarian street art 8-bit waistcoat.
                   Distillery hexagon disrupt edison bulbche.
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="content-bg p-6 rounded-lg">
                 <Image
-                width={500}
-                height={500}
+                  width={500}
+                  height={500}
                   className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="/606x366.png"
+                  src="/pexels-thijsvdw-1094770.jpg"
                   alt="content"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
+                <h3 className="tracking-widest text-green-400 text-xs font-medium title-font">
+                  <Link href='/specialties/carpentry'>Reed more...</Link>
                 </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Great Pyramid of Giza
+                <h2 className="text-lg text-white font-medium title-font mb-4">
+                  Carpentry
                 </h2>
-                <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
-                </p>
-              </div>
-            </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <Image
-                width={500}
-                height={500}
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="/606x366.png"
-                  alt="content"
-                />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  San Francisco
-                </h2>
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-base text-gray-300 ">
                   Fingerstache flexitarian street art 8-bit waistcoat.
                   Distillery hexagon disrupt edison bulbche.
                 </p>
