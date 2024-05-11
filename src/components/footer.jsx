@@ -20,8 +20,33 @@ export const Footer = () => {
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                <BiPhoneCall size={80} color='#000A82' className='mb-5'/>
-              <nav className="list-none mb-10">
+                <BiPhoneCall size={80} color='#000A82' className='flex mx-auto mb-10'/>
+              <nav className="list-none mb-10 text-center">
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+            <div className="flex flex-col justify-center lg:w-1/4 md:w-1/2 w-full px-4 mx-auto">
+              <BiSolidStore size={80} color='#000A82' className='flex mx-auto mb-10'/>
+              <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
                     First Link
@@ -45,8 +70,8 @@ export const Footer = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <BiSolidStore size={80} color='#000A82' className='mb-5'/>
-              <nav className="list-none mb-10">
+            <BiCalendar size={80} color='#000A82' className='sm:flex sm:mx-auto mb-10'/>
+              <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
                     First Link
@@ -70,34 +95,8 @@ export const Footer = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <BiCalendar size={80} color='#000A82' className='mb-5'/>
-            
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    First Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
-                  </a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <AiOutlineMail size={80} color='#000A82' className='mb-5'/>
-              <nav className="list-none mb-10">
+            <AiOutlineMail size={80} color='#000A82' className='flex mx-auto mb-10'/>
+              <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
                     First Link
