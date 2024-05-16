@@ -40,8 +40,8 @@ export const Footer = () => {
                 </li>
               </nav>
             </div>
-            <div className="flex flex-col justify-center lg:w-1/4 md:w-1/2 w-full px-4 mx-auto">
-            <BiCalendar size={80} color='#000A82' className='sm:flex mx-auto mb-10'/>
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+            <BiCalendar size={80} color='#000A82' className='sm:flex sm:mx-auto mb-10'/>
               <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">

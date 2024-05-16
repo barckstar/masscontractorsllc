@@ -6,7 +6,7 @@ const steps = () => {
       <section className="text-gray-600 body-font">
         <div className="lg:w-5/6 px-5 py-4 mx-auto flex flex-wrap">
           <div className="flex flex-wrap w-full">
-            <div className="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
+            <div className="lg:w-3/5 md:w-full md:pr-10 md:py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -144,7 +144,7 @@ const steps = () => {
               </div>
             </div>
             <Image
-              className="lg:w-1/3 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              className="lg:w-1/3 lg:mx-auto object-cover object-center rounded-lg md:mt-0 mt-12 hidden lg:block"
               src="/pexels-ivaoo-691710.jpg"
               width={500}
               height={500}
