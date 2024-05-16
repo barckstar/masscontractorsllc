@@ -17,13 +17,13 @@ const statistics = () => {
                 heirloom prism food truck ugh squid celiac humblebrag.
               </p>
             </div>
-            <div className="lg:max-w-lg mx-auto items-center justify-center lg:w-full md:w-1/2 w-5/6 mb-2 md:mb-0">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div className="mx-auto">
+              <div className="border-2 border-gray-200 px-4 py-6 mx-4 rounded-lg">
                 <AiTwotoneHome size={80} color='#000A82' className='flex mx-auto'/>
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   2.7K
                 </h2>
-                <p className="leading-relaxed">Proyects Completed</p>
+                <p className="leading-relaxed">Projects Completed</p>
               </div>
             </div>
           </div>
