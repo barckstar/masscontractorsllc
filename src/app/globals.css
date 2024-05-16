@@ -18,6 +18,10 @@ a {
     color: inherit;
 }
 
+.font-georgia{
+    font-family: Georgia, serif !important;
+}
+
 .container {
     background-color: var(--bg);
     width: 1563px;
@@ -62,7 +66,7 @@ a {
 }
 
 .hero-content {
-    margin-top: 10%;
+    margin-top: 7%;
     width: 80%;
     color: white;
     z-index: 1;
@@ -103,19 +107,26 @@ a {
 
 .hero-button:hover {
     background-color: #73C239;
-    /* Verde claro de la empresa */
 }
 
 .bg-image-service{
-    background-image: url('/textura-madera-3.jpg');
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    background-position-y: 6rem;
+    background-image: url('/textura-madera-1.jpg');
+    background-repeat: repeat;
+}
+
+.bg-image-proyects{
+    background-image: url('/textura-madera-2.jpg');
+    background-repeat: repeat;
+}
+
+.bg-image-about{
+    background-image: url('/textura-madera-4.jpg');
+    background-repeat: repeat;
 }
 
 .bg-spec{
     background-image: url('/textura-madera-2.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-clip: content-box;
     background-position-y: 3.5rem;
 }

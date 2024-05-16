@@ -1,5 +1,6 @@
-import Statistics from "@/components/statistics";
+import ContentSpec from "@/components/contentSpec";
 import Steps from "@/components/steps";
+import Hero from "@/components/hero";
 import HeroR from "@/components/heroR";
 import HeroL from "@/components/heroL";
 import Image from "next/image";
@@ -14,10 +15,14 @@ export default function Home() {
         </video>
         <div className="overlay-content">
           <div className="hero-content">
-            <h1 className="hero-title">
-              Transform Your Home with
-            </h1>
-            <Image className="img mb-5" src='/IMG_0271-notext.png' width={500} height={500} alt="Logo"/>
+            <h1 className="hero-title">Transform Your Home with</h1>
+            <Image
+              className="img mb-5"
+              src="/IMG_0271-notext.png"
+              width={500}
+              height={500}
+              alt="Logo"
+            />
             <h1 className="hero-title-logo">Contractors LLC</h1>
             <p className="hero-description">
               We are experts in home remodeling, delivering quality, experience,
@@ -31,10 +36,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Statistics />
-      <HeroL />
+      <ContentSpec />
+      <div className="w-5/6 mx-auto">
+        <HeroL />
+      </div>
+      <Hero hidden={true} />
       <Steps />
-      <HeroR />
+      <div className="w-5/6 mx-auto">
+        <HeroR />
+      </div>
     </>
   );
 }

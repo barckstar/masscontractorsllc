@@ -4,14 +4,14 @@ const steps = () => {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="lg:w-5/6 px-5 py-24 mx-auto flex flex-wrap">
+        <div className="lg:w-5/6 px-5 py-4 mx-auto flex flex-wrap">
           <div className="flex flex-wrap w-full">
-            <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <div className="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -38,7 +38,7 @@ const steps = () => {
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -65,7 +65,7 @@ const steps = () => {
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -93,7 +93,7 @@ const steps = () => {
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -118,7 +118,7 @@ const steps = () => {
                 </div>
               </div>
               <div className="flex relative">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -144,8 +144,8 @@ const steps = () => {
               </div>
             </div>
             <Image
-              className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-              src="/606x366.png"
+              className="lg:w-1/3 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              src="/pexels-ivaoo-691710.jpg"
               width={500}
               height={500}
               alt="step"

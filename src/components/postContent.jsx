@@ -1,8 +1,10 @@
 import Image from "next/image";
+import FillNav from "@/components/fillNav"
 
 const postContent = () => {
   return (
     <>
+    <FillNav/>
       <section className="text-gray-600 body-font mt-10">
         <div className="px-5 py-24 mx-auto flex flex-col">
           <div className="lg:w-5/6 mx-auto">
