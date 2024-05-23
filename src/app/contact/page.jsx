@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Contact from "@/components/contact"
+"use client"
+import Contact from "@/components/contact";
+import {Fade} from "react-awesome-reveal";
 
 export default function contact() {
   return (
     <>
-      <Contact/>
+      <Fade delay='10'>
+        <Contact />
+      </Fade>
     </>
   );
 }

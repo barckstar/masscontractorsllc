@@ -1,13 +1,16 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import { BiPhoneCall } from "react-icons/bi";
 import { BiSolidStore } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiCalendar } from "react-icons/bi";
+import { Fade } from "react-awesome-reveal";
 
 export const Footer = () => {
   return (
     <>
+    <Fade delay='5'>
       <footer className="text-gray-600 body-font bg-gray-200">
         <div className="px-5 w-5/6 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
@@ -20,7 +23,7 @@ export const Footer = () => {
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                <BiPhoneCall size={80} color='#000A82' className='flex mx-auto mb-10'/>
+                <BiPhoneCall size={60} color='#000A82' className='flex mx-auto mb-4'/>
               <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
@@ -30,7 +33,7 @@ export const Footer = () => {
               </nav>
             </div>
             <div className="flex flex-col justify-center lg:w-1/4 md:w-1/2 w-full px-4 mx-auto">
-              <BiSolidStore size={80} color='#000A82' className='flex mx-auto mb-10'/>
+              <BiSolidStore size={60} color='#000A82' className='flex mx-auto mb-4'/>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
@@ -41,7 +44,7 @@ export const Footer = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <BiCalendar size={80} color='#000A82' className='sm:flex sm:mx-auto mb-10'/>
+            <BiCalendar size={60} color='#000A82' className='sm:flex sm:mx-auto mb-4'/>
               <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
@@ -52,7 +55,7 @@ export const Footer = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <AiOutlineMail size={80} color='#000A82' className='flex mx-auto mb-10'/>
+            <AiOutlineMail size={60} color='#000A82' className='flex mx-auto mb-4'/>
               <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
@@ -136,6 +139,7 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
+      </Fade>
     </>
   );
 };

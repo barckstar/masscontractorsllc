@@ -67,5 +67,45 @@
             "description": "Description of window replacement service...",
             "img": "/pexels-expect-best-79873-323781.jpg"
         }
+    ],
+    "best_projects": [
+        {
+            "title": "Full Home Renovation",
+            "description": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "image": "/FullRenovation/2814-w-grace-st-8_52737488328_o.jpg",
+            "link": "/projects/post1"
+        },
+        {
+            "title": "The Catalyzer",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "image": "/606x366.png",
+            "link": "/projects/post2"
+        },
+        {
+            "title": "The 400 Blows",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "image": "/606x366.png",
+            "link": "/projects/post3"
+        }
+    ],
+    "recent_projects": [
+        {
+            "title": "Shooting Stars",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "image": "/606x366.png",
+            "link": "/projects/post1"
+        },
+        {
+            "title": "The Catalyzer",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "image": "/606x366.png",
+            "link": "/projects/post2"
+        },
+        {
+            "title": "The 400 Blows",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "image": "/606x366.png",
+            "link": "/projects/post3"
+        }
     ]
 }
