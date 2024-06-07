@@ -18,7 +18,7 @@ export const Footer = () => {
               <Image src='/IMG_0271.png' alt='Logo' width={250} height={250}/>
             </a>
             <p className="mt-2 text-sm text-gray-500">
-              Air plant banjo lyft occupy retro adaptogen indego
+              General Contractor in Richmond, VA.
             </p>
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
@@ -44,7 +44,7 @@ export const Footer = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <BiCalendar size={60} color='#000A82' className='sm:flex sm:mx-auto mb-4'/>
+            <BiCalendar size={60} color='#000A82' className='flex mx-auto mb-4'/>
               <nav className="list-none mb-10 text-center">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">

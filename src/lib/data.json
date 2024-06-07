@@ -70,42 +70,176 @@
     ],
     "best_projects": [
         {
+            "slug" : "full_renovation",
             "title": "Full Home Renovation",
             "description": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "image": "/FullRenovation/2814-w-grace-st-8_52737488328_o.jpg",
-            "link": "/projects/post1"
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "image": "/FullRenovation/FR1.jpg",
+            "link": "/projects/full_renovation",
+            "imgCarrusel" : [                
+                {
+                    "img": "/FullRenovation/FR2.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR3.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR4.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR5.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR6.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR7.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR8.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR9.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR10.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR11.jpg"
+                },
+                {
+                    "img": "/FullRenovation/FR12.jpg"
+                }
+            ]
         },
         {
-            "title": "The Catalyzer",
+            "slug" : "residential_construction",
+            "title": "Residential Construction",
             "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
-            "image": "/606x366.png",
-            "link": "/projects/post2"
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "image": "/ResidentialConstruction/RC6.jpg",
+            "link": "/projects/residential_construction",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/ResidentialConstruction/RC1.jpg"
+                },
+                {
+                    "img": "/ResidentialConstruction/RC2.jpg"
+                },
+                {
+                    "img": "/ResidentialConstruction/RC3.jpg"
+                },
+                {
+                    "img": "/ResidentialConstruction/RC4.jpg"
+                },
+                {
+                    "img": "/ResidentialConstruction/RC5.jpg"
+                }
+            ]
         },
         {
+            "slug" : "post3",
             "title": "The 400 Blows",
             "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
             "image": "/606x366.png",
-            "link": "/projects/post3"
+            "link": "/projects/post3",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/606x366.png"
+                }
+            ]
         }
     ],
     "recent_projects": [
         {
+            "slug" : "recentpost1",
             "title": "Shooting Stars",
             "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
             "image": "/606x366.png",
-            "link": "/projects/post1"
+            "link": "/projects/recentpost1",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/606x366.png"
+                }
+            ]
         },
         {
+            "slug" : "recentpost2",
             "title": "The Catalyzer",
             "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
             "image": "/606x366.png",
-            "link": "/projects/post2"
+            "link": "/projects/recentpost2",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/606x366.png"
+                }
+            ]
         },
         {
+            "slug" : "recentpost3",
             "title": "The 400 Blows",
             "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
             "image": "/606x366.png",
-            "link": "/projects/post3"
+            "link": "/projects/recentpost3",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/606x366.png"
+                }
+            ]
+        }
+    ],
+    "specialties": [
+        {
+            "slug" : "comercial_cabinetry",
+            "title": "Comercial Cabinetry",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "image": "/606x366.png",
+            "link": "/specialties/comercial_cabinetry",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/606x366.png"
+                }
+            ]
+        },
+        {
+            "slug" : "tile",
+            "title": "Tile",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "image": "/606x366.png",
+            "link": "/specialties/tile",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/606x366.png"
+                }
+            ]
+        },
+        {
+            "slug" : "carpentry",
+            "title": "Carpentry",
+            "description": "Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "image": "/606x366.png",
+            "link": "/specialties/carpentry",
+            "imgCarrusel" : [ 
+                {
+                    "img": "/606x366.png"
+                }
+            ]
         }
     ]
 }

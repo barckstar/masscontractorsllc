@@ -7,7 +7,7 @@ const statistics = () => {
         <div className="w-full pt-10 mx-auto">
           <div className="flex flex-wrap mx-auto items-center justify-center w-full mb-4">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-              <h1 className="sm:text-3xl px-4 font-georgia text-2xl font-medium title-font mb-4 text-gray-900">
+              <h1 className="sm:text-3xl font-bold px-4 font-georgia text-2xl title-font mb-4 text-gray-900">
                 Master Cleanse Reliac Heirloom
               </h1>
               <p className="lg:w-full px-4 mx-auto leading-relaxed text-base">

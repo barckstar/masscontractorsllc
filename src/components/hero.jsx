@@ -4,7 +4,7 @@ const hero = ({ hidden }) => {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="mx-auto flex px-5 py-4 items-center justify-center flex-col">
+        <div className="mx-auto flex px-5 pt-5 items-center justify-center flex-col">
           {!hidden && (
             <Image
               className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"

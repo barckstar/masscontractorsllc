@@ -32,7 +32,7 @@ const contentSpec = () => {
                   alt="content"
                 />
                 <h3 className="tracking-widest text-green-600 text-s font-medium title-font">
-                  <Link href="/specialties/comercialcabinetry">
+                  <Link href="/specialties/comercial_cabinetry">
                     Read more...
                   </Link>
                 </h3>

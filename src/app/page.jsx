@@ -21,7 +21,7 @@ export default function Home() {
               <Slide direction="down" delay="5" triggerOnce>
                 <h1 className="hero-title">Transform Your Home with</h1>
               </Slide>              
-              <Slide direction="left" triggerOnce>
+              <Fade delay='25' triggerOnce>
               <Image
                 className="img mb-5"
                 src="/IMG_0271-notext.png"
@@ -29,7 +29,7 @@ export default function Home() {
                 height={500}
                 alt="Logo"
               />
-              </Slide>
+              </Fade>
               <Slide direction="up" delay="5" triggerOnce>
               <h1 className="hero-title-logo">Contractors LLC</h1>
               </Slide>
