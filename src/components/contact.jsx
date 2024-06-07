@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import ReCAPTCHA from "react-google-recaptcha";
 
-function contact() {
+function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
     const form = useRef();
 
@@ -98,4 +98,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;

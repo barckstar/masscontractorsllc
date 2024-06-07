@@ -5,7 +5,7 @@ import data from "@/lib/data.json";
 import { useParams } from "next/navigation";
 import { Fade, Slide } from "react-awesome-reveal";
 
-const postContent = () => {
+const PostContent = () => {
   const { slug } = useParams();
 
   if (!slug) {
@@ -85,4 +85,4 @@ const postContent = () => {
   );
 };
 
-export default postContent;
+export default PostContent;
