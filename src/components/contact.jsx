@@ -11,8 +11,7 @@ function contact() {
     };
     
     const sendEmail = (e) => {
-        e.preventDefault();
-        
+        e.preventDefault();        
         if (captchaValue) {
             emailjs
                 .sendForm(t('config.emailServiceKey'), t('config.emailTemplateKey'), form.current, {
