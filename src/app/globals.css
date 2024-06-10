@@ -82,8 +82,8 @@ a {
 
 .hero-title-logo {
     font-family: Georgia, serif;
-    font-size: 1.5rem;
-    /* Tamaño del título ajustado */
+    font-size: 3rem;
+    font-weight: bold;
     letter-spacing: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -165,7 +165,7 @@ a {
     }
 
     .hero-title-logo {
-        font-size: 1rem;
+        font-size: 2rem;
         letter-spacing: 1rem;
     }
 
@@ -184,10 +184,6 @@ a {
         height: 60%;
     }
 
-    .hero-description {
-        display: none;
-    }
-
     .overlay-content {
         align-items: baseline;
     }
@@ -204,6 +200,10 @@ a {
     .hero-title {
         font-size: 1.75rem;
     }
+    .hero-title-logo {
+        font-size: 2rem;
+        letter-spacing: 0.25rem;
+    }
     .img {
         width: 40%;
         height: 40%;
@@ -218,7 +218,7 @@ a {
         font-size: 1.5rem;
     }
     .hero-title-logo {
-        font-size: 1rem;
+        font-size: 2rem;
         letter-spacing: 0.25rem;
     }
     .hero-content{
@@ -242,6 +242,7 @@ a {
 
     .hero-description {
         font-size: 0.75rem;
+        margin-bottom: 0.5rem;
     }
 
     .hero-title-logo {
@@ -257,7 +258,7 @@ a {
     .container {
         width: 320px;
     }
-    .hero-button{
-        display: none;
+    .hero-button {
+        padding: 0.25rem;
     }
 }
