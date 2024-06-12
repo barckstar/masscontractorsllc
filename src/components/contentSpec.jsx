@@ -79,9 +79,6 @@ const contentSpec = () => {
                   src="/pexels-thijsvdw-1094770.jpg"
                   alt="content"
                 />
-                <h3 className="tracking-widest text-green-600 text-s font-medium title-font">
-                  <Link href="/specialties/carpentry">Read more...</Link>
-                </h3>
                 <h2 className="text-lg font-georgia text-black font-medium title-font mb-4">
                   Carpentry
                 </h2>
