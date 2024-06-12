@@ -37,9 +37,6 @@ const contectSer = () => {
                   <p className="leading-relaxed text-base mb-2">
                     {service.description}
                   </p>
-                  <h3 className="tracking-widest text-green-600 text-s font-medium title-font">
-                    <Link href="/contact">Contact for more info...</Link>
-                  </h3>
                 </div>
               </Fade>
             </div>
