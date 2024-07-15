@@ -63,7 +63,6 @@ export default function Home() {
         <div className="w-5/6 mx-auto">
           <HeroL hidden={false} media="/Bathroom.mp4" title="" text="" />
         </div>
-        <Hero hidden={true} />
         <div className="w-5/6 mx-auto">
           <HeroR hidden={false} media="/Bathroom2.mp4" title="" text="" />
         </div>
