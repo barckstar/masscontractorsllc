@@ -1,6 +1,5 @@
 "use client";
 import ContentSpec from "@/components/contentSpec";
-import Steps from "@/components/steps";
 import Hero from "@/components/hero";
 import HeroR from "@/components/heroR";
 import HeroL from "@/components/heroL";
@@ -65,7 +64,6 @@ export default function Home() {
           <HeroL hidden={false} media="/Bathroom.mp4" title="" text="" />
         </div>
         <Hero hidden={true} />
-        <Steps />
         <div className="w-5/6 mx-auto">
           <HeroR hidden={false} media="/Bathroom2.mp4" title="" text="" />
         </div>
