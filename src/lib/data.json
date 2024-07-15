@@ -33,14 +33,14 @@
             "img": "/Roofing.jpeg"
         },
         {
-            "title": "BATHROOMS",
-            "description": "Increase the value of your home. We love adding new bathroom cabinets, adding soaking tubs, new storage closets, and new shower tile.",
-            "img": "/Bathroom.jpeg"
-        },
-        {
             "title": "KITCHEN",
             "description": "The kitchen is the heart of the home, let us transform it by installing cabinets, countertops, tile backsplash, flooring, and appliances.",
             "img": "/Kitchen.jpeg"
+        },
+        {
+            "title": "BATHROOMS",
+            "description": "Increase the value of your home. We love adding new bathroom cabinets, adding soaking tubs, new storage closets, and new shower tile.",
+            "img": "/Bathroom.jpeg"
         },
         {
             "title": "DOORS",
@@ -65,7 +65,7 @@
         {
             "title": "HOME ADDITIONS",
             "description": "Add value to your home with your desired additional space. We take care of all required city permits, plumbing and electrical work. Your dreams will become a reality.",
-            "img": "/Additions.jpeg"
+            "img": "/CustomRoomAdditions.png"
         }
     ],
     "best_projects": [
@@ -189,7 +189,7 @@
             "slug": "comercial_cabinetry",
             "title": "Custom Room Additions",
             "description": "Your room addition will provide you with a lifetime of enjoyment while increasing the value of your home.",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge": "",
             "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
             "hero": "If you can dream it, we can do it!",
             "list": [],
@@ -225,12 +225,37 @@
             "slug": "finish_trim_carpentry",
             "title": "Finish & Trim Carpentry",
             "description": "Transform the bare bones of any house or building into a usable and visually pleasing space.",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge": "Our carpenters use the best trim carpentry techniques during the vital stage of building. We provide a full spectrum of carpentry for residential and commercial projects including",
+            "descriptionLarge2": "",
             "list": [
                 {
-                    "item": ""
+                    "item": "Custom Carpentry Installation"
+                },
+                {
+                    "item": "Bookshelves & Built-Ins"
+                },
+                {
+                    "item": "Custom Woodworking"
+                },
+                {
+                    "item": "Trim and Molding"
+                },
+                {
+                    "item": "Beamwork"
+                },
+                {
+                    "item": "Wainscoting"
+                },
+                {
+                    "item": "Coffered Ceilings"
+                },
+                {
+                    "item": "Staircases & Railings"
+                },
+                {
+                    "item": "Interior Door Installation"
                 }
+                
             ],
             "hero": "If you can dream it, we can do it!",
             "image": "/FinishCarpentry.png",

@@ -30,7 +30,7 @@ const contentSpec = () => {
                     <Image
                       width={500}
                       height={500}
-                      className="h-40 rounded w-full object-cover object-center mb-6"
+                      className="h-52 rounded w-full object-contain object-center mb-6"
                       src={specialties.image}
                       alt="content"
                     />

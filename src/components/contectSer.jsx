@@ -20,17 +20,14 @@ const contectSer = () => {
           {data.contect_services.map((service, index) => (
             <div key={index} className="xl:w-1/3 md:w-1/2 p-4">
               <Fade delay={index * 100} triggerOnce>
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <div className="rounded w-full h-40 overflow-hidden mb-6">
+                <div className="h-full p-6 rounded-sm shadow-lg hover:shadow-2xl transition duration-300">
                     <Image
                       src={service.img}
                       alt="Service Image"
-                      layout="responsive"
-                      width={200}
-                      height={200}
-                      className="object-cover"
+                      width={500}
+                      height={500}
+                      className="h-52 rounded w-full object-contain mb-6"
                     />
-                  </div>
                   <h2 className="text-lg font-georgia text-gray-900 font-medium title-font mb-2">
                     {service.title}
                   </h2>
