@@ -21,6 +21,23 @@
             "title": "Contact"
         }
     ],
+    "heroL" : {
+        "title": "Why Choose MAS Contractors?",
+        "subTitle" : "Experience",
+        "subTitle2" : "SERVICE",
+        "text": "We are trusted home remodeling experts that have served 100's of satisfied customers throughout the Richmond and Charlottesville area.",
+        "text2": "We are known for providing affordable prices using the industry's best quality products matched with great installations."
+    },
+    "heroR" : {
+        "title": "",
+        "subTitle" : "WARRANTY",
+        "subTitle2" : "QUALITY",
+        "text": "We believe in the products that we install and we stand behind them with our one-year warranty of workmanship.",
+        "text2": "We provide honest, straightforward quotes and offer reasonable prices and top-of-the-line products from the industry's most trusted brands."
+    },
+    "heroHome" : {
+        "text" : "All of our work is professional and we pride ourselves on our craftsmanship."
+    },
     "contect_services": [
         {
             "title": "TRIM",

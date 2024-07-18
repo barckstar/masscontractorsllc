@@ -6,6 +6,7 @@ import HeroL from "@/components/heroL";
 import Image from "next/image";
 import { Fade, Slide } from "react-awesome-reveal";
 import Link from "next/link";
+import data from "@/lib/data.json";
 
 export default function Home() {
   return (
@@ -37,19 +38,21 @@ export default function Home() {
               </Slide>
               <Fade delay="50" triggerOnce>
                 <Link href="/contact">
-                  <button className="hero-button shadow-lg hover:shadow-2xl">Get a quote !</button>
+                  <button className="hero-button shadow-lg hover:shadow-2xl">
+                    Get a quote !
+                  </button>
                 </Link>
               </Fade>
             </div>
           </div>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mt-7 mx-auto">
-        <p className="text-lg text-center mb-4">
-              MAS Contractors is a building and Remodeling Company proud to
-              offer small or large renovation projects. Our range of services
-              includes Commercial Trim, Room Additions, Porches and Decks,
-              Kitchen & Bathroom Remodeling Carpentry, Tile, and much more.
-            </p>
+          <p className="text-lg text-center mb-4">
+            MAS Contractors is a building and Remodeling Company proud to offer
+            small or large renovation projects. Our range of services includes
+            Commercial Trim, Room Additions, Porches and Decks, Kitchen &
+            Bathroom Remodeling Carpentry, Tile, and much more.
+          </p>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mt-5 mx-auto bg-green-300 rounded-sm shadow-lg hover:bg-green-400 transition duration-300">
           <div className="text-center p-5 mx-auto">
@@ -60,11 +63,30 @@ export default function Home() {
           </div>
         </div>
         <ContentSpec />
-        <div className="w-5/6 mx-auto">
-          <HeroL hidden={false} media="/Bathroom.mp4" title="" text="" />
+        <div className="w-5/6 mx-auto my-10">
+          <Hero hidden={true} title={data.heroHome.text} text="" img="/" />
         </div>
         <div className="w-5/6 mx-auto">
-          <HeroR hidden={false} media="/Bathroom2.mp4" title="" text="" />
+          <HeroL
+            hidden={false}
+            media="/Bathroom.mp4"
+            title={data.heroL.title}
+            text={data.heroL.text}
+            text2={data.heroL.text2}
+            subTitle={data.heroL.subTitle}
+            subTitle2={data.heroL.subTitle2}
+          />
+        </div>
+        <div className="w-5/6 mx-auto">
+          <HeroR
+            hidden={false}
+            media="/Bathroom2.mp4"
+            title={data.heroR.title}
+            text={data.heroR.text}
+            text2={data.heroR.text2}
+            subTitle={data.heroR.subTitle}
+            subTitle2={data.heroR.subTitle2}
+          />
         </div>
       </Fade>
     </>
