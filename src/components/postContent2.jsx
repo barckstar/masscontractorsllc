@@ -5,7 +5,7 @@ import data from "@/lib/data.json";
 import { useParams } from "next/navigation";
 import { Fade, Slide } from "react-awesome-reveal";
 
-const PostContent = () => {
+const PostContent2 = () => {
   const { slug } = useParams();
 
   if (!slug) {
@@ -13,6 +13,8 @@ const PostContent = () => {
   }
 
   const post =
+    data.best_projects.find((post) => post.slug === slug) ||
+    data.recent_projects.find((post) => post.slug === slug) ||
     data.specialties.find((post) => post.slug === slug);
 
   if (!post) {
@@ -51,28 +53,19 @@ const PostContent = () => {
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <Fade triggerOnce>
-                  <p className="leading-relaxed text-lg mb-5">
+                  <p className="leading-relaxed text-lg mb-4">
                     {post.descriptionLarge2}
-                  </p>                    
                     {post.list && post.list.length > 0 &&(
                       <ul>
                         {post.list.map((list, index) => (
-                          <li className="leading-relaxed text-lg" key={index}>{list.item}</li>
+                          <li key={index}>{list.item}</li>
                         ))}
                       </ul>
                     )}
+                  </p>
                 </Fade>
               </div>
             </div>
-            <Fade delay="10">
-            <div className="lg:w-5/6 px-5 py-3 my-16 mx-auto bg-green-200 rounded-sm shadow-lg hover:bg-green-400 transition duration-300">
-                <div className="text-center p-3 mx-auto">
-                  <p className="text-2xl font-bold font-georgia text-gray-900">
-                    If you can dream it, we can do it!
-                  </p>
-                </div>
-              </div>
-            </Fade>
             <h1 className="title-font text-center mt-10 font-georgia sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
               Galery
             </h1>
@@ -103,4 +96,4 @@ const PostContent = () => {
   );
 };
 
-export default PostContent;
+export default PostContent2;

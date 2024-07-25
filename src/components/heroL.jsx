@@ -5,7 +5,6 @@ import { GiWorld } from "react-icons/gi";
 const heroL = ({
   hidden,
   media,
-  img,
   title,
   text,
   subTitle,
