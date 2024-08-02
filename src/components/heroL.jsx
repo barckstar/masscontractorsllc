@@ -24,14 +24,14 @@ const heroL = ({
               {subTitle}
             </h3>
             <p className="leading-relaxed flex items-center">
-              <GiFamilyHouse color="#B55A4A" size={150} className="mr-2" />
+              <GiFamilyHouse color="#B55A4A" size={60} className="m-2" />
               {text}
             </p>
             <h3 className="mt-8 title-font font-georgia text-2xl font-light text-gray-900">
               {subTitle2}
             </h3>
             <p className="leading-relaxed flex items-center">
-              <GiWorld color="#9BD052" size={150} className="mr-2" />
+              <GiWorld color="#9BD052" size={60} className="m-2" />
               {text2}
             </p>
           </div>

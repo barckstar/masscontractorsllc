@@ -39,24 +39,24 @@ export const Navbar = () => {
       className="fixed left-0 top-0 w-full z-40 ease-in duration-300"
       style={{ backgroundColor: scrollColor }}
     >
-      <div className="max-w-[1240px] m-auto font-bold flex justify-between items-center p-4 text-black">
+      <div className="max-w-[1240px] m-auto font-bold flex flex-col justify-between items-center p-4 text-black">
         <Link href="/">
-          <div className={`transition-opacity duration-500 ${logoHidden && router.pathname != "/" ? 'opacity-0' : 'opacity-100'}`}> 
-            <Image src="/IMG_0271.png" width={200} height={75} alt="logo" />
+          <div className={`transition-opacity mb-8 duration-500 ${logoHidden && router.pathname != "/" ? 'opacity-0' : 'opacity-100'}`}> 
+            <Image src="/IMG_0271.png" width={250} height={100} alt="logo" />
           </div>
         </Link>
-        <div className="hidden md:flex gap-10 ml-10">
+        <div className="hidden md:flex gap-2 mb-4 ml-10">
           {data.url_navbar.map((link) => (
-            <Link key={link.title} href={link.url} className="text-black">
+            <Link key={link.title} href={link.url} className="text-black py-1 px-10 bg-transparent rounded-sm hover:shadow-lg hover:shadow-blue-900 transition-all">
               {link.title}
             </Link>
           ))}
         </div>
         {/* Mobile Button */}
-        <div className="md:hidden">
-          <button className="menuButton" onClick={toggleMobileMenu}>
+        <div className="md:hidden flex mr-10 justify-end w-full">
+          <button onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? (
-              <AiOutlineClose size={30} style={{ color: "#000000" }} />
+              <AiOutlineClose size={30} style={{ color: "#000000"}} />
             ) : (
               <AiOutlineMenu size={30} style={{ color: "#000000" }} />
             )}
@@ -64,14 +64,14 @@ export const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute mt-4 top-20 right-0 w-3/4 h-4/5 bg-white text-center ease-in duration-300">
-            <div className="flex flex-col items-center justify-center gap-4 bg-white">
+          <div className="md:hidden absolute mt-4 top-40 right-0 w-full bg-white text-center ease-in duration-300 flex flex-col ">            
               {data.url_navbar.map((link) => (
                 <Link key={link.title} href={link.url} className="text-black" onClick={toggleMobileMenu}>
+                <div className="items-center justify-center gap-4 bg-white py-2 hover:bg-blue-900 hover:text-white">
                   {link.title}
+                </div>
                 </Link>
               ))}
-            </div>
           </div>
         )}
       </div>

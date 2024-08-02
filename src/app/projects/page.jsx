@@ -1,7 +1,7 @@
 "use client"
 import Statistics from "@/components/statistics";
 import ContentView from "@/components/contentView";
-import FillNav from "@/components/fillNav";
+import { Navbar2 } from "@/components/navbar2";
 import Data from "@/lib/data.json";
 import { Fade } from "react-awesome-reveal";
 
@@ -9,7 +9,7 @@ export default function projects() {
   return (
     <>
       <Fade>
-        <FillNav />
+        <Navbar2 />
         <section className="bg-image-proyects">
           <div className="w-5/6 mx-auto bg-white">
             <Statistics />

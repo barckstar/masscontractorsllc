@@ -35,18 +35,6 @@ function Contact() {
     <>
       <Fade>
         <section className="text-gray-600 body-font relative">
-          <div className="absolute inset-0 bg-gray-300">
-            <iframe
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
-              title="map"
-              scrolling="no"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.383146996318!2d-77.60695613759268!3d37.497154934875326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f530!3m3!1m2!1s0x89b16d7f234f05ff%3A0xa8abb6f08a9e62b5!2s411%20Branchway%20Rd%20%23218%2C%20North%20Chesterfield%2C%20VA%2023236%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scr!4v1715807560653!5m2!1ses-419!2scr"
-            ></iframe>
-          </div>
           <Fade delay={200}>
             <div className="container px-5 py-24 flex">
               <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-20 md:mt-5 relative z-10 shadow-md">

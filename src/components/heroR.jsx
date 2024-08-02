@@ -46,14 +46,14 @@ const heroR = ({ hidden,
               {subTitle}
             </h3>
             <p className="leading-relaxed flex items-center">
-              <HiOutlineTrophy color="#1570B6" size={150} className="mr-2" />
+              <HiOutlineTrophy color="#1570B6" size={60} className="m-2" />
               {text}
             </p>
             <h3 className="mt-8 title-font font-georgia text-2xl font-light text-gray-900">
               {subTitle2}
             </h3>
             <p className="leading-relaxed flex items-center">
-              <BsShieldShaded color="#3FF02D"  size={150} className="mr-2" />
+              <BsShieldShaded color="#3FF02D"  size={60} className="m-2" />
               {text2}
             </p>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 import Hero from "@/components/hero";
-import FillNav from "@/components/fillNav";
+import { Navbar2 } from "@/components/navbar2";
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 import data from "../../lib/data.json";
@@ -10,7 +10,7 @@ export default function about() {
   return (
     <>
       <Fade delay="10">
-        <FillNav />
+        <Navbar2 />
         <section className="bg-image-about">
           <div className="w-5/6 mx-auto bg-white">
             <Fade delay="10">
@@ -53,7 +53,7 @@ export default function about() {
                   </Fade>
                 </div>
               </div>
-              <div className="lg:w-5/6 px-5 py-3 mx-auto bg-blue-200 rounded-sm shadow-lg hover:bg-blue-400 transition duration-300">
+              <div className="lg:w-5/6 px-5 py-3 mx-auto bg-blue-200 rounded-sm shadow-lg hover:bg-blue-400 my-16 transition duration-300">
                 <div className="text-center p-3 mx-auto">
                   <p className="text-2xl font-bold font-georgia text-gray-900">
                     {data.about.aboutFooter}
@@ -61,7 +61,7 @@ export default function about() {
                 </div>
               </div>
               <Fade delay="50" triggerOnce>
-                <div className="flex justify-center">
+                <div className="flex mb-16 justify-center">
                   <Link href="/contact">
                     <button className="my-9 hero-button shadow-lg hover:shadow-2xl">
                       {data.about.buttonText}
