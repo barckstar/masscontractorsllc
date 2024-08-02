@@ -7,6 +7,7 @@ function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
   const form = useRef();
   const key = "6Lcz5rQZAAAAAH17FgXW0yjN-vXjsCYM8nx9krI9";
+
   const onChangeCaptcha = (value) => {
     setCaptchaValue(value);
   };
@@ -31,15 +32,17 @@ function Contact() {
       console.log("Por favor, completa el CAPTCHA.");
     }
   };
+
   return (
     <>
       <Fade>
         <section className="text-gray-600 body-font relative">
-          <Fade delay={200}>
-            <div className="container px-5 py-24 flex">
-              <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-20 md:mt-5 relative z-10 shadow-md">
+          <Fade delay={200}>                          
+          <h1 className="font-bold font-georgia title-services my-2 text-gray-900 mx-auto">Contact US</h1>
+            <div className="container px-5 py-24 flex justify-center">
+              <div className="bg-white rounded-lg p-8 flex flex-col w-4/5 md:w-3/4 lg:w-1/2 shadow-md">
                 <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-                  Send us a Email
+                  Send us an Email
                 </h2>
                 <form id="contactForm" onSubmit={sendEmail} ref={form}>
                   <div className="relative mb-4">
@@ -102,7 +105,7 @@ function Contact() {
                   </div>
                   <ReCAPTCHA sitekey={key} onChange={onChangeCaptcha} />
                   <button className="text-white bg-indigo-500 mt-4 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                    <input type="submit" value="Send" />
+                    <input type="submit" value="Send" className="hidden" />
                     Button
                   </button>
                 </form>
