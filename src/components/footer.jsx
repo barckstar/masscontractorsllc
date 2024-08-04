@@ -1,144 +1,150 @@
-"use client"
-import Image from 'next/image';
-import React from 'react';
+"use client";
+import Image from "next/image";
+import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { BiSolidStore } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiCalendar } from "react-icons/bi";
 import { Fade } from "react-awesome-reveal";
+import data from "@/lib/data.json";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
     <>
-    <Fade delay='5'>
-      <footer className="text-gray-600 body-font bg-gray-200">
-        <div className="px-5 w-5/6 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-            <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <Image src='/IMG_0271.png' alt='Logo' width={250} height={250}/>
-            </a>
-            <p className="mt-2 text-sm text-gray-500">
-              General Contractor in Richmond, VA.
-            </p>
+      <Fade delay="5">
+        <footer className="text-gray-600 body-font bg-gray-200">
+          <div className="px-5 w-11/12 py-8 mx-auto flex items-center md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div className="w-2/6 flex-shrink-0 mx-auto justify-center text-center">
+              <Link href="/" className="flex title-font font-medium items-center justify-center text-gray-900">
+                <Image
+                  src="/IMG_0271.png"
+                  alt="Logo"
+                  width={350}
+                  height={350}
+                />
+              </Link>
+              <p className="mt-2 text-xl text-gray-500">
+                General Contractor in Richmond, VA.
+              </p>
+            </div>
+            <div className="flex-grow flex flex-wrap -mb-10 md:text-left text-start order-first">
+              <div className="custom:w-1/3 mb-10 custom870:w-1/2 w-full px-4">
+                <nav className="list-none text-start">
+                  <li>
+                    <a className="text-gray-800 font-georgia text-start text-3xl font-medium hover:text-gray-800">
+                      Contact Us
+                    </a>
+                  </li>
+                  <li className="flex items-start mt-4 space-x-2">
+                    <BiPhoneCall
+                      size={35}
+                      color="#000A82"
+                      className="flex-wrap"
+                    />
+                    <a className="text-gray-600 text-xl hover:text-gray-800">
+                      +1 (804) 404-5361
+                    </a>
+                  </li>
+
+                  <li className="flex items-start mt-4 space-x-2">
+                    <BiSolidStore
+                      size={55}
+                      color="#000A82"
+                      className="flex-wrap"
+                    />
+                    <a className="text-gray-600 text-xl hover:text-gray-800">
+                      411 Branchway Rd Suite 218 N. Chesterfield, VA 23236
+                    </a>
+                  </li>
+                  <li className="flex items-start mt-4 space-x-2">
+                    <BiCalendar
+                      size={35}
+                      color="#000A82"
+                      className="flex-wrap"
+                    />
+                    <a className="text-gray-600 text-xl hover:text-gray-800">
+                      Mon - Fri: 7:00am - 4:00pm
+                    </a>
+                  </li>
+                  <li className="flex items-start mt-4 space-x-2">
+                    <AiOutlineMail
+                      size={35}
+                      color="#000A82"
+                      className="flex-wrap"
+                    />
+                    <a className="text-gray-600 text-xl hover:text-gray-800">
+                      info@mascontractors.com
+                    </a>
+                  </li>
+                </nav>
+              </div>
+              <div className="flex flex-col custom:w-1/6 custom870:w-1/2 w-full  px-4 mx-auto">
+                <nav className="list-none mb-10">
+                  <li>
+                    <a className="text-gray-800 font-georgia text-center text-3xl font-medium hover:text-gray-800">
+                      Services
+                    </a>
+                  </li>
+                  {data.contect_services.map((service, index) => (
+                    <li key={index} className="flex items-start mt-4 space-x-2">
+                      <a className="text-blue-800 text-xl font-medium">
+                        {service.title}
+                      </a>
+                    </li>
+                  ))}
+                </nav>
+              </div>
+              <div className="custom:w-1/4 custom870:w-1/2 w-full px-4">
+                <nav className="list-none mb-10">
+                  <li>
+                    <a className="text-gray-800 font-georgia text-3xl font-medium hover:text-gray-800">
+                      Specialities
+                    </a>
+                  </li>                  
+                  {data.specialties.map((specialtie, index) => (
+                    <li key={index} className="flex items-start mt-4 space-x-2">
+                      <Link href={specialtie.link} className="text-blue-800 text-xl font-medium hover:text-gray-800">
+                        {specialtie.title}
+                      </Link>
+                    </li>
+                  ))}
+                </nav>
+              </div>
+              <div className="custom:w-1/6 custom:mr-8 custom870:w-1/2 w-full mr-0 pl-4">
+                <nav className="list-none mb-10">
+                  <li>
+                    <a className="text-gray-800 font-georgia text-3xl font-medium hover:text-gray-800">
+                      Connect
+                    </a>
+                  </li>                  
+                  {data.social_media.map((social_media, index) => (
+                    <li key={index} className="flex items-start mt-4 space-x-2">
+                      <Link href={social_media.link} className="text-blue-800 text-xl font-medium hover:text-gray-800">
+                        {social_media.name}
+                      </Link>
+                    </li>
+                  ))}
+                </nav>
+              </div>
+            </div>
           </div>
-          <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                <BiPhoneCall size={60} color='#000A82' className='flex mx-auto mb-4'/>
-              <nav className="list-none mb-10 text-center">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    +1 (804) 404-5361
-                  </a>
-                </li>
-              </nav>
-            </div>
-            <div className="flex flex-col justify-center lg:w-1/4 md:w-1/2 w-full px-4 mx-auto">
-              <BiSolidStore size={60} color='#000A82' className='flex mx-auto mb-4'/>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                  411 Branchway Rd Suite 218
-                  N. Chesterfield, VA 23236
-                  </a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <BiCalendar size={60} color='#000A82' className='flex mx-auto mb-4'/>
-              <nav className="list-none mb-10 text-center">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Monday - Friday
-                    7:00am - 4:00pm
-                  </a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <AiOutlineMail size={60} color='#000A82' className='flex mx-auto mb-4'/>
-              <nav className="list-none mb-10 text-center">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    info@mascontractors.com
-                  </a>
-                </li>
-              </nav>
+          <div className="bg-gray-800">
+            <div className="mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+              <p className="text-gray-200 text-sm text-center sm:text-left">
+                © 2024 MasContractorsLLC, All Rights Reserved —
+                <a
+                  href="https://twitter.com/knyttneve"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 ml-1"
+                  target="_blank"
+                >
+                  @Leonel
+                </a>
+              </p>
             </div>
           </div>
-        </div>
-        <div className="bg-gray-800">
-          <div className="mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p className="text-gray-500 text-sm text-center sm:text-left">
-              © 2020 Tailblocks —
-              <a
-                href="https://twitter.com/knyttneve"
-                rel="noopener noreferrer"
-                className="text-gray-600 ml-1"
-                target="_blank"
-              >
-                @knyttneve
-              </a>
-            </p>
-            <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a className="text-gray-500">
-                <svg
-                  fill="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a className="ml-3 text-gray-500">
-                <svg
-                  fill="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a className="ml-3 text-gray-500">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a className="ml-3 text-gray-500">
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="0"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="none"
-                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                  ></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </footer>
+        </footer>
       </Fade>
     </>
   );

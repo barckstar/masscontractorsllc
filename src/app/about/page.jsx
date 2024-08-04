@@ -61,7 +61,7 @@ export default function about() {
                 </div>
               </div>
               <Fade delay="50" triggerOnce>
-                <div className="flex mb-16 justify-center">
+                <div className="flex justify-center">
                   <Link href="/contact">
                     <button className="my-9 hero-button shadow-lg hover:shadow-2xl">
                       {data.about.buttonText}

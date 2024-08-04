@@ -11,17 +11,17 @@ export const Navbar = () => {
   const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrollColor, setScrollColor] = useState("transparent");
-  const [logoHidden, setLogoHidden] = useState(true); // Inicialmente oculto
+  const [logoHidden, setLogoHidden] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop >= 90) {
         setScrollColor("#F3F4F6");
-        setLogoHidden(false); // Mostrar el logo cuando se desplaza hacia abajo
+        setLogoHidden(false); 
       } else {
         setScrollColor("transparent");
-        setLogoHidden(true); // Ocultar el logo cuando se desplaza hacia arriba
+        setLogoHidden(true); 
       }
     };
 

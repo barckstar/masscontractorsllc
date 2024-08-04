@@ -72,46 +72,55 @@
     "contect_services": [
         {
             "title": "TRIM",
+            "title2": "Trim",
             "description": "We install interior doors, crown molding, coffered ceilings, wall panels and built-in shelves exactly as you imagined it.",
             "img": "/Trim.jpeg"
         },
         {
             "title": "ROOFING",
+            "title2": "Roofing",
             "description": "Whether it’s a minor roof repair, an older roof in need of a full replacement. We provide all the assistance you need to help service you every step of the way!",
             "img": "/Roofing.jpeg"
         },
         {
             "title": "KITCHEN",
+            "title2": "Kitchen",
             "description": "The kitchen is the heart of the home, let us transform it by installing cabinets, countertops, tile backsplash, flooring, and appliances.",
             "img": "/Kitchen.jpeg"
         },
         {
             "title": "BATHROOMS",
+            "title2": "Bathrooms",
             "description": "Increase the value of your home. We love adding new bathroom cabinets, adding soaking tubs, new storage closets, and new shower tile.",
             "img": "/Bathroom.jpeg"
         },
         {
             "title": "DOORS",
+            "title2": "Doors",
             "description": "We can install storm doors, sliding glass doors, french doors and front entry doors that come with built-in safety mechanisms and in a variety of patterns, colors, and glass panels.",
             "img": "/Doors.jpeg"
         },
         {
             "title": "DECKS",
+            "title2": "Decks",
             "description": "We offer deck replacements and custom deck builds including porches and pergolas. We offer various materials to choose from for it to be long lasting for your home.",
             "img": "/Deck.jpeg"
         },
         {
             "title": "SIDING",
+            "title2": "Siding",
             "description": "New siding doesn’t only bring new life to your home’s exterior but also can reduce the amount of maintenance needed to upkeep your home.",
             "img": "/Siding.jpeg"
         },
         {
             "title": "WINDOWS",
+            "title2": "Windows",
             "description": "With our expansive offering of numerous manufacturers, we can help you change any window to a high quality and energy efficient window.",
             "img": "/Windows.jpeg"
         },
         {
             "title": "HOME ADDITIONS",
+            "title2": "Home Additons",
             "description": "Add value to your home with your desired additional space. We take care of all required city permits, plumbing and electrical work. Your dreams will become a reality.",
             "img": "/CustomRoomAdditions.png"
         }
@@ -347,5 +356,36 @@
                 }
             ]
         }
+    ],
+    "social_media" : [
+        {
+            "name":"Facebook",
+            "link":"/"
+        },        
+        {
+            "name":"Instagram",
+            "link":"/"
+        },        
+        {
+            "name":"Google",
+            "link":"/"
+        },        
+        {
+            "name":"X",
+            "link":"/"
+        },        
+        {
+            "name":"Houzz",
+            "link":"/"
+        },        
+        {
+            "name":"linkedin",
+            "link":"/"
+        },        
+        {
+            "name":"BBB",
+            "link":"/"
+        }        
     ]
+
 }

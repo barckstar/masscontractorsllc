@@ -19,8 +19,8 @@ const heroR = ({ hidden,
               (isVideo ? (
                 <video
                   className="object-cover object-center rounded mx-auto"
-                  width="250"
-                  height="250"
+                  width="200"
+                  height="150"
                   autoPlay
                   muted
                   loop

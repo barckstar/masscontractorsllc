@@ -4,6 +4,8 @@ import Hero from "@/components/hero";
 import HeroR from "@/components/heroR";
 import HeroL from "@/components/heroL";
 import Image from "next/image";
+import Contact from "@/components/contact";
+import Map from "@/components/map";
 import { Fade, Slide } from "react-awesome-reveal";
 import Link from "next/link";
 import data from "@/lib/data.json";
@@ -88,6 +90,11 @@ export default function Home() {
             subTitle2={data.heroR.subTitle2}
           />
         </div>
+        <div className="w-5/6 mx-auto mt-10">
+          <Hero hidden={true} title="Our Physical Location" text="" img="/" />
+        </div>
+        <Map />
+        <Contact />
       </Fade>
     </>
   );
