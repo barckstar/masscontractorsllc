@@ -14,12 +14,6 @@ const contentSpec = () => {
             </h1>
             <div className="h-1 w-20 bg-green-400 rounded"></div>
           </div>
-          <div className="mx-auto w-9/12">
-            <p className="lg:w-2/3 w-full text-black mx-auto">
-              All of our work is professionally done and we pride ourselves on
-              our craftsmanship.
-            </p>
-          </div>
         </div>
         <div className="flex flex-wrap -m-4">
           {data.specialties.map((specialties, index) => (
