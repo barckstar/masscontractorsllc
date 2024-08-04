@@ -12,15 +12,15 @@ export default function about() {
       <Fade delay="10">
         <Navbar2 />
         <section className="bg-image-about">
-          <div className="w-5/6 mx-auto bg-white">
+          <div className="w-11/12 mx-auto bg-white">
             <Fade delay="10">
               <Hero
                 hidden={true}
                 title={data.heroAbout.title}
                 text={data.heroAbout.text}
               />
-              <div className="mx-auto flex lg:w-5/6 px-5 py-4 mt-7 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-2/3 flex flex-col md:items-center md:text-left md:mx-auto mb-16 md:mb-0 items-center text-center">
+              <div className="mx-auto flex lg:w-5/6 px-5 py-4 mt-7 md:flex-row flex-col ">
+                <div className="md:w-2/3 flex flex-col md:text-left text-center mb-16 md:mb-0">
                   <Fade delay="10">
                     <h1 className="title-font font-georgia sm:text-3xl text-2xl mb-6 font-bold text-gray-900">
                       {data.about.title}
