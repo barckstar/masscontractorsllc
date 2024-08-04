@@ -9,10 +9,10 @@ const contentSpec = () => {
       <div className="lg:w-5/6 px-5 py-4 mx-auto">
         <div className="flex flex-wrap w-full mb-5 p-5 rounded-lg">
           <div className="lg:w-1/4 w-full mb-3 lg:mb-0">
-            <h1 className="sm:text-4xl font-georgia text-2xl font-bold title-font mb-2 text-black">
+            <h1 className="sm:text-5xl font-georgia text-2xl font-bold title-font mb-2 text-black">
               Specialties
             </h1>
-            <div className="h-1 w-20 bg-green-400 rounded"></div>
+            <div className="h-1 w-8/12 bg-green-400 rounded"></div>
           </div>
         </div>
         <div className="flex flex-wrap -m-4">

@@ -17,9 +17,10 @@ const heroL = ({
       <section className="text-gray-600 body-font">
         <div className="mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font font-georgia sm:text-4xl text-4xl mb-6 font-bold text-lime-500">
+            <h1 className="title-font font-georgia sm:text-4xl text-4xl mb-6 font-bold text-gray-900">
               {title}
-            </h1>
+            <div className="h-1 w-full bg-green-400 rounded"></div>            
+            </h1>            
             <h3 className="title-font font-georgia text-3xl font-light text-gray-900">
               {subTitle}
             </h3>

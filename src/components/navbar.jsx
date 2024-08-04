@@ -47,7 +47,7 @@ export const Navbar = () => {
         </Link>
         <div className="hidden md:flex gap-2 mb-4 ml-10">
           {data.url_navbar.map((link) => (
-            <Link key={link.title} href={link.url} className="text-black py-1 px-10 bg-transparent rounded-sm hover:shadow-lg hover:shadow-blue-900 transition-all">
+            <Link key={link.title} href={link.url} className="text-black text-xl py-1 px-10 bg-transparent rounded-sm hover:shadow-lg hover:shadow-blue-900 transition-all">
               {link.title}
             </Link>
           ))}

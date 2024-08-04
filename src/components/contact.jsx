@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Fade } from "react-awesome-reveal";
-import data from "@/lib/data.json"
+import data from "@/lib/data.json";
 
 function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
@@ -40,16 +40,17 @@ function Contact() {
         <section className="text-gray-600 body-font relative">
           <Fade delay={200}>
             <div className="container px-5 py-10 flex justify-center">
-              <div className="bg-white rounded-lg p-8 flex flex-col w-full shadow-md">
+              <div className="bg-white rounded-lg p-8 flex flex-col w-full shadow-2xl">
                 <h2 className="text-gray-900 text-center text-4xl mb-8 font-medium title-font">
                   Send us an Email
+                  <div className="h-1 w-1/5 mx-auto bg-green-400 rounded"></div>
                 </h2>
                 <form id="contactForm" onSubmit={sendEmail} ref={form}>
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
                       <label
                         htmlFor="first_name"
-                        className="leading-7 text-ml font-medium text-gray-600"
+                        className="leading-7 text-xl font-medium text-gray-600"
                       >
                         First Name
                       </label>
@@ -64,7 +65,7 @@ function Contact() {
                     <div className="w-full md:w-1/2 px-3">
                       <label
                         htmlFor="last_name"
-                        className="leading-7 text-ml font-medium text-gray-600"
+                        className="leading-7 text-xl font-medium text-gray-600"
                       >
                         Last Name
                       </label>
@@ -81,7 +82,7 @@ function Contact() {
                     <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
                       <label
                         htmlFor="email"
-                        className="leading-7 text-ml font-medium text-gray-600"
+                        className="leading-7 text-xl font-medium text-gray-600"
                       >
                         Email
                       </label>
@@ -96,7 +97,7 @@ function Contact() {
                     <div className="w-full md:w-1/2 px-3">
                       <label
                         htmlFor="phone"
-                        className="leading-7 text-ml font-medium text-gray-600"
+                        className="leading-7 text-xl font-medium text-gray-600"
                       >
                         Phone
                       </label>
@@ -112,7 +113,7 @@ function Contact() {
                   <div className="relative mb-4">
                     <label
                       htmlFor="subject"
-                      className="leading-7 text-ml font-medium text-gray-600"
+                      className="leading-7 text-xl font-medium text-gray-600"
                     >
                       Subject
                     </label>
@@ -121,16 +122,23 @@ function Contact() {
                       name="user_subject"
                       required
                       defaultValue="default"
-                      className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full text-xl bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     >
                       <option value="default" disabled>
                         Select a subject
                       </option>
                       {data.contect_services.map((service, index) => (
-                      <option key={service.title} value={service.title2}>{service.title2}</option>
-                      ))}                      
+                        <option key={service.title} value={service.title2}>
+                          {service.title2}
+                        </option>
+                      ))}
                       {data.specialties.map((specialties, index) => (
-                      <option key={specialties.title} value={specialties.title}>{specialties.title}</option>
+                        <option
+                          key={specialties.title}
+                          value={specialties.title}
+                        >
+                          {specialties.title}
+                        </option>
                       ))}
                       <option value="General Inquiry">General Inquiry</option>
                       <option value="Support">Support</option>

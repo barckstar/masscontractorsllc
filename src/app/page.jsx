@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mt-7 mx-auto">
-          <p className="text-lg text-center mb-4">
+          <p className="text-2xl text-center mb-4">
             MAS Contractors is a building and Remodeling Company proud to offer
             small or large renovation projects. Our range of services includes
             Commercial Trim, Room Additions, Porches and Decks, Kitchen &
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         <div className="lg:w-5/6 px-5 py-4 mt-5 mx-auto bg-green-300 rounded-sm shadow-lg hover:bg-green-400 transition duration-300">
           <div className="text-center p-5 mx-auto">
-            <p className="text-2xl font-bold font-georgia text-gray-900">
+            <p className="text-3xl font-bold font-georgia text-gray-900">
               Ensure one of your biggest investments showcases great style and
               personality.
             </p>
