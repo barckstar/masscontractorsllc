@@ -22,7 +22,7 @@ export default function about() {
               <div className="mx-auto flex lg:w-5/6 px-5 py-4 mt-7 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-2/3 flex flex-col md:items-center md:text-left md:mx-auto mb-16 md:mb-0 items-center text-center">
                   <Fade delay="10">
-                    <h1 className="title-font font-georgia sm:text-3xl text-2xl mb-6 font-medium text-gray-900">
+                    <h1 className="title-font font-georgia sm:text-3xl text-2xl mb-6 font-bold text-gray-900">
                       {data.about.title}
                     </h1>
                   </Fade>
@@ -30,7 +30,7 @@ export default function about() {
                     {data.about.list.map((item, index) => (
                       <li key={index} className="my-4 text-gray-600 body-font">
                         <Fade delay={index * 150}>
-                          <p>
+                          <p className="text-lg">
                             <span className="title-font sm:text-xl text-2xl mb-6 font-bold text-gray-700">
                               {item.subTitle} -
                             </span>{" "}
