@@ -4,6 +4,7 @@ import { Navbar2 } from "@/components/navbar2";
 import data from "@/lib/data.json";
 import { useParams } from "next/navigation";
 import { Fade, Slide } from "react-awesome-reveal";
+import Carrusel from "@components/Carrusel";
 
 const PostContent2 = () => {
   const { slug } = useParams();
@@ -14,8 +15,7 @@ const PostContent2 = () => {
 
   const post =
     data.best_projects.find((post) => post.slug === slug) ||
-    data.recent_projects.find((post) => post.slug === slug) ||
-    data.specialties.find((post) => post.slug === slug);
+    data.recent_projects.find((post) => post.slug === slug);
 
   if (!post) {
     return <div>Post not found</div>;
@@ -69,6 +69,7 @@ const PostContent2 = () => {
             <h1 className="title-font text-center mt-10 font-georgia sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
               Galery
             </h1>
+            <Carrusel/>
             <div className="flex flex-wrap mx-auto justify-center">
               {post.imgCarrusel.map((image, index) => (
                 <div

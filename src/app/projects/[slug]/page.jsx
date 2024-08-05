@@ -1,10 +1,10 @@
 "use client";
-import PostContent from "@/components/postContent";
+import PostContent2 from "@/components/postContent2";
 
 export default function Post() {
   return (
     <>
-      <PostContent />
+      <PostContent2 />
     </>
   );
 }
