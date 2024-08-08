@@ -27,7 +27,7 @@ const Carrusel = () => {
   };
 
   if (!dataImg || !carruselImages.length) {
-    return <div>No images available</div>;
+    return null;
   }
 
   return (

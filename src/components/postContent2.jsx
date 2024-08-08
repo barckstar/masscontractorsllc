@@ -5,7 +5,7 @@ import { Navbar2 } from "@/components/navbar2";
 import data from "@/lib/data.json";
 import { useParams } from "next/navigation";
 import { Fade, Slide } from "react-awesome-reveal";
-import Carrusel from "@/components/Carrusel";
+import Carrusel from "@/components/carrusel";
 
 const PostContent2 = () => {
   const { slug } = useParams();
