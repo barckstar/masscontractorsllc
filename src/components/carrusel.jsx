@@ -4,7 +4,7 @@ import data from "../lib/data.json";
 import { useParams } from "next/navigation";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
-const Carrusel = () => {  
+function Carrusel() {  
   const { slug } = useParams();
 
   const dataImg = data.best_projects.find((post) => post.slug === slug) ||
