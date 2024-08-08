@@ -10,8 +10,7 @@ const Carrusel = () => {
   const dataImg = data.best_projects.find((post) => post.slug === slug) ||
   data.recent_projects.find((post) => post.slug === slug);
 
-
-  const carruselImages = dataImg.imgCarrusel;
+  const carruselImages = dataImg?.imgCarrusel || []; // Agregamos un valor por defecto
 
   const [currentItem, setCurrentItem] = useState(0);
 
