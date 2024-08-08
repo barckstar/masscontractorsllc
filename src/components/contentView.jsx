@@ -11,11 +11,11 @@ const contentView = ({ title, projects = [], description }) => {
           <div className="w-24 h-full bg-green-500"></div>
         </div>
         <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 className="sm:w-2/5 font-georgia text-gray-900 title-font text-2xl mb-2 sm:mb-0">
+          <h1 className="font-georgia text-gray-900 font-bold title-font text-3xl mb-2">
             {title}
           </h1>
           {description && (
-            <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+            <p className="text-xl leading-relaxed">
               {description}
             </p>
           )}

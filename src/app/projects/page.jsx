@@ -16,14 +16,14 @@ export default function projects() {
             <ContentView
               title={"Best Projects"}
               description={
-                "Street art subway tile salvia four dollar toast bitters selfiesquinoa yuccie synth meditation iPhone intelligentsia prism tofu.Viral gochujang bitters dreamcatcher."
+                "From a beautiful commercial office space to detailed finishes in a large custom home, see more to check out our work. We believe our experience and knowledge of the industry will be a great benefit to you and your family. We would be honored to remodel or build your dream into a reality. We look forward to hearing from you!"
               }
               projects={Data.best_projects}
             />
             <ContentView
               title={"Recent Projects"}
               description={
-                "Street art subway tile salvia four dollar toast bitters selfiesquinoa yuccie synth meditation iPhone intelligentsia prism tofu.Viral gochujang bitters dreamcatcher."
+                "From a beautiful commercial office space to detailed finishes in a large custom home, see more to check out our work. We believe our experience and knowledge of the industry will be a great benefit to you and your family. We would be honored to remodel or build your dream into a reality. We look forward to hearing from you!"
               }
               projects={Data.recent_projects}
             />
