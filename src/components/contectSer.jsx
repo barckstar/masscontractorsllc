@@ -9,7 +9,7 @@ const contectSer = () => {
       <div className="w-5/6 px-5 py-10 mx-auto bg-white">
         <div className="flex flex-wrap w-full mb-5">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="font-bold font-georgia title-services mb-2 text-gray-900">
+            <h1 className="font-bold font-georgia text-3xl mb-2 text-gray-900">
               Our Services
             </h1>
             <div className="h-1 w-20 bg-blue-800 rounded"></div>

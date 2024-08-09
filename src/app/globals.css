@@ -5,21 +5,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
     background-color: #ffffff;
-    color: var(--text);
+    color: var(--text)
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit
 }
 
 .font-georgia {
-    font-family: Georgia, serif !important;
+    font-family: Georgia, serif !important
 }
 
 .container {
@@ -28,18 +28,18 @@ a {
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
-    display: flex;
+    display: flex
 }
 
 .hero-section {
-    position: relative;
+    position: relative
 }
 
 .video-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 .bg-video {
@@ -50,7 +50,7 @@ a {
     height: auto;
     min-width: 100%;
     min-height: 100%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 
 .overlay-content {
@@ -61,23 +61,21 @@ a {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Cambia el color del overlay si es necesario */
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .hero-content {
     margin-top: 10%;
     width: 80%;
     color: white;
-    z-index: 1;
+    z-index: 1
 }
 
 .hero-title {
     font-family: Georgia, serif;
     font-size: 3rem;
-    /* Tamaño del título ajustado */
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
 }
 
 .hero-title-logo {
@@ -85,12 +83,12 @@ a {
     font-size: 3rem;
     font-weight: bold;
     letter-spacing: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
 }
 
 .hero-description {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem
 }
 
 .hero-button {
@@ -102,180 +100,169 @@ a {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3)
 }
 
 .hero-button:hover {
-    background-color: #73C239;
+    background-color: #73C239
 }
 
 .bg-image-service {
     background-image: url('/textura-madera-1.jpg');
-    background-repeat: repeat;
+    background-repeat: repeat
 }
 
 .bg-image-proyects {
     background-image: url('/textura-madera-2.jpg');
-    background-repeat: repeat;
+    background-repeat: repeat
 }
 
 .bg-image-about {
     background-image: url('/textura-madera-4.jpg');
-    background-repeat: repeat;
-}
-
-.bg-spec {
-    background-image: url('/textura-madera-2.jpg');
-    background-repeat: repeat;
-    background-clip: content-box;
-    background-position-y: 3.5rem;
-}
-
-.title-services {
-    font-size: 2rem;
+    background-repeat: repeat
 }
 
 .content-bg {
-    background-color: #212D38;
+    background-color: #212D38
 }
 
 .truncate {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
-  }
+    text-overflow: ellipsis
+}
 
-@media (max-width: 1563px) {
+@media (max-width:1563px) {
     .container {
-        width: 1366px;
+        width: 1366px
     }
 }
 
-@media (max-width: 1366px) {
+@media (max-width:1366px) {
     .container {
-        width: 1280px;
+        width: 1280px
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width:1280px) {
     .container {
-        width: 1024px;
+        width: 1024px
     }
 
     .hero-title {
-        font-size: 2.25rem;
+        font-size: 2.25rem
     }
 
     .hero-description {
-        font-size: 1rem;
+        font-size: 1rem
     }
 
     .hero-title-logo {
         font-size: 2rem;
-        letter-spacing: 1rem;
+        letter-spacing: 1rem
     }
 
     .hero-button {
-        font-size: 1rem;
+        font-size: 1rem
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width:1024px) {
     .container {
-        width: 768px;
+        width: 768px
     }
 
     .img {
         width: 60%;
-        height: 60%;
+        height: 60%
     }
 
     .overlay-content {
-        align-items: baseline;
+        align-items: baseline
     }
 
     .hero-content {
-        margin-top: 15%;
+        margin-top: 15%
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .container {
-        width: 640px;
+        width: 640px
     }
 
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 1.75rem
     }
 
     .hero-title-logo {
         font-size: 2rem;
-        letter-spacing: 0.25rem;
+        letter-spacing: 0.25rem
     }
 
     .img {
         width: 40%;
-        height: 40%;
+        height: 40%
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width:640px) {
     .container {
-        width: 475px;
+        width: 475px
     }
 
     .hero-title {
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
 
     .hero-title-logo {
         font-size: 2rem;
-        letter-spacing: 0.25rem;
+        letter-spacing: 0.25rem
     }
 
     .hero-content {
-        margin-top: 7%;
+        margin-top: 7%
     }
 
     .hero-button {
-        padding: 0.75rem;
+        padding: 0.75rem
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width:475px) {
     .container {
-        width: 380;
+        width: 380
     }
 
     .hero-button {
-        padding: 0.75rem;
+        padding: 0.75rem
     }
 
     .hero-title {
-        font-size: 1.25rem;
+        font-size: 1.25rem
     }
 
     .hero-description {
         font-size: 0.75rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem
     }
 
     .hero-title-logo {
-        font-size: 0.75rem;
+        font-size: 0.75rem
     }
 
     .hero-button {
-        font-size: 0.75rem;
+        font-size: 0.75rem
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width:380px) {
     .container {
-        width: 320px;
+        width: 320px
     }
 
     .hero-button {
-        padding: 0.25rem;
+        padding: 0.25rem
     }
 }
