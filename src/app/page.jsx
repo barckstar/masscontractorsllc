@@ -17,6 +17,7 @@ export default function Home() {
         <div className="video-container mt-0 ">
           <video autoPlay muted loop>
             <source src="/bg-video.mp4" type="video/mp4" />
+            <track src="/captions_en.vtt" kind="captions" srclang="en" label="english_captions"/>
             Your browser does not support the video tag.
           </video>
           <div className="overlay-content">

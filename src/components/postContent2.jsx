@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 import { Navbar2 } from "@/components/navbar2";
 import data from "@/lib/data.json";
 import { useParams } from "next/navigation";
@@ -27,70 +27,65 @@ const PostContent2 = () => {
       <Navbar2 />
       <section className="text-gray-600 body-font">
         <div className="px-5 py-24 mx-auto flex flex-col">
-          <div className="lg:w-5/6 mx-auto">
+          <div className="lg:w-4/6 mx-auto">
             <Slide direction="down" triggerOnce>
-              <h1 className="title-font text-center font-georgia sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
+              <h1 className="title-font text-center font-georgia sm:text-5xl text-3xl mb-10 font-bold text-gray-900">
                 {post.title}
               </h1>
             </Slide>
             <div className="rounded-lg overflow-hidden">
-              <Fade triggerOnce>
-                <p className="leading-relaxed text-lg mb-4">
-                  {post.descriptionLarge}
+              <Fade>
+                <p className="leading-relaxed text-justify text-xl mb-4">
+                  {post.description != null ? post.description : ""}
                 </p>
               </Fade>
             </div>
-            <div className="flex flex-col sm:flex-row mt-10">
-              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                <Slide direction="left" triggerOnce>
-                  <Image
-                    alt="content"
-                    className="object-cover object-center"
-                    width={500}
-                    height={500}
-                    src={post.image}
-                  />
-                </Slide>
-              </div>
-              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <Fade triggerOnce>
-                  <p className="leading-relaxed text-lg mb-4">
-                    {post.descriptionLarge2}
-                    {post.list && post.list.length > 0 &&(
-                      <ul>
-                        {post.list.map((list, index) => (
-                          <li key={index}>{list.item}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </p>
-                </Fade>
-              </div>
+            <Fade delay={10}>
+              <Carrusel />
+            </Fade>
+            <div className="rounded-lg text-justifys overflow-hidden">
+              <Fade>
+                <h1 className="title-font text-center font-georgia sm:text-3xl text-2xl mb-10 font-medium text-gray-700">
+                  {post.subTitle != null ? post.subTitle : ""}
+                </h1>
+              </Fade>
             </div>
-            <h1 className="title-font text-center mt-10 font-georgia sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
-              Galery
-            </h1>
-            <Carrusel/>
-            <div className="flex flex-wrap mx-auto justify-center">
-              {post.imgCarrusel.map((image, index) => (
-                <div
-                  key={index}
-                  className="m-5 flex items-center justify-center"
-                >
-                  <Fade delay={index * 5}>
-                    <div>
-                      <Image
-                        alt="content"
-                        className=" object-center"
-                        width={250}
-                        height={250}
-                        src={image.img}
-                      />
-                    </div>
-                  </Fade>
-                </div>
-              ))}
+            <div className="rounded-lg text-justify overflow-hidden">
+              <Fade>
+                <p className="leading-relaxed text-xl mb-4">
+                  {post.descriptionLarge != null ? post.descriptionLarge : ""}
+                </p>
+              </Fade>
             </div>
+            <div className="rounded-lg text-justifys overflow-hidden">
+              <Fade>
+                <p className="leading-relaxed text-xl mb-4">
+                  {post.descriptionLarge2 != null ? post.descriptionLarge2 : ""}
+                </p>
+              </Fade>
+            </div>
+            <div className="rounded-lg text-justifys overflow-hidden">
+              <Fade>
+                <h1 className="title-font text-center font-georgia sm:text-3xl text-2xl mt-10 font-medium text-gray-700">
+                  {post.titleButton != null ? post.titleButton : ""}
+                </h1>
+              </Fade>
+            </div>
+            <Fade delay="30">
+              <div className="flex justify-center">
+                <Link href="/contact">
+                  <button
+                    className="my-9 px-16 py-8 text-2xl hero-button shadow-2xl hover:shadow-3xl"
+                    style={{
+                      fontSize: "2rem",
+                      padding: "20px 100px",
+                    }}
+                  >
+                    Let's Talk!!
+                  </button>
+                </Link>
+              </div>
+            </Fade>
           </div>
         </div>
       </section>

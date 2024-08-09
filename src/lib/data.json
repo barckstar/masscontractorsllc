@@ -128,10 +128,12 @@
     "best_projects": [
         {
             "slug": "full_renovation",
-            "title": "Full Home Renovation",
-            "description": "",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "title": "Full Home Renovation",            
+            "description": "This property in the city of Richmond has become a gem, a home ready for someone to move into and enjoy from day one. All structural, electrical, and plumbing inspections were satisfied. All major systems were replaced. Everything from the roof to the paint on the walls was transformed. New appliances and the touch of modern finishes turned it into a successful home remodel.",
+            "descriptionLarge": "It is the literal customization that makes your home your very own. The professionals at MAS Contractors will collaborate with you to incorporate all the small details and special features that reflect your lifestyle and design preferences. Custom details can be as small as adding crown molding with intricate detailing or as large as building a custom closet with drawers and shelves.",
+            "descriptionLarge2": "If you've been thinking about home improvement in Richmond, VA, then it's time to contact us. We will collaborate with you to make your home remodeling ideas a reality. You can rest assured that our professionals will keep you fully informed and answer any questions you may have along the way. We have the knowledge and experience necessary to transform your home into the home of your dreams.",
+            "subTitle" : "Make your home unique with custom details.",
+            "titleButton" : "Don't wait any longer to start that home improvement project. Call us to get started.",
             "image": "/FullRenovation/FR1.jpg",
             "link": "/projects/full_renovation",
             "imgCarrusel": [
@@ -174,8 +176,10 @@
             "slug": "residential_construction",
             "title": "Residential Construction",
             "description": "",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge": "If you already own a building lot or land in Virginia, then congratulations! The toughest part of the whole process is behind you. Since you already own a lot, you are a perfect candidate to build with MAS Contractors because we only build custom homes on individually owned lots or land.",
+            "descriptionLarge2": "MAS Contractors doesn't build in planned communities or subdivisions. Building on individually owned lots or land isn't done as an afterthought or to supplement/complement our primary business models (planned communities & subdivisions) like many home builders. Building on a lot or land that a client already owns or will own is ALL we do—that is our only business model.",
+            "subTitle" : "We build on your lot or land in Richmond, Charlottesville, Norfolk, or Spotsylvania County.",
+            "titleButton" : "Don't wait any longer to start that home improvement project. Call us to get started.",
             "image": "/ResidentialConstruction/RC6.jpg",
             "link": "/projects/residential_construction",
             "imgCarrusel": [

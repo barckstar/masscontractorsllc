@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Slide } from "react-awesome-reveal";
 
-const contentView = ({ title, projects = [], description }) => {
+const contentView = ({ title, projects = [], description, hidden }) => {
   return (
     <div className="w-full px-4 py-12 mx-auto">
       <div className="flex flex-col">
@@ -15,9 +15,7 @@ const contentView = ({ title, projects = [], description }) => {
             {title}
           </h1>
           {description && (
-            <p className="text-xl leading-relaxed">
-              {description}
-            </p>
+            <p className="text-xl leading-relaxed">{description}</p>
           )}
         </div>
       </div>
@@ -41,23 +39,25 @@ const contentView = ({ title, projects = [], description }) => {
             <p className="text-base leading-relaxed mt-2">
               {project.description}
             </p>
-            <Link
-              href={project.link}
-              className="text-green-500 inline-flex items-center mt-3"
-            >
-              Learn More
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
+            {!hidden && (
+              <Link
+                href={project.link}
+                className="text-green-500 hover:text-green-700 inline-flex text-xl items-center mt-3"
               >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </Link>
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </Link>
+            )}
           </div>
         ))}
       </div>

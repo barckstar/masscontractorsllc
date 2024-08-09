@@ -48,6 +48,7 @@ const heroL = ({
                   loop
                 >
                   <source src={media} type="video/mp4" />
+                  <track src="/captions_en.vtt" kind="captions" srclang="en" label="english_captions"/>
                   Your browser does not support the video tag.
                 </video>
               ) : (
