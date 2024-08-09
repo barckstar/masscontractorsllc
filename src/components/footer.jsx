@@ -48,7 +48,6 @@ export const Footer = () => {
                         +1 (804) 404-5361
                       </p>
                     </li>
-
                     <li className="flex items-start mt-4 space-x-2">
                       <BiSolidStore
                         size={55}
@@ -125,11 +124,10 @@ export const Footer = () => {
               </div>
               <div className="custom:w-1/6 custom:mr-8 custom870:w-1/2 w-full mr-0 pl-4">
                 <nav className="list-none mb-10">
-                  <li>
                     <p className="text-gray-800 font-georgia text-3xl font-medium hover:text-gray-800">
                       Connect
                     </p>
-                  </li>
+                    <ul>
                   {data.social_media.map((social_media, index) => (
                     <li key={index} className="flex items-start mt-4 space-x-2">
                       <Link
@@ -140,6 +138,7 @@ export const Footer = () => {
                       </Link>
                     </li>
                   ))}
+                  </ul>
                 </nav>
               </div>
             </div>

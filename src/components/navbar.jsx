@@ -54,7 +54,7 @@ export const Navbar = () => {
         </div>
         {/* Mobile Button */}
         <div className="md:hidden flex mr-10 justify-end w-full">
-          <button onClick={toggleMobileMenu}>
+          <button aria-label="Menu" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? (
               <AiOutlineClose size={30} style={{ color: "#000000"}} />
             ) : (

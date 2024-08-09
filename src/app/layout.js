@@ -15,6 +15,21 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <header>
+          <meta
+            httpEquiv="Content-Security-Policy"
+            content="
+              default-src 'none';
+              script-src 'self' 'nonce-random123' https://trusted.cdn.com;
+              style-src 'self' 'unsafe-inline';
+              img-src 'self' data: https://images.example.com;
+              connect-src 'self' https://api.example.com;
+              frame-ancestors 'none';
+              base-uri 'self';
+              form-action 'self';
+            "
+          />
+        </header>
       <body className={inter.className}>
         <Navbar />
         <SocialMediaBar />

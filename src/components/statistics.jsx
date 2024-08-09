@@ -18,7 +18,7 @@ const statistics = () => {
               <div className="border-2 text-center border-gray-200 px-4 py-6 mx-4 rounded-lg">
                 <AiTwotoneHome size={80} color='#000A82' className='flex mx-auto'/>
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  +2500
+                  +2.7k
                 </h2>
                 <p className="leading-relaxed">Projects Completed</p>
               </div>
