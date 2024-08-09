@@ -39,11 +39,10 @@ function Contact() {
       <Fade>
         <section className="text-gray-600 body-font relative">
           <Fade delay={200}>
-            <div className="container px-5 py-10 flex justify-center">
-              <div className="bg-white rounded-lg p-8 flex flex-col w-full shadow-2xl">
+            <div className="px-5 py-10 flex justify-center">
+              <div className="bg-white rounded-lg p-8 flex flex-col w-full md:w-3/4 lg:w-1/2 shadow-2xl">
                 <h2 className="text-gray-900 text-center text-4xl mb-8 font-medium title-font">
                   Send us an Email
-                  <div className="h-1 w-1/5 mx-auto bg-green-400 rounded"></div>
                 </h2>
                 <form id="contactForm" onSubmit={sendEmail} ref={form}>
                   <div className="flex flex-wrap -mx-3 mb-4">
@@ -127,12 +126,12 @@ function Contact() {
                       <option value="default" disabled>
                         Select a subject
                       </option>
-                      {data.contect_services.map((service, index) => (
+                      {data.contect_services.map((service) => (
                         <option key={service.title} value={service.title2}>
                           {service.title2}
                         </option>
                       ))}
-                      {data.specialties.map((specialties, index) => (
+                      {data.specialties.map((specialties) => (
                         <option
                           key={specialties.title}
                           value={specialties.title}
@@ -162,7 +161,7 @@ function Contact() {
                     <ReCAPTCHA sitekey={key} onChange={onChangeCaptcha} />
                   </div>
                   <div className="flex justify-center">
-                    <button className="text-white bg-green-500 mt-4 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 mx-auto rounded text-xl font-medium w-11/12">
+                    <button className="text-white bg-green-500 mt-4 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-xl font-medium w-full sm:w-11/12">
                       <input type="submit" value="Send" className="hidden" />
                       Send Email
                     </button>

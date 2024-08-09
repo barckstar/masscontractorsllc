@@ -50,7 +50,7 @@ export const Footer = () => {
                     </li>
                     <li className="flex items-start mt-4 space-x-2">
                       <BiSolidStore
-                        size={55}
+                        size={35}
                         color="#000A82"
                         className="flex-wrap"
                       />
@@ -83,7 +83,7 @@ export const Footer = () => {
               </div>
               <div className="flex flex-col custom:w-1/6 custom870:w-1/2 w-full  px-4 mx-auto">
                 <nav className="list-none mb-10">
-                  <p className="text-gray-800 font-georgia text-center text-3xl font-medium hover:text-gray-800">
+                  <p className="text-gray-800 font-georgia text-3xl font-medium hover:text-gray-800">
                     Services
                   </p>
                   <ul>
