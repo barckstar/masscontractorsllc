@@ -19,24 +19,24 @@ const contentView = ({ title, projects = [], description, hidden }) => {
           )}
         </div>
       </div>
-      <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div className="flex flex-wrap">
         {projects.map((project, index) => (
-          <div key={index} className="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div key={index} className="p-4 md:w-1/3 sm:mb-0 rounded-lg shadow-lg hover:shadow-2xl">
             <Slide direction="up" delay={index * 300} triggerOnce>
               <div className="rounded-lg h-64 overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   alt={project.title}
-                  className="object-cover object-center h-full w-full"
+                  className="object-contain rounded-lg object-center h-full w-full"
                   src={project.image}
                 />
               </div>
             </Slide>
-            <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+            <h2 className="text-2xl font-medium title-font text-gray-900 mt-5">
               {project.title}
             </h2>
-            <p className="text-base leading-relaxed mt-2">
+            <p className="text-gl leading-relaxed mt-2 line-clamp-2 max-w-[100%]">
               {project.description}
             </p>
             {!hidden && (
@@ -44,18 +44,7 @@ const contentView = ({ title, projects = [], description, hidden }) => {
                 href={project.link}
                 className="text-green-500 hover:text-green-700 inline-flex text-xl items-center mt-3"
               >
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+                Learn More ...
               </Link>
             )}
           </div>

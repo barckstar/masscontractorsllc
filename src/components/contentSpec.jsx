@@ -34,7 +34,7 @@ const contentSpec = () => {
                     <p className="leading-relaxed text-base text-black">
                       {specialties.description}
                     </p>
-                    <h3 className="tracking-widest text-green-600 text-s mt-2 font-medium title-font">
+                    <h3 className="tracking-widest text-green-600 hover:text-green-800 text-s mt-2 font-medium title-font">
                       Learn More...
                     </h3>
                   </div>

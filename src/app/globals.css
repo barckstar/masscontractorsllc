@@ -139,6 +139,13 @@ a {
     background-color: #212D38;
 }
 
+.truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
 @media (max-width: 1563px) {
     .container {
         width: 1366px;
