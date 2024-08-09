@@ -7,7 +7,7 @@ import data from "@/lib/data.json";
 function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
   const form = useRef();
-  const key = "6Lcz5rQZAAAAAH17FgXW0yjN-vXjsCYM8nx9krI9";
+  const key = "6LeANfIpAAAAAMIopTky8pEB73V_cjbPwT7b5jE8";
 
   const onChangeCaptcha = (value) => {
     setCaptchaValue(value);
