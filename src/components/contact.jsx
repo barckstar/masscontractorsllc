@@ -6,15 +6,20 @@ import data from "@/lib/data.json";
 
 function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
+  const [message, setMessage] = useState("");
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const form = useRef();
   const key = "6LcnByQqAAAAALE1TZQ0KK2Rsw0XVlnn8r4fJ_nj";
 
   const onChangeCaptcha = (value) => {
     setCaptchaValue(value);
+    setIsButtonDisabled(false);
   };
 
   const sendEmail = (e) => {
+    setIsButtonDisabled(true);
     e.preventDefault();
+    setMessage("");
     if (captchaValue) {
       emailjs
         .sendForm("service_dat04vh", "template_iu7wwvs", form.current, {
@@ -22,15 +27,17 @@ function Contact() {
         })
         .then(
           () => {
-            console.log("SUCCESS!");
-            console.log("Mensaje enviado");
+            setMessage("Email sent successfully!");
+            setIsButtonDisabled(true);
           },
           (error) => {
-            console.log("FAILED...", error.text);
+            setMessage("Failed to send email. Please try again later.");
+            console.error("FAILED...", error.text);
+            setIsButtonDisabled(true);
           }
         );
     } else {
-      console.log("Por favor, completa el CAPTCHA.");
+      setMessage("Please complete the CAPTCHA.");
     }
   };
 
@@ -161,12 +168,21 @@ function Contact() {
                     <ReCAPTCHA sitekey={key} onChange={onChangeCaptcha} />
                   </div>
                   <div className="flex justify-center">
-                    <button className="text-white bg-green-500 mt-4 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-xl font-medium w-full sm:w-11/12">
-                      <input type="submit" value="Send" className="hidden" />
+                  <button
+                      className={`text-white ${
+                        isButtonDisabled ? "bg-gray-400" : "bg-green-500 hover:bg-green-600 "
+                      } mt-4 border-0 py-2 px-6 focus:outline-none rounded text-xl font-medium w-full sm:w-11/12`}
+                      disabled={isButtonDisabled}
+                    >
                       Send Email
                     </button>
                   </div>
                 </form>
+                {message && (
+                  <div className="text-center mt-4 text-xl font-semibold text-green-600">
+                    {message}
+                  </div>
+                )}
               </div>
             </div>
           </Fade>
