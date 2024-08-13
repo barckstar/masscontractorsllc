@@ -39,44 +39,52 @@ export const Footer = () => {
                   </p>
                   <ul>
                     <li className="flex items-start mt-4 space-x-2">
-                      <BiPhoneCall
-                        size={35}
-                        color="#000A82"
-                        className="flex-wrap"
-                      />
-                      <p className="text-gray-600 text-xl hover:text-gray-800">
-                        +1 (804) 404-5361
-                      </p>
+                      <div className="flex flex-row items-center text-xl">
+                        <div className="m-2">
+                          <BiPhoneCall
+                            size={35}
+                            color="#000A82"
+                            className="flex-wrap"
+                          />
+                        </div>
+                        <div className="m-2 text-gray-600 text-xl hover:text-gray-800">+1 (804) 404-5361</div>
+                      </div>
                     </li>
                     <li className="flex items-start mt-4 space-x-2">
-                      <BiSolidStore
-                        size={35}
-                        color="#000A82"
-                        className="flex-wrap"
-                      />
-                      <p className="text-gray-600 text-xl hover:text-gray-800">
-                        411 Branchway Rd Suite 218 N. Chesterfield, VA 23236
-                      </p>
+                      <div className="flex flex-row items-center text-xl">
+                        <div className="m-2">
+                          <BiSolidStore
+                            size={35}
+                            color="#000A82"
+                            className="flex-wrap"
+                          />
+                        </div>
+                        <div className="m-2 text-gray-600 text-xl hover:text-gray-800">411 Branchway Rd Suite 218 N. Chesterfield, VA 23236</div>
+                      </div>
                     </li>
                     <li className="flex items-start mt-4 space-x-2">
-                      <BiCalendar
-                        size={35}
-                        color="#000A82"
-                        className="flex-wrap"
-                      />
-                      <p className="text-gray-600 text-xl hover:text-gray-800">
-                        Mon - Fri: 7:00am - 4:00pm
-                      </p>
+                      <div className="flex flex-row items-center text-xl">
+                        <div className="m-2">
+                          <BiCalendar
+                            size={35}
+                            color="#000A82"
+                            className="flex-wrap"
+                          />
+                        </div>
+                        <div className="m-2 text-gray-600 text-xl hover:text-gray-800">Mon - Fri: 7:00am - 4:00pm</div>
+                      </div>
                     </li>
                     <li className="flex items-start mt-4 space-x-2">
-                      <AiOutlineMail
-                        size={35}
-                        color="#000A82"
-                        className="flex-wrap"
-                      />
-                      <p className="text-gray-600 text-xl hover:text-gray-800">
-                        info@mascontractors.com
-                      </p>
+                      <div className="flex flex-row items-center text-xl">
+                        <div className="m-2">
+                          <AiOutlineMail
+                            size={35}
+                            color="#000A82"
+                            className="flex-wrap"
+                          />
+                        </div>
+                        <div className="m-2 text-gray-600 text-xl hover:text-gray-800">info@mascontractors.com</div>
+                      </div>
                     </li>
                   </ul>
                 </nav>
@@ -124,20 +132,23 @@ export const Footer = () => {
               </div>
               <div className="custom:w-1/6 custom:mr-8 custom870:w-1/2 w-full mr-0 pl-4">
                 <nav className="list-none mb-10">
-                    <p className="text-gray-800 font-georgia text-3xl font-medium hover:text-gray-800">
-                      Connect
-                    </p>
-                    <ul>
-                  {data.social_media.map((social_media, index) => (
-                    <li key={index} className="flex items-start mt-4 space-x-2">
-                      <Link
-                        href={social_media.link}
-                        className="text-blue-800 text-xl font-medium hover:text-gray-800"
+                  <p className="text-gray-800 font-georgia text-3xl font-medium hover:text-gray-800">
+                    Connect
+                  </p>
+                  <ul>
+                    {data.social_media.map((social_media, index) => (
+                      <li
+                        key={index}
+                        className="flex items-start mt-4 space-x-2"
                       >
-                        {social_media.name}
-                      </Link>
-                    </li>
-                  ))}
+                        <Link
+                          href={social_media.link}
+                          className="text-blue-800 text-xl font-medium hover:text-gray-800"
+                        >
+                          {social_media.name}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </nav>
               </div>
@@ -147,7 +158,7 @@ export const Footer = () => {
             <div className="mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
               <p className="text-gray-200 text-sm text-center sm:text-left">
                 © 2024 MasContractorsLLC, All Rights Reserved —
-                <Link 
+                <Link
                   href="https://www.linkedin.com/in/leo-cas/"
                   className="text-gray-400 ml-1"
                   target="_blank"
