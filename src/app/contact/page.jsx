@@ -28,9 +28,9 @@ export default function contact() {
               />
               <nav className="list-none text-center">
                 <li>
-                  <a className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
+                  <p className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
                     Office Number
-                  </a>
+                  </p>
                 </li>
                 <br />
                 <li>
@@ -48,15 +48,15 @@ export default function contact() {
               />
               <nav className="list-none text-center">
                 <li>
-                  <a className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
+                  <p className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
                     Headquaters
-                  </a>
+                  </p>
                 </li>
                 <br />
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <p className="text-gray-600 hover:text-gray-800">
                     411 Branchway Rd Suite 218 N. Chesterfield, VA 23236
-                  </a>
+                  </p>
                 </li>
               </nav>
             </div>
@@ -68,9 +68,9 @@ export default function contact() {
               />
               <nav className="list-none text-center">
                 <li>
-                  <a className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
+                  <p className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
                     Business Hours
-                  </a>
+                  </p>
                 </li>
                 <br />
                 <li>
@@ -88,15 +88,15 @@ export default function contact() {
               />
               <nav className="list-none text-center">
                 <li>
-                  <a className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
+                  <p className="text-gray-800 font-georgia text-xl font-bold hover:text-gray-800">
                     Email
-                  </a>
+                  </p>
                 </li>
                 <br />
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <p className="text-gray-600 hover:text-gray-800">
                     info@mascontractors.com
-                  </a>
+                  </p>
                 </li>
               </nav>
             </div>
