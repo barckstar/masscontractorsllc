@@ -2,9 +2,8 @@
 
 const nextConfig = {
     images:{
-        domains:[
-            'images.pexels.com',
-            'dummyimage.com'
+        domains:[            
+            'mascontractors.com'
         ]
     }
 };
