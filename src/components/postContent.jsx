@@ -74,7 +74,7 @@ const PostContent = () => {
               </div>
             </Fade>
             <h1 className="title-font text-center mt-10 font-georgia sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
-              Galery
+              Gallery
             </h1>
             <div className="flex flex-wrap mx-auto justify-center">
               {post.imgCarrusel.map((image, index) => (
