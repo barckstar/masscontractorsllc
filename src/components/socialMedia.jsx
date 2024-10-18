@@ -1,8 +1,7 @@
-// SocialMediaBar.js
+
 import React from "react";
-import { AiFillFacebook, AiFillInstagram, AiFillGoogleCircle, AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
-import { AiOutlineBold   } from "react-icons/ai";
-import { FaHouzz } from "react-icons/fa";
+import { AiFillFacebook, AiFillInstagram, AiFillGoogleCircle } from "react-icons/ai";
+import { FaT } from "react-icons/fa6";
 import Link from "next/link";
 import data from "@/lib/data.json";
 
@@ -10,10 +9,7 @@ const socialIcons = {
   Facebook: AiFillFacebook,
   Instagram: AiFillInstagram,
   Google: AiFillGoogleCircle,
-  X: AiFillTwitterCircle,
-  Houzz: FaHouzz,
-  linkedin: AiFillLinkedin,
-  BBB: AiOutlineBold ,
+  Thumbtack: FaT ,
 };
 
 export const SocialMediaBar = () => {
