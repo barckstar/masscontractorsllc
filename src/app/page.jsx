@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
-import Hero from "@/components/hero";
 import { Fade, Slide } from "react-awesome-reveal";
 import Link from "next/link";
 import data from "@/lib/data.json";
-import Carrusel from "@/components/carrusel";
 
 export default function Home() {
   return (
@@ -48,19 +46,21 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mx-auto">
-          <div className="flex flex-col md:flex-row items-center p-5 mx-auto">
-            <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+          <div className="flex flex-col lg:flex-row items-center p-5 mx-auto">
+            <div className="w-full  flex justify-center mb-6 md:mb-0">
               <Image
                 src="/logo-3D.png"
                 alt="Descripción"
+                width={400}
+                height={400}
                 className="max-w-xs md:max-w-full h-auto"
               />
             </div>
-            <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-4">
+            <div className="w-full flex flex-col justify-center text-center md:text-left px-4">
               <p className="text-sm font-atpinko text-white mb-4">
                 About MAS Contractors
               </p>
-              <p className="text-6xl font-atpinko text-white mb-8">
+              <p className="text-6xl font-atpinko text-white mb-8 hero-title-logo">
                 Discover the experience and professionalism that <span className="text-[#9fe300]">makes your home the espace you always dreamed of.</span>
               </p>
               <p className="text-lg font-atpinko text-white mb-2">
@@ -72,9 +72,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="lg:w-5/6 px-5 py-4 mx-auto rounded-sm shadow-lg mb-10">
+        <div className="hero-get lg:w-5/6 px-5 py-4 mx-auto rounded-sm shadow-lg mb-10">
           <div className="text-center p-5 mx-auto">
-            <p className="text-5xl  font-contrax text-white mb-5">
+            <p className="text-6xl font-contrax text-white mb-5 hero-title-logo">
               <span className="text-[#9fe300]">Elevating </span>Your<br></br>
               Construction Journey
             </p>
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mx-auto">
-          <p className="text-5xl font-contrax text-white mb-5 text-center">
+          <p className="text-6xl font-contrax text-white mb-5 text-center hero-title-logo">
             Our <span className="text-[#9fe300]">Featured </span>Projects: <br />
             <span className="text-[#9fe300]">Quality</span> in Every Transformation
           </p>
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mx-auto">
-          <p className="text-5xl font-contrax text-white mb-5 text-center">
+          <p className="text-5xl font-contrax text-white mb-5 text-center hero-title-logo">
             Explore <br />
             our <span className="text-[#9fe300]">Services</span>
           </p>
@@ -154,7 +154,7 @@ export default function Home() {
         <div className="lg:w-5/6 px-5 py-8 mx-auto">
           <div className="bg-[#1e1e1e] rounded-xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-2/3 flex flex-col justify-center text-center md:text-left">
-              <h2 className="text-5xl font-contrax text-white mb-4">
+              <h2 className="text-5xl font-contrax text-white mb-4 hero-title-logo">
                 Free <span className="text-[#9fe300]">Visit</span>
               </h2>
               <p className="text-lg font-atpinko text-white mb-2">
@@ -181,7 +181,7 @@ export default function Home() {
         </div>
 
         <div className="lg:w-5/6 px-5 py-8 mx-auto">
-          <h2 className="text-6xl font-contrax text-white mt-24 mb-24 text-center">
+          <h2 className="text-5xl font-contrax text-white mt-24 mb-24 text-center hero-title-logo">
             <span className="text-[#9fe300]">Illuminating</span> <br />
             the Future
           </h2>
@@ -208,9 +208,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="lg:w-5/6 px-5 py-4 mx-auto rounded-sm shadow-lg mb-10">
+        <div className="hero-get lg:w-5/6 px-5 py-4 mx-auto rounded-sm shadow-lg mb-10">
           <div className="text-center p-5 mx-auto">
-            <p className="text-5xl  font-contrax text-white mb-5">
+            <p className="text-5xl font-contrax text-white mb-5 hero-title-logo">
               <span className="text-[#9fe300]">Elevating </span>Your<br></br>
               Construction Journey
             </p>

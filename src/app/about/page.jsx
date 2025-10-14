@@ -19,10 +19,8 @@ export default function about() {
                 title={data.heroAbout.title}
                 text={data.heroAbout.text}
               />
-
-
-              <div className="mx-auto flex lg:w-5/6 px-5 py-8 mt-7 md:flex-row flex-col gap-8">
-                <div className="md:w-2/3 flex flex-col md:text-left text-center mb-16 md:mb-0">
+              <div className="mx-auto md:items-center md:text-center flex lg:w-5/6 px-5 py-8 mt-7 md:flex-row flex-col gap-8">
+                <div className="flex flex-col md:text-left text-center">
                   <Fade delay="10">
                     <h1 className="title-font font-contrax sm:text-4xl text-2xl mb-6 font-bold text-[#9fe300]">
                       {data.about.title}
@@ -42,25 +40,25 @@ export default function about() {
                       </li>
                     ))}
                   </ul>
-                  <div className="my-8 flex justify-center">
+                  <div className="mt-8 flex flex-col md:flex-row md:items-center justify-center">
                     <Image
                       src="/uniform-3.png"
                       alt="Our Team in Uniform"
                       width={320}
                       height={200}
-                      className="rounded-xl shadow-lg object-cover"
+                      className="mx-auto object-contain object-center rounded-xl shadow-lg"
                     />
                     <Image
                       src="/uniform-2.png"
                       alt="Our Team in Uniform"
                       width={320}
                       height={200}
-                      className="rounded-xl shadow-lg object-cover"
+                      className="mx-auto object-contain object-center rounded-xl shadow-lg"
                     />
                   </div>
                 </div>
                 {/* Imagen principal About */}
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex flex-col gap-6">
+                <div className="lg:max-w-lg lg:w-full flex flex-col gap-6">
                   <Fade delay="10">
                     <Image
                       className="mx-auto object-contain object-center rounded-xl shadow-lg"
@@ -71,14 +69,15 @@ export default function about() {
                     />
                   </Fade>
                   {/* Espacio para imagen de certificaciones */}
-                  <div className="flex justify-center items-center bg-[#1e1e1e]/70 gap-4 p-5 rounded-xl shadow-lg">
-                    <Image
+                  <p className="mx-auto text-3xl font-contrax text-[#9fe300] text-center">Certifications</p>
+                  <div className="mx-auto flex justify-center items-center bg-[#1e1e1e]/70 gap-4 p-5 rounded-xl shadow-lg">
+                    {/* <Image
                       src="/OSHA-logo.png"
                       alt="OSHA Certification"
                       width={80}
                       height={80}
                       className="rounded bg-white p-2"
-                    />
+                    /> */}
                     <Image
                       src="/DPOR.png"
                       alt="State License"
@@ -86,21 +85,17 @@ export default function about() {
                       height={80}
                       className="rounded bg-white p-2"
                     />
-                    <Image
+                    {/*  <Image
                       src="/EPA.png"
                       alt="EPA Certification"
                       width={80}
                       height={80}
                       className="rounded bg-white p-1"
                     />
-
+                */}
                   </div>
                 </div>
               </div>
-
-
-
-
               {/* Misión, Visión, Valores */}
               <div className="lg:w-5/6 px-5 py-8 mx-auto grid md:grid-cols-3 gap-8 text-center">
                 <div className="bg-[#1e1e1e] rounded-xl shadow-lg p-6 border-2 border-[#9fe300]">
@@ -130,7 +125,7 @@ export default function about() {
               {/* Proceso y Metodología de Trabajo */}
               <div className="lg:w-5/6 px-5 py-8 mx-auto">
                 <h2 className="text-4xl font-contrax text-[#9fe300] mb-8 text-center">Our Process</h2>
-                <div className="grid md:grid-cols-5 gap-8 text-center">
+                <div className="grid xl:grid-cols-5 gap-8 text-center">
                   {/* Paso 1 */}
                   <div className="bg-[#1e1e1e] rounded-xl shadow-lg p-6 border-2 border-[#9fe300] flex flex-col items-center">
                     <BiPhoneCall
@@ -170,11 +165,11 @@ export default function about() {
                   </div>
                   {/* Paso 5 */}
                   <div className="bg-[#1e1e1e] rounded-xl shadow-lg p-6 border-2 border-[#9fe300] flex flex-col items-center">
-                    <TbBrandCashapp 
+                    <TbBrandCashapp
                       size={90}
                       color="#9fe300"
                       className="flex mx-auto mb-4"
-                      />
+                    />
                     <h3 className="text-xl font-contrax text-[#9fe300] mb-2">Payment & Completion</h3>
                     <p className="text-white font-atpinko text-base">
                       50% upfront for materials, 50% upon completion. We deliver quality and transparency at every step.
