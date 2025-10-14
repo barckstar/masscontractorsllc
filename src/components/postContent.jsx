@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { Navbar2 } from "@/components/navbar2";
 import data from "@/lib/data.json";
 import { useParams } from "next/navigation";
 import { Fade, Slide } from "react-awesome-reveal";
@@ -21,12 +20,11 @@ const PostContent = () => {
 
   return (
     <>
-      <Navbar2 />
       <section className="text-gray-600 body-font">
         <div className="px-5 py-24 mx-auto flex flex-col">
           <div className="lg:w-5/6 mx-auto">
             <Slide direction="down" triggerOnce>
-              <h1 className="title-font text-center font-georgia sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
+              <h1 className="title-font text-center font-contrax sm:text-4xl text-3xl mb-10 font-medium text-white">
                 {post.title}
               </h1>
             </Slide>
@@ -67,13 +65,13 @@ const PostContent = () => {
             <Fade delay="10">
             <div className="lg:w-5/6 px-5 py-3 my-16 mx-auto bg-green-200 rounded-sm shadow-lg hover:bg-green-400 transition duration-300">
                 <div className="text-center p-3 mx-auto">
-                  <p className="text-2xl font-bold font-georgia text-gray-900">
+                  <p className="text-2xl font-bold font-georgia text-white">
                     If you can dream it, we can do it!
                   </p>
                 </div>
               </div>
             </Fade>
-            <h1 className="title-font text-center mt-10 font-georgia sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
+            <h1 className="title-font text-center mt-10 font-georgia sm:text-4xl text-3xl mb-10 font-medium text-white">
               Gallery
             </h1>
             <div className="flex flex-wrap mx-auto justify-center">

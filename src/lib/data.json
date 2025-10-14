@@ -5,14 +5,6 @@
             "title": "Home"
         },
         {
-            "url": "/services",
-            "title": "Services"
-        },
-        {
-            "url": "/projects",
-            "title": "Projects"
-        },
-        {
             "url": "/about",
             "title": "About"
         },
@@ -21,10 +13,60 @@
             "title": "Contact"
         }
     ],
+    "homeCards" : [
+        {
+            "title": "Robust Roofs, Guaranteed Protection",
+            "text": "We specialize in high-quality roofing solutions that stand the test of time. Our expert team ensures your home is protected with durable materials and expert craftsmanship.",
+            "img": "/img-5.jpg"
+        },
+        {
+            "title": "Your Personal Oasis, Exquisite Designs",
+            "text": "Transform your bathroom into a luxurious retreat with our expert remodeling services. From elegant fixtures to modern layouts, we create spaces that blend functionality with style.",
+            "img": "/img-7.jpg"
+        },
+        {
+            "title": "Inspiring Porches, Outdoor Elegance",
+            "text": "We create stunning outdoor spaces that enhance your home's curb appeal and provide a perfect retreat for relaxation and entertainment. Our custom porch designs are tailored to your style and needs.",
+            "img": "/img-8.jpg"
+        }
+    ],
+    "homeGreenCards":[
+        {
+            "title": "HOME ADDITIONS",
+            "subTitle": "Expand your space. Enhance your life.",
+            "text": "We design and build custom home additions that seamlessly blend with your existing structure, providing you with the extra space you need for your growing family or lifestyle.",
+            "img": "/img-9.png"
+        },{
+            "title": "KITCHEN",
+            "subTitle": "Your dream kitchen, come to life",
+            "text": "From modern makeovers to classic designs, we create kitchens that are both beautiful and functional, tailored to your cooking and entertaining needs. Our attention to detail ensures a perfect blend of style and practicality.",
+            "img": "/img-10.png"
+        },{
+            "title": "BATHROOMS",
+            "subTitle": "Your personal oasis, exquisite designs",
+            "text": "Transform your bathroom into a luxurious retreat with our expert remodeling services. From elegant fixtures to modern layouts, we create spaces that blend functionality with style.",
+            "img": "/img-11.png"
+        },{
+            "title": "DECKS",
+            "subTitle": "Outdoor living at its finest",
+            "text": "We create beautiful and functional decks that enhance your outdoor space, providing the perfect setting for relaxation and entertainment. Our custom designs are tailored to your lifestyle and preferences.",
+            "img": "/img-12.png"
+        },{
+            "title": "ROOFING",
+            "subTitle": "Superios protection for your home",
+            "text": "We offer comprehensive roofing services, including repairs, replacements, and installations, to ensure your home is protected from the elements. Our team uses high-quality materials and expert craftsmanship to deliver durable and reliable roofing solutions.",
+            "img": "/img-13.png"
+        },{
+            "title": "SIDING",
+            "subTitle": "Flexible protection for your home",
+            "text": "Enhance your home's exterior with our top-notch siding services. We provide a variety of styles and materials to improve your home's appearance and protect it from the elements, ensuring long-lasting durability and curb appeal.",
+            "img": "/img-14.png"
+        }
+    ],
     "heroL" : {
         "title": "Why Choose MAS Contractors?",
-        "subTitle" : "Experience",
-        "subTitle2" : "SERVICE",
+        "subTitle": "Experience",
+        "subTitle2": "SERVICE",
         "text": "We are trusted home remodeling experts that have served 100's of satisfied customers throughout the Richmond and Charlottesville area.",
         "text2": "We are known for providing affordable prices using the industry's best quality products matched with great installations."
     },

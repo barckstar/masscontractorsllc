@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Contrax Heavy';
+  src: url('/fonts/Conthrax-SemiBold.otf') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'At Pinko';
+  src: url('/fonts/ATPinko-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +23,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #1e1e1e;
     color: var(--text)
 }
 
@@ -18,8 +32,13 @@ a {
     color: inherit
 }
 
-.font-georgia {
-    font-family: Georgia, serif !important
+
+.font-contrax {
+  font-family: Contrax Heavy !important;
+}
+
+.font-atpinko {
+  font-family: At Pinko !important;
 }
 
 .container {
@@ -35,35 +54,6 @@ a {
     position: relative
 }
 
-.video-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%
-}
-
-.bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translate(-50%, -50%)
-}
-
-.overlay-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5)
-}
-
 .hero-content {
     margin-top: 10%;
     width: 80%;
@@ -72,17 +62,16 @@ a {
 }
 
 .hero-title {
-    font-family: Georgia, serif;
+    font-family: Contrax Heavy;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem
 }
 
 .hero-title-logo {
-    font-family: Georgia, serif;
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 1.4rem;
+    font-family: Contrax Heavy;
+    font-size: 4rem;
+    font-weight: 800;
     margin-bottom: 1rem
 }
 
@@ -94,36 +83,82 @@ a {
 .hero-button {
     font-size: 1.25rem;
     padding: 0.75rem 1.5rem;
-    background-color: #00126A;
-    color: white;
+    background-color: #9fe300;
+    color: #1e1e1e;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3)
 }
 
 .hero-button:hover {
-    background-color: #73C239
+    background-color: #1e1e1e;
+    color: #9fe300;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px 4px rgba(255,255,255,0.7);
 }
 
-.bg-image-service {
-    background-image: url('/textura-madera-1.jpg');
-    background-repeat: repeat
+.bg-hero {
+  position: relative;
+  overflow: hidden;
 }
 
-.bg-image-proyects {
-    background-image: url('/textura-madera-2.jpg');
-    background-repeat: repeat
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/img-2.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  z-index: 0;
 }
 
-.bg-image-about {
-    background-image: url('/textura-madera-4.jpg');
-    background-repeat: repeat
+.bg-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.74);
+  z-index: 1;
 }
+
+.bg-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-hero2 {
+  position: relative;
+  overflow: hidden;  
+  z-index: 2;
+}
+
+.bg-hero2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/img-3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  z-index: 0;
+}
+
+.bg-hero2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.74);
+  z-index: 1;
+}
+
+.bg-hero2 > * {
+  position: relative;
+  z-index: 2;
+}
+
 
 .content-bg {
-    background-color: #212D38
+    background-color: #9fe300
 }
 
 .truncate {

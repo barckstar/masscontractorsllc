@@ -7,14 +7,6 @@ const contentSpec = () => {
   return (
     <section className="body-font mt-10">
       <div className="lg:w-5/6 px-5 py-4 mx-auto">
-        <div className="flex flex-wrap w-full mb-5 p-5 rounded-lg">
-          <div className="lg:w-1/4 w-full mb-3 lg:mb-0">
-            <h1 className="sm:text-5xl font-georgia text-2xl font-bold title-font mb-2 text-black">
-              Specialties
-            </h1>
-            <div className="h-1 w-8/12 bg-green-400 rounded"></div>
-          </div>
-        </div>
         <div className="flex flex-wrap -m-4">
           {data.specialties.map((specialties, index) => (
             <div key={index} className="xl:w-1/3 md:w-1/2 p-4">
@@ -28,15 +20,12 @@ const contentSpec = () => {
                       src={specialties.image}
                       alt="content"
                     />
-                    <h2 className="text-lg font-georgia text-black font-semibold title-font mb-4 uppercase">
+                    <h2 className="text-lg font-bold font-atpinko text-white font-semibold title-font mb-4 uppercase">
                       {specialties.title}
                     </h2>
-                    <p className="leading-relaxed text-base text-black">
+                    <p className="leading-relaxed text-base text-white font-atpinko">
                       {specialties.description}
                     </p>
-                    <h3 className="tracking-widest text-green-600 hover:text-green-800 text-s mt-2 font-medium title-font">
-                      Learn More...
-                    </h3>
                   </div>
                 </Link>
               </Slide>

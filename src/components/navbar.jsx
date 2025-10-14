@@ -1,80 +1,84 @@
-"use client"
+"use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { useRouter } from 'next/navigation';
 
 import data from "../lib/data.json";
 
 export const Navbar = () => {
-  const router = useRouter();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [scrollColor, setScrollColor] = useState("transparent");
-  const [logoHidden, setLogoHidden] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop >= 90) {
-        setScrollColor("#F3F4F6");
-        setLogoHidden(false); 
-      } else {
-        setScrollColor("transparent");
-        setLogoHidden(true); 
-      }
+    // Función para actualizar el estado según el ancho de la ventana
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint de Tailwind
     };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleResize(); // Ejecutar al montar
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
   return (
-    <div
-      className="fixed left-0 top-0 w-full z-40 ease-in duration-300"
-      style={{ backgroundColor: scrollColor }}
-    >
-      <div className="max-w-[1240px] m-auto font-bold flex flex-col justify-between items-center p-4 text-black">
-        <Link href="/">
-          <div className={`transition-opacity mb-8 duration-500 ${logoHidden && router.pathname != "/" ? 'opacity-0' : 'opacity-100'}`}> 
-            <Image src="/IMG_0271.png" width={250} height={100} alt="logo" />
-          </div>
+    <nav className="w-full bg-[#1e1e1e]/70 backdrop-blur-md shadow-md fixed top-0 left-0 z-50 font-atpinko">
+      <div className="max-w-full mx-auto px-6 flex items-center justify-between h-28">
+        <Link href="/" className="flex-shrink-0">
+          <Image
+            src={isMobile ? "/IMG_0271_SM.png" : "/IMG_0271.png"}
+            width={isMobile ? 55 : 250}
+            height={isMobile ? 25 : 120}
+            alt="logo"
+          />
         </Link>
-        <div className="hidden md:flex gap-2 mb-4 ml-10">
+        {/* Desktop links */}
+        <div className="hidden md:flex space-x-8">
           {data.url_navbar.map((link) => (
-            <Link key={link.title} href={link.url} className="text-black text-xl py-1 px-10 bg-transparent rounded-sm hover:shadow-lg hover:shadow-blue-900 transition-all">
+            <Link
+              key={link.title}
+              href={link.url}
+              className="text-white text-xl py-1 px-6 bg-transparent hover:text-[#9fe300]"
+            >
               {link.title}
             </Link>
           ))}
         </div>
-        {/* Mobile Button */}
-        <div className="md:hidden flex mr-10 justify-end w-full">
-          <button aria-label="Menu" onClick={toggleMobileMenu}>
-            {isMobileMenuOpen ? (
-              <AiOutlineClose size={30} style={{ color: "#000000"}} />
-            ) : (
-              <AiOutlineMenu size={30} style={{ color: "#000000" }} />
-            )}
-          </button>
-        </div>
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden absolute mt-4 top-40 right-0 w-full bg-white text-center ease-in duration-300 flex flex-col ">            
-              {data.url_navbar.map((link) => (
-                <Link key={link.title} href={link.url} className="text-black" onClick={toggleMobileMenu}>
-                <div className="items-center justify-center gap-4 bg-white py-2 hover:bg-blue-900 hover:text-white">
-                  {link.title}
-                </div>
-                </Link>
-              ))}
-          </div>
-        )}
+        {/* Mobile menu button */}
+        <button
+          className="md:hidden flex items-center px-6"
+          onClick={() => setOpen(!open)}
+          aria-label="Abrir menú"
+        >
+          <svg
+            className="h-8 w-8 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </div>
-    </div>
+      {/* Mobile links */}
+      {open && (
+        <div className="md:hidden px-6 pb-4 flex flex-col space-y-2 bg-[#1e1e1e]/90 shadow">
+          {data.url_navbar.map((link) => (
+            <Link
+              key={link.title}
+              href={link.url}
+              className="text-white font-atpinko text-lg py-2 px-4 rounded hover:shadow-lg hover:text-[#9fe300]"
+              onClick={() => setOpen(false)}
+            >
+              {link.title}
+            </Link>
+          ))}
+        </div>
+      )}
+    </nav>
   );
 };

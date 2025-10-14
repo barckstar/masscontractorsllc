@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Navbar2 } from "@/components/navbar2";
 import data from "@/lib/data.json";
 import { useParams } from "next/navigation";
 import { Fade, Slide } from "react-awesome-reveal";
@@ -24,7 +23,6 @@ const PostContent2 = () => {
 
   return (
     <>
-      <Navbar2 />
       <section className="text-gray-600 body-font">
         <div className="px-5 py-24 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">

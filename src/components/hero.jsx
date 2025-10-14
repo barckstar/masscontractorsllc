@@ -15,10 +15,10 @@ const hero = ({ hidden, text, title, img }) => {
             />
           )}
           <div className="text-center lg:w-2/3 w-full">
-            <h1 className="title-font font-georgia sm:text-4xl text-3xl my-4 font-bold text-gray-900">
+            <h1 className="title-font font-contrax sm:text-4xl text-3xl my-4 font-bold text-white">
               {title}
             </h1>
-            <p className="mb-8 text-xl leading-relaxed">
+            <p className="mb-8 text-xl leading-relaxed text-white text-atpinko">
               {text}
               </p>
           </div>
