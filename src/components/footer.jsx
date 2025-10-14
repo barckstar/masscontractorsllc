@@ -14,9 +14,9 @@ export const Footer = () => {
         <Fade delay={50} >
           <div className="px-24 py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between">
             {/* Secciones */}
-            <div className="flex-grow flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-12">
+            <div className="flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-24">
               {/* Services */}
-              <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+              <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
                 <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Services</p>
                 <ul className="space-y-2">
                   {data.contect_services.map((service, index) => (
@@ -27,7 +27,7 @@ export const Footer = () => {
                 </ul>
               </div>
               {/* Specialties */}
-              <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+              <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
                 <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Specialties</p>
                 <ul className="space-y-2">
                   {data.specialties.map((specialtie, index) => (
@@ -38,7 +38,7 @@ export const Footer = () => {
                 </ul>
               </div>
               {/* Connect */}
-              <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+              <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
                 <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Connect</p>
                 <ul className="space-y-2">
                   {data.social_media.map((social_media, index) => (
