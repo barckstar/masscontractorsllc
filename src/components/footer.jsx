@@ -12,12 +12,12 @@ export const Footer = () => {
     <>
       <footer className="body-font bg-[#1e1e1e] border-t-2 border-[#515151]">
         <Fade delay={50} >
-          <div className="px-20 py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between gap-12">
+          <div className="px-24 py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between">
             {/* Secciones */}
             <div className="flex-grow flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-12">
               {/* Services */}
-              <div className="w-full sm:w-1/2 lg:w-1/5 px-4">
-                <p className="text-[#9fe300] font-contrax text-2xl mb-4 footer-title">Services</p>
+              <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Services</p>
                 <ul className="space-y-2">
                   {data.contect_services.map((service, index) => (
                     <li key={index} className="text-white text-lg font-atpinko hover:text-[#9fe300] transition footer-text">
@@ -27,8 +27,8 @@ export const Footer = () => {
                 </ul>
               </div>
               {/* Specialties */}
-              <div className="w-full sm:w-1/2 lg:w-1/5 px-4">
-                <p className="text-[#9fe300] font-contrax text-2xl mb-4 footer-title">Specialties</p>
+              <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Specialties</p>
                 <ul className="space-y-2">
                   {data.specialties.map((specialtie, index) => (
                     <li key={index} className="text-white text-lg font-atpinko hover:text-[#9fe300] transition footer-text">
@@ -38,8 +38,8 @@ export const Footer = () => {
                 </ul>
               </div>
               {/* Connect */}
-              <div className="w-full sm:w-1/2 lg:w-1/5 px-4">
-                <p className="text-[#9fe300] font-contrax text-2xl mb-4 footer-title">Connect</p>
+              <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Connect</p>
                 <ul className="space-y-2">
                   {data.social_media.map((social_media, index) => (
                     <li key={index}>
@@ -60,9 +60,9 @@ export const Footer = () => {
                 <Image
                   src="/IMG_0271.png"
                   alt="Logo"
-                  width={350}
-                  height={350}
-                  className="object-contain"
+                  width={500}
+                  height={500}
+                  className="object-contain mx-auto"
                 />
               </Link>
             </div>
