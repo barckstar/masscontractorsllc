@@ -106,7 +106,7 @@ export default function about() {
                 <div className="bg-[#1e1e1e] rounded-xl shadow-lg p-6 border-2 border-[#9fe300]">
                   <h2 className="text-3xl font-contrax text-[#9fe300] mb-4">MISSION</h2>
                   <p className="text-white font-atpinko text-base">
-                    Build high quality projects, providing innovative and comfortable solutions that improve people's lives. We are committed to safety, compliance with deadlines, and total satisfaction of our clients.
+                    Build high quality projects, providing innovative and comfortable solutions that improve people&apos;s lives. We are committed to safety, compliance with deadlines, and total satisfaction of our clients.
                   </p>
                 </div>
                 <div className="bg-[#1e1e1e] rounded-xl shadow-lg p-6 border-2 border-[#9fe300]">

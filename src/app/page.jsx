@@ -50,7 +50,7 @@ export default function Home() {
         <div className="lg:w-5/6 px-5 py-4 mx-auto">
           <div className="flex flex-col md:flex-row items-center p-5 mx-auto">
             <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
-              <img
+              <Image
                 src="/logo-3D.png"
                 alt="Descripción"
                 className="max-w-xs md:max-w-full h-auto"
