@@ -12,7 +12,7 @@ export const Footer = () => {
     <>
       <footer className="body-font bg-[#1e1e1e] border-t-2 border-[#515151]">
         <Fade delay={50} >
-          <div className="px-24 py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between">
+          <div className="py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between lg:px-24">
             {/* Secciones */}
             <div className="flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-24">
               {/* Services */}
@@ -55,13 +55,13 @@ export const Footer = () => {
               </div>
             </div>
             {/* Logo */}
-            <div className="flex-shrink-0 flex justify-center lg:justify-start mb-8 lg:mb-0">
+            <div className="flex-shrink-0 flex justify-center lg:justify-start mb-8 lg:mb-0 mt-10">
               <Link href="/" className="flex title-font font-medium items-center justify-center">
                 <Image
                   src="/IMG_0271.png"
                   alt="Logo"
-                  width={500}
-                  height={500}
+                  width={400}
+                  height={400}
                   className="object-contain mx-auto"
                 />
               </Link>
