@@ -1,6 +1,6 @@
 "use client";
 import Contact from "@/components/contact";
-import Map from "@/components/map";
+import Mapa from "@/components/mapa";
 import { Fade } from "react-awesome-reveal";
 import { BiPhoneCall } from "react-icons/bi";
 import { BiSolidStore } from "react-icons/bi";
@@ -119,7 +119,7 @@ export default function contact() {
           </div>
         </div>
         <Contact />
-        <Map />
+        <Mapa />
       </Fade>
     </>
   );

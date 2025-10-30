@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Map = () => {
+const Mapa = () => {
   return (
     <div className="w-full">
       <section className="body-font pb-0">
@@ -25,4 +25,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default Mapa;
