@@ -36,11 +36,8 @@ export default function Home() {
               </Fade>
             </div>
             <div className="lg:w-5/6 px-5 py-4 mt-7 mx-auto">
-              <p className="text-2xl text-center mb-4 text-white font-atpinko">
-                MAS Contractors is a building and Remodeling Company proud to offer
-                small or large renovation projects. Our range of services includes
-                Commercial Trim, Room Additions, Porches and Decks, Kitchen &
-                Bathroom Remodeling Carpentry, Tile, and much more.
+              <p className="text-5xl text-center mb-4 text-white font-contrax">
+                Comercial & Residencial
               </p>
             </div>
           </div>
@@ -64,26 +61,12 @@ export default function Home() {
                 Discover the experience and professionalism that <span className="text-[#9fe300]">makes your home the espace you always dreamed of.</span>
               </p>
               <p className="text-lg font-atpinko text-white mb-2">
-                For 10 years, we´ve been the reliable force behind countless successful projects, delivering exceptional craftsmanship and personalized service in Richdmond VA.
+                For 11 years, we´ve been the reliable force behind countless successful projects, delivering exceptional craftsmanship and personalized service in Richdmond VA.
               </p>
               <p className="text-lg font-atpinko text-white mb-2">
                 Our passion for craftsmanship and meticulous attention to detail ensure that every project we undertake is executed to the highest standards.
               </p>
             </div>
-          </div>
-        </div>
-        <div className="hero-get lg:w-5/6 px-5 py-4 mx-auto rounded-sm shadow-lg mb-10">
-          <div className="text-center p-5 mx-auto">
-            <p className="text-6xl font-contrax text-white mb-5 hero-title-logo">
-              <span className="text-[#9fe300]">Elevating </span>Your<br></br>
-              Construction Journey
-            </p>
-            <p className="text-lg font-atpinko text-white mb-2">
-              As contractors, we understand that every project is unique, and we are committed to delivering tailored solutions that meet your specific needs and exceed your expectations.
-            </p>
-            <button className="my-9 hero-button font-contrax bg-[#9fe300] transition duration-300 ease-in-out">
-              Get a quote !
-            </button>
           </div>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mx-auto">

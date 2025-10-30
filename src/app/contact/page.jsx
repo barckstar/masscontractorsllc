@@ -33,7 +33,7 @@ export default function contact() {
                 <br />
                 <li>
                   <a className="text-white font-atpinko">
-                    +1 (804) 404-5361
+                    +1 (804) 
                   </a>
                 </li>
                 <li>
@@ -41,7 +41,7 @@ export default function contact() {
                     +1 (540) 376-4453
                   </a>
                 </li>
-              </nav>
+              </nav>  
             </div>
             <div className="flex flex-col justify-center lg:w-1/4 md:w-1/2 w-full px-4 mx-auto">
               <BiSolidStore

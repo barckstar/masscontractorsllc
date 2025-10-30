@@ -15,24 +15,24 @@ export const Footer = () => {
           <div className="py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between lg:px-24">
             {/* Secciones */}
             <div className="flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-24">
-              {/* Services */}
+              {/* Commercial */}
               <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
-                <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Services</p>
+                <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Commercial Services</p>
                 <ul className="space-y-2">
-                  {data.contect_services.map((service, index) => (
+                  {data.commercial.map((commercial, index) => (
                     <li key={index} className="text-white text-lg font-atpinko hover:text-[#9fe300] transition footer-text">
-                      {service.title}
+                      {commercial.text}
                     </li>
                   ))}
                 </ul>
               </div>
-              {/* Specialties */}
+              {/* Residential */}
               <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
-                <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Specialties</p>
+                <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Residential Services</p>
                 <ul className="space-y-2">
-                  {data.specialties.map((specialtie, index) => (
+                  {data.residential.map((residential, index) => (
                     <li key={index} className="text-white text-lg font-atpinko hover:text-[#9fe300] transition footer-text">
-                      {specialtie.title}
+                      {residential.text}
                     </li>
                   ))}
                 </ul>

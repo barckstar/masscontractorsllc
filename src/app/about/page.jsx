@@ -40,22 +40,6 @@ export default function about() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-8 flex flex-col md:flex-row md:items-center justify-center">
-                    <Image
-                      src="/uniform-3.png"
-                      alt="Our Team in Uniform"
-                      width={320}
-                      height={200}
-                      className="mx-auto object-contain object-center rounded-xl shadow-lg"
-                    />
-                    <Image
-                      src="/uniform-2.png"
-                      alt="Our Team in Uniform"
-                      width={320}
-                      height={200}
-                      className="mx-auto object-contain object-center rounded-xl shadow-lg"
-                    />
-                  </div>
                 </div>
                 {/* Imagen principal About */}
                 <div className="lg:max-w-lg lg:w-full flex flex-col gap-6">
@@ -68,24 +52,24 @@ export default function about() {
                       src="/uniform-1.png"
                     />
                   </Fade>
-                  {/* Espacio para imagen de certificaciones */}
-                  <p className="mx-auto text-3xl font-contrax text-[#9fe300] text-center">Certifications</p>
-                  <div className="mx-auto flex justify-center items-center bg-[#1e1e1e]/70 gap-4 p-5 rounded-xl shadow-lg">
-                    {/* <Image
+                </div>
+              </div>
+              <div className="lg:w-5/6 mx-auto flex justify-center items-center gap-4 p-5 rounded-xl">
+                {/* <Image
                       src="/OSHA-logo.png"
                       alt="OSHA Certification"
                       width={80}
                       height={80}
                       className="rounded bg-white p-2"
                     /> */}
-                    <Image
-                      src="/DPOR.png"
-                      alt="State License"
-                      width={80}
-                      height={80}
-                      className="rounded bg-white p-2"
-                    />
-                    {/*  <Image
+                <Image
+                  src="/DPOR.png"
+                  alt="State License"
+                  width={150}
+                  height={150}
+                  className="rounded bg-white p-2"
+                />
+                {/*  <Image
                       src="/EPA.png"
                       alt="EPA Certification"
                       width={80}
@@ -93,9 +77,8 @@ export default function about() {
                       className="rounded bg-white p-1"
                     />
                 */}
-                  </div>
-                </div>
               </div>
+
               {/* Misión, Visión, Valores */}
               <div className="lg:w-5/6 px-5 py-8 mx-auto grid md:grid-cols-3 gap-8 text-center">
                 <div className="bg-[#1e1e1e] rounded-xl shadow-lg p-6 border-2 border-[#9fe300]">

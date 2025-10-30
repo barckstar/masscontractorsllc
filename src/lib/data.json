@@ -13,7 +13,7 @@
             "title": "Contact"
         }
     ],
-    "homeCards" : [
+    "homeCards": [
         {
             "title": "Robust Roofs, Guaranteed Protection",
             "text": "We specialize in high-quality roofing solutions that stand the test of time. Our expert team ensures your home is protected with durable materials and expert craftsmanship.",
@@ -30,86 +30,91 @@
             "img": "/img-8.jpg"
         }
     ],
-    "homeGreenCards":[
+    "homeGreenCards": [
         {
             "title": "HOME ADDITIONS",
             "subTitle": "Expand your space. Enhance your life.",
             "text": "We design and build custom home additions that seamlessly blend with your existing structure, providing you with the extra space you need for your growing family or lifestyle.",
             "img": "/img-9.png"
-        },{
+        },
+        {
             "title": "KITCHEN",
             "subTitle": "Your dream kitchen, come to life",
             "text": "From modern makeovers to classic designs, we create kitchens that are both beautiful and functional, tailored to your cooking and entertaining needs. Our attention to detail ensures a perfect blend of style and practicality.",
             "img": "/img-10.png"
-        },{
+        },
+        {
             "title": "BATHROOMS",
             "subTitle": "Your personal oasis, exquisite designs",
             "text": "Transform your bathroom into a luxurious retreat with our expert remodeling services. From elegant fixtures to modern layouts, we create spaces that blend functionality with style.",
             "img": "/img-11.png"
-        },{
+        },
+        {
             "title": "DECKS",
             "subTitle": "Outdoor living at its finest",
             "text": "We create beautiful and functional decks that enhance your outdoor space, providing the perfect setting for relaxation and entertainment. Our custom designs are tailored to your lifestyle and preferences.",
             "img": "/img-12.png"
-        },{
+        },
+        {
             "title": "ROOFING",
             "subTitle": "Superios protection for your home",
             "text": "We offer comprehensive roofing services, including repairs, replacements, and installations, to ensure your home is protected from the elements. Our team uses high-quality materials and expert craftsmanship to deliver durable and reliable roofing solutions.",
             "img": "/img-13.png"
-        },{
+        },
+        {
             "title": "SIDING",
             "subTitle": "Flexible protection for your home",
             "text": "Enhance your home's exterior with our top-notch siding services. We provide a variety of styles and materials to improve your home's appearance and protect it from the elements, ensuring long-lasting durability and curb appeal.",
             "img": "/img-14.png"
         }
     ],
-    "heroL" : {
+    "heroL": {
         "title": "Why Choose MAS Contractors?",
         "subTitle": "Experience",
         "subTitle2": "SERVICE",
         "text": "We are trusted home remodeling experts that have served 100's of satisfied customers throughout the Richmond and Charlottesville area.",
         "text2": "We are known for providing affordable prices using the industry's best quality products matched with great installations."
     },
-    "heroR" : {
+    "heroR": {
         "title": "",
-        "subTitle" : "Warranty",
-        "subTitle2" : "Quality",
+        "subTitle": "Warranty",
+        "subTitle2": "Quality",
         "text": "We believe in the products that we install and we stand behind them with our one-year warranty of workmanship.",
         "text2": "We provide honest, straightforward quotes and offer reasonable prices and top-of-the-line products from the industry's most trusted brands."
     },
-    "heroHome" : {
-        "text" : "All of our work is professional and we pride ourselves on our craftsmanship."
+    "heroHome": {
+        "text": "All of our work is professional and we pride ourselves on our craftsmanship."
     },
-    "heroAbout" : {
-        "title" : "About Us",
-        "text" : "MAS Contractors is a family-owned business with over 10 years of experience in the construction industry. We don't just want to be your contractor for life. That's why we approach every project with respect, attention to detail, and quality craftsmanship, which we've become known for in the local area."
+    "heroAbout": {
+        "title": "About Us",
+        "text": "MAS Contractors is a family-owned business with over 11 years of experience in the construction industry. We don't just want to be your contractor for life. That's why we approach every project with respect, attention to detail, and quality craftsmanship, which we've become known for in the local area."
     },
-    "about" :{
-        "title" : "Choose MAS Contractors because we are:",
-        "list" : [
+    "about": {
+        "title": "Choose MAS Contractors because we are:",
+        "list": [
             {
-                "subTitle" : "Qualified",
-                "description" : "We're fully licensed and insured for your protection."
+                "subTitle": "Qualified",
+                "description": "We're fully licensed and insured for your protection."
             },
             {
-                "subTitle" : "Experienced",
-                "description" : "We've been in the remodeling business for over a decade."
+                "subTitle": "Experienced",
+                "description": "We've been in the remodeling business for over a decade."
             },
             {
-                "subTitle" : "Careful",
-                "description" : "We'll take care of your home like it's our own."
+                "subTitle": "Careful",
+                "description": "We'll take care of your home like it's our own."
             },
             {
-                "subTitle" : "Dedicated",
-                "description" : "We won't stop before we've taken care of every detail."
+                "subTitle": "Dedicated",
+                "description": "We won't stop before we've taken care of every detail."
             },
             {
-                "subTitle" : "Professional",
-                "description" : "We'll prioritize your satisfaction above all."
+                "subTitle": "Professional",
+                "description": "We'll prioritize your satisfaction above all."
             }
         ],
-        "aboutFooter" : "MAS Contractors has completed hundreds of home remodeling and commercial projects in and around the Richmond, VA area.",
-        "buttonText" : "WORK WITH US !"
+        "aboutFooter": "MAS Contractors has completed hundreds of home remodeling and commercial projects in and around the Richmond, VA area.",
+        "buttonText": "WORK WITH US !"
     },
     "contect_services": [
         {
@@ -170,12 +175,12 @@
     "best_projects": [
         {
             "slug": "full_renovation",
-            "title": "Full Home Renovation",            
+            "title": "Full Home Renovation",
             "description": "This property in the city of Richmond has become a gem, a home ready for someone to move into and enjoy from day one. All structural, electrical, and plumbing inspections were satisfied. All major systems were replaced. Everything from the roof to the paint on the walls was transformed. New appliances and the touch of modern finishes turned it into a successful home remodel.",
             "descriptionLarge": "It is the literal customization that makes your home your very own. The professionals at MAS Contractors will collaborate with you to incorporate all the small details and special features that reflect your lifestyle and design preferences. Custom details can be as small as adding crown molding with intricate detailing or as large as building a custom closet with drawers and shelves.",
             "descriptionLarge2": "If you've been thinking about home improvement in Richmond, VA, then it's time to contact us. We will collaborate with you to make your home remodeling ideas a reality. You can rest assured that our professionals will keep you fully informed and answer any questions you may have along the way. We have the knowledge and experience necessary to transform your home into the home of your dreams.",
-            "subTitle" : "Make your home unique with custom details.",
-            "titleButton" : "Don't wait any longer to start that home improvement project. Call us to get started.",
+            "subTitle": "Make your home unique with custom details.",
+            "titleButton": "Don't wait any longer to start that home improvement project. Call us to get started.",
             "image": "/FR1.jpg",
             "link": "/projects/full_renovation",
             "imgCarrusel": [
@@ -220,8 +225,8 @@
             "description": "",
             "descriptionLarge": "If you already own a building lot or land in Virginia, then congratulations! The toughest part of the whole process is behind you. Since you already own a lot, you are a perfect candidate to build with MAS Contractors because we only build custom homes on individually owned lots or land.",
             "descriptionLarge2": "MAS Contractors doesn't build in planned communities or subdivisions. Building on individually owned lots or land isn't done as an afterthought or to supplement/complement our primary business models (planned communities & subdivisions) like many home builders. Building on a lot or land that a client already owns or will own is ALL we do—that is our only business model.",
-            "subTitle" : "We build on your lot or land in Richmond, Charlottesville, Norfolk, or Spotsylvania County.",
-            "titleButton" : "Don't wait any longer to start that home improvement project. Call us to get started.",
+            "subTitle": "We build on your lot or land in Richmond, Charlottesville, Norfolk, or Spotsylvania County.",
+            "titleButton": "Don't wait any longer to start that home improvement project. Call us to get started.",
             "image": "/RC6.jpg",
             "link": "/projects/residential_construction",
             "imgCarrusel": [
@@ -326,164 +331,109 @@
             ]
         }
     ],
-    "specialties": [
+    "commercial": [
         {
-            "slug": "comercial_cabinetry",
-            "title": "Custom Room Additions",
-            "description": "Your room addition will provide you with a lifetime of enjoyment while increasing the value of your home.",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "descriptionLarge2": "Contact us for a free consultation before making any important decisions, and we will help you navigate through permits and regulations, providing you with tools and expertise so that you can find the best choice for your room addition project.",
-            "list": [],
-            "image": "/CustomRoomAdditions.png",
-            "link": "/specialties/comercial_cabinetry",
-            "imgCarrusel": [
-                {
-                    "img": "/CustomRoomAdditions1.png"
-                },
-                {
-                    "img": "/CustomRoomAdditions2.png"
-                },
-                {
-                    "img": "/CustomRoomAdditions3.png"
-                }
-                ,
-                {
-                    "img": "/CustomRoomAdditions.png"
-                }
-            ]
+            "name": "Roofing Systems",
+            "text": "TPO Roofing"
         },
         {
-            "slug": "tile",
-            "title": "Tile",
-            "description": "Let us assist you in choosing tile from an endless array of colors, designs, and materials.",
-            "descriptionLarge": "Tiles can be great for use in a number of different settings around your home, or even in a commercial setting. They offer amazing durability and have real design flexibility, given all the colors, patterns, and designs that you can choose from. MAS ensures to use waterproofing moisture barriers as needed to create a smooth and durable surface that will last.",
-            "descriptionLarge2": "We can provide all different kinds of tiles such as ceramic, porcelain, glass, stone, marble, and granite, perfect for a variety of needs and uses, including:",
-            "list": [
-                {
-                    "item": "Shower tile"
-                },
-                {
-                    "item": "Backsplash"
-                },
-                {
-                    "item": "Flooring tile"
-                },
-                {
-                    "item": "Wall tiles"
-                },
-                {
-                    "item": "Steam showers"
-                },
-                {
-                    "item": "Shower benches"
-                }
-            ],
-            "image": "/Tile.png",
-            "link": "/specialties/tile",
-            "imgCarrusel": [
-                {
-                    "img": "/TileGalery1.png"
-                },
-                {
-                    "img": "/TileGalery2.png"
-                },
-                {
-                    "img": "/TileGalery3.png"
-                },
-                {
-                    "img": "/TileGalery4.png"
-                },
-                {
-                    "img": "/TileGalery5.png"
-                },
-                {
-                    "img": "/TileGalery6.png"
-                }
-            ]
+            "name": "Roofing Systems",
+            "text": "EPDM Rubber Roofing"
         },
         {
-            "slug": "finish_trim_carpentry",
-            "title": "Finish & Trim Carpentry",
-            "description": "Transform the bare bones of any house or building into a usable and visually pleasing space.",
-            "descriptionLarge": "Our carpenters use the best trim carpentry techniques during the vital stage of building. We provide a full spectrum of carpentry for residential and commercial projects including",
-            "descriptionLarge2": "",
-            "list": [
-                {
-                    "item": "Custom Carpentry Installation"
-                },
-                {
-                    "item": "Bookshelves & Built-Ins"
-                },
-                {
-                    "item": "Custom Woodworking"
-                },
-                {
-                    "item": "Trim and Molding"
-                },
-                {
-                    "item": "Beamwork"
-                },
-                {
-                    "item": "Wainscoting"
-                },
-                {
-                    "item": "Coffered Ceilings"
-                },
-                {
-                    "item": "Staircases & Railings"
-                },
-                {
-                    "item": "Interior Door Installation"
-                }
-                
-            ],
-            "image": "/FinishCarpentry.png",
-            "link": "/specialties/finish_trim_carpentry",
-            "imgCarrusel": [
-                {
-                    "img": "/FinishCarpentryGalery1.png"
-                },
-                {
-                    "img": "/FinishCarpentryGalery2.png"
-                },
-                {
-                    "img": "/FinishCarpentryGalery3.png"
-                },
-                {
-                    "img": "/FinishCarpentryGalery4.png"
-                },
-                {
-                    "img": "/FinishCarpentryGalery6.png"
-                },
-                {
-                    "img": "/FinishCarpentryGalery7.png"
-                },
-                {
-                    "img": "/FinishCarpentryGalery5.png"
-                },
-                {
-                    "img": "/FinishCarpentryGalery8.png"
-                }
-            ]
+            "name": "Roofing Systems",
+            "text": "Metal Roofing"
+        },
+        {
+            "name": "Roofing Systems",
+            "text": "Slate Roofing"
+        },
+        {
+            "name": "Roofing Systems",
+            "text": "Plumbing rough and final"
+        },
+        {
+            "name": "Roofing Systems",
+            "text": "Drywall & Finish. Insulation"
+        },
+        {
+            "name": "Roofing Systems",
+            "text": "Metal Framing"
+        },
+        {
+            "name": "Gutter Installation",
+            "text": "Doors and Windows"
+        },
+        {
+            "name": "Gutter Installation",
+            "text": "Paint & Finish"
+        },
+        {
+            "name": "Gutter Installation",
+            "text": "Floor Installation LVP"
+        },
+        {
+            "name": "Gutter Installation",
+            "text": "Professional Hardie backer siding installation"
         }
     ],
-    "social_media" : [
+    "residential": [
         {
-            "name":"Facebook",
-            "link":"https://www.facebook.com/buildandrenovaterva?_rdr"
-        },        
+            "text": "Patios & Decks"
+        },
         {
-            "name":"Instagram",
-            "link":"https://www.instagram.com/mas_contractors/"
-        },        
+            "text": "Renovations"
+        },
         {
-            "name":"Google",
-            "link":"https://www.google.com/search?q=mascontractorsllc.com&num=10&newwindow=1&sca_esv=339a018dea4bc811&rlz=1C1FHFK_esCR1097CR1097&sxsrf=ADLYWIImuQnH1utVhGzOwQWeZsSatZ1i9Q%3A1729213701080&ei=BbURZ-W4BISbwbkPrbunOA&ved=0ahUKEwilz5KD35aJAxWETTABHa3dCQcQ4dUDCBA&uact=5&oq=mascontractorsllc.com&gs_lp=Egxnd3Mtd2l6LXNlcnAiFW1hc2NvbnRyYWN0b3JzbGxjLmNvbTIJEAAYgAQYExgNMgkQABiABBgTGA1I00tQkSlY80lwAHgAkAEBmAHwAaABzAeqAQUwLjYuMbgBA8gBAPgBAZgCBqAC5wXCAgoQABiABBiwAxgTwgILEAAYgAQYsAMYogTCAgYQABgWGB7CAggQABiABBiiBJgDAOIDBRIBMSBAiAYBkAYCkgcDMC42oAeCEQ&sclient=gws-wiz-serp"
-        },        
+            "text": "Insulation"
+        },
         {
-            "name":"Thumbtack",
-            "link":"https://www.thumbtack.com/va/richmond/disability-retrofit/mas-contractors-llc/service/292433618750267588"
-        }      
+            "text": "Plumbing"
+        },
+        {
+            "text": "Flooring"
+        },
+        {
+            "text": "Remodels"
+        },
+        {
+            "text": "Doors & Windows"
+        },
+        {
+            "text": "Drywall & Paint"
+        },
+        {
+            "text": "Framing"
+        },
+        {
+            "text": "Gutters & Siding"
+        },
+        {
+            "text": "Flat Roofing"
+        },
+        {
+            "text": "TPO Roofing"
+        },
+        {
+            "text": "Hardie Siding"
+        }
+    ],
+    "social_media": [
+        {
+            "name": "Facebook",
+            "link": "https://www.facebook.com/buildandrenovaterva?_rdr"
+        },
+        {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/mas_contractors/"
+        },
+        {
+            "name": "Google",
+            "link": "https://www.google.com/search?q=mascontractorsllc.com&num=10&newwindow=1&sca_esv=339a018dea4bc811&rlz=1C1FHFK_esCR1097CR1097&sxsrf=ADLYWIImuQnH1utVhGzOwQWeZsSatZ1i9Q%3A1729213701080&ei=BbURZ-W4BISbwbkPrbunOA&ved=0ahUKEwilz5KD35aJAxWETTABHa3dCQcQ4dUDCBA&uact=5&oq=mascontractorsllc.com&gs_lp=Egxnd3Mtd2l6LXNlcnAiFW1hc2NvbnRyYWN0b3JzbGxjLmNvbTIJEAAYgAQYExgNMgkQABiABBgTGA1I00tQkSlY80lwAHgAkAEBmAHwAaABzAeqAQUwLjYuMbgBA8gBAPgBAZgCBqAC5wXCAgoQABiABBiwAxgTwgILEAAYgAQYsAMYogTCAgYQABgWGB7CAggQABiABBiiBJgDAOIDBRIBMSBAiAYBkAYCkgcDMC42oAeCEQ&sclient=gws-wiz-serp"
+        },
+        {
+            "name": "Thumbtack",
+            "link": "https://www.thumbtack.com/va/richmond/disability-retrofit/mas-contractors-llc/service/292433618750267588"
+        }
     ]
-
 }
