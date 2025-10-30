@@ -172,165 +172,6 @@
             "img": "/CustomRoomAdditions.png"
         }
     ],
-    "best_projects": [
-        {
-            "slug": "full_renovation",
-            "title": "Full Home Renovation",
-            "description": "This property in the city of Richmond has become a gem, a home ready for someone to move into and enjoy from day one. All structural, electrical, and plumbing inspections were satisfied. All major systems were replaced. Everything from the roof to the paint on the walls was transformed. New appliances and the touch of modern finishes turned it into a successful home remodel.",
-            "descriptionLarge": "It is the literal customization that makes your home your very own. The professionals at MAS Contractors will collaborate with you to incorporate all the small details and special features that reflect your lifestyle and design preferences. Custom details can be as small as adding crown molding with intricate detailing or as large as building a custom closet with drawers and shelves.",
-            "descriptionLarge2": "If you've been thinking about home improvement in Richmond, VA, then it's time to contact us. We will collaborate with you to make your home remodeling ideas a reality. You can rest assured that our professionals will keep you fully informed and answer any questions you may have along the way. We have the knowledge and experience necessary to transform your home into the home of your dreams.",
-            "subTitle": "Make your home unique with custom details.",
-            "titleButton": "Don't wait any longer to start that home improvement project. Call us to get started.",
-            "image": "/FR1.jpg",
-            "link": "/projects/full_renovation",
-            "imgCarrusel": [
-                {
-                    "img": "/FR2.jpg"
-                },
-                {
-                    "img": "/FR3.jpg"
-                },
-                {
-                    "img": "/FR4.jpg"
-                },
-                {
-                    "img": "/FR5.jpg"
-                },
-                {
-                    "img": "/FR6.jpg"
-                },
-                {
-                    "img": "/FR7.jpg"
-                },
-                {
-                    "img": "/FR8.jpg"
-                },
-                {
-                    "img": "/FR9.jpg"
-                },
-                {
-                    "img": "/FR10.jpg"
-                },
-                {
-                    "img": "/FR11.jpg"
-                },
-                {
-                    "img": "/FR12.jpg"
-                }
-            ]
-        },
-        {
-            "slug": "residential_construction",
-            "title": "Residential Construction",
-            "description": "",
-            "descriptionLarge": "If you already own a building lot or land in Virginia, then congratulations! The toughest part of the whole process is behind you. Since you already own a lot, you are a perfect candidate to build with MAS Contractors because we only build custom homes on individually owned lots or land.",
-            "descriptionLarge2": "MAS Contractors doesn't build in planned communities or subdivisions. Building on individually owned lots or land isn't done as an afterthought or to supplement/complement our primary business models (planned communities & subdivisions) like many home builders. Building on a lot or land that a client already owns or will own is ALL we do—that is our only business model.",
-            "subTitle": "We build on your lot or land in Richmond, Charlottesville, Norfolk, or Spotsylvania County.",
-            "titleButton": "Don't wait any longer to start that home improvement project. Call us to get started.",
-            "image": "/RC6.jpg",
-            "link": "/projects/residential_construction",
-            "imgCarrusel": [
-                {
-                    "img": "/RC1.jpg"
-                },
-                {
-                    "img": "/RC2.jpg"
-                },
-                {
-                    "img": "/RC3.jpg"
-                },
-                {
-                    "img": "/RC4.jpg"
-                },
-                {
-                    "img": "/RC5.jpg"
-                }
-            ]
-        }
-    ],
-    "recent_projects": [
-        {
-            "slug": "recentpost1",
-            "title": "BERKADIA",
-            "description": "",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "image": "/Berkadia.jpg",
-            "link": "/projects/berkadia",
-            "imgCarrusel": [
-                {
-                    "img": "/Berkadia1.jpg"
-                },
-                {
-                    "img": "/Berkadia2.jpg"
-                },
-                {
-                    "img": "/Berkadia3.jpg"
-                },
-                {
-                    "img": "/Berkadia4.jpg"
-                },
-                {
-                    "img": "/Berkadia.jpg"
-                }
-            ]
-        },
-        {
-            "slug": "recentpost2",
-            "title": "THE HAVEN",
-            "description": "",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "image": "/the_haven.jpg",
-            "link": "/projects/the_haven",
-            "imgCarrusel": [
-                {
-                    "img": "/the_haven1.jpg"
-                },
-                {
-                    "img": "/the_haven2.jpg"
-                },
-                {
-                    "img": "/the_haven3.jpg"
-                },
-                {
-                    "img": "/the_haven.jpg"
-                }
-            ]
-        },
-        {
-            "slug": "recentpost3",
-            "title": "MULTIPLE BATHROOMS",
-            "description": "",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "descriptionLarge2": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
-            "image": "/multiple_bathrooms.jpg",
-            "link": "/projects/multiple_bathrooms",
-            "imgCarrusel": [
-                {
-                    "img": "/multiple_bathrooms1.jpg"
-                },
-                {
-                    "img": "/multiple_bathrooms2.jpg"
-                },
-                {
-                    "img": "/multiple_bathrooms3.jpg"
-                },
-                {
-                    "img": "/multiple_bathrooms4.jpg"
-                },
-                {
-                    "img": "/multiple_bathrooms5.jpg"
-                },
-                {
-                    "img": "/multiple_bathrooms6.jpg"
-                },
-                {
-                    "img": "/multiple_bathrooms.jpg"
-                }
-            ]
-        }
-    ],
     "commercial": [
         {
             "name": "Roofing Systems",
@@ -416,6 +257,145 @@
         },
         {
             "text": "Hardie Siding"
+        }
+    ],
+    "specialties": [
+        {
+            "slug": "comercial_cabinetry",
+            "title": "Custom Room Additions",
+            "description": "Your room addition will provide you with a lifetime of enjoyment while increasing the value of your home.",
+            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge2": "Contact us for a free consultation before making any important decisions, and we will help you navigate through permits and regulations, providing you with tools and expertise so that you can find the best choice for your room addition project.",
+            "list": [],
+            "image": "/CustomRoomAdditions.png",
+            "link": "/specialties/comercial_cabinetry",
+            "imgCarrusel": [
+                {
+                    "img": "/CustomRoomAdditions1.png"
+                },
+                {
+                    "img": "/CustomRoomAdditions2.png"
+                },
+                {
+                    "img": "/CustomRoomAdditions3.png"
+                },
+                {
+                    "img": "/CustomRoomAdditions.png"
+                }
+            ]
+        },
+        {
+            "slug": "tile",
+            "title": "Tile",
+            "description": "Let us assist you in choosing tile from an endless array of colors, designs, and materials.",
+            "descriptionLarge": "Tiles can be great for use in a number of different settings around your home, or even in a commercial setting. They offer amazing durability and have real design flexibility, given all the colors, patterns, and designs that you can choose from. MAS ensures to use waterproofing moisture barriers as needed to create a smooth and durable surface that will last.",
+            "descriptionLarge2": "We can provide all different kinds of tiles such as ceramic, porcelain, glass, stone, marble, and granite, perfect for a variety of needs and uses, including:",
+            "list": [
+                {
+                    "item": "Shower tile"
+                },
+                {
+                    "item": "Backsplash"
+                },
+                {
+                    "item": "Flooring tile"
+                },
+                {
+                    "item": "Wall tiles"
+                },
+                {
+                    "item": "Steam showers"
+                },
+                {
+                    "item": "Shower benches"
+                }
+            ],
+            "image": "/Tile.png",
+            "link": "/specialties/tile",
+            "imgCarrusel": [
+                {
+                    "img": "/TileGalery1.png"
+                },
+                {
+                    "img": "/TileGalery2.png"
+                },
+                {
+                    "img": "/TileGalery3.png"
+                },
+                {
+                    "img": "/TileGalery4.png"
+                },
+                {
+                    "img": "/TileGalery5.png"
+                },
+                {
+                    "img": "/TileGalery6.png"
+                }
+            ]
+        },
+        {
+            "slug": "finish_trim_carpentry",
+            "title": "Finish & Trim Carpentry",
+            "description": "Transform the bare bones of any house or building into a usable and visually pleasing space.",
+            "descriptionLarge": "Our carpenters use the best trim carpentry techniques during the vital stage of building. We provide a full spectrum of carpentry for residential and commercial projects including",
+            "descriptionLarge2": "",
+            "list": [
+                {
+                    "item": "Custom Carpentry Installation"
+                },
+                {
+                    "item": "Bookshelves & Built-Ins"
+                },
+                {
+                    "item": "Custom Woodworking"
+                },
+                {
+                    "item": "Trim and Molding"
+                },
+                {
+                    "item": "Beamwork"
+                },
+                {
+                    "item": "Wainscoting"
+                },
+                {
+                    "item": "Coffered Ceilings"
+                },
+                {
+                    "item": "Staircases & Railings"
+                },
+                {
+                    "item": "Interior Door Installation"
+                }
+            ],
+            "image": "/FinishCarpentry.png",
+            "link": "/specialties/finish_trim_carpentry",
+            "imgCarrusel": [
+                {
+                    "img": "/FinishCarpentryGalery1.png"
+                },
+                {
+                    "img": "/FinishCarpentryGalery2.png"
+                },
+                {
+                    "img": "/FinishCarpentryGalery3.png"
+                },
+                {
+                    "img": "/FinishCarpentryGalery4.png"
+                },
+                {
+                    "img": "/FinishCarpentryGalery6.png"
+                },
+                {
+                    "img": "/FinishCarpentryGalery7.png"
+                },
+                {
+                    "img": "/FinishCarpentryGalery5.png"
+                },
+                {
+                    "img": "/FinishCarpentryGalery8.png"
+                }
+            ]
         }
     ],
     "social_media": [

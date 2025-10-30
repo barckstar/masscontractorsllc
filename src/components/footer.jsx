@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { BiPhoneCall, BiSolidStore, BiCalendar } from "react-icons/bi";
-import { AiOutlineMail } from "react-icons/ai";
 import { Fade } from "react-awesome-reveal";
 import data from "@/lib/data.json";
 import Link from "next/link";
