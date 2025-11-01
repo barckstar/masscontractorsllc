@@ -215,6 +215,12 @@ a {
     .hero-content {
         margin-top: 15%
     }
+    .topnavbaricon{
+        display: none;
+    }
+    .title-mt{
+        padding-top: 10px;
+    }
 }
 
 @media (max-width:768px) {
@@ -233,6 +239,9 @@ a {
     .img {
         width: 40%;
         height: 40%
+    }    
+    .title-mt{
+        padding-top: 20%;
     }
 }
 
@@ -253,6 +262,9 @@ a {
     }
     .hero-get{
         font-size: 1.5rem;
+    }   
+    .title-mt{
+        padding-top: 30%;
     }
 }
 

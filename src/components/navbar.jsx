@@ -2,7 +2,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoShieldCheckmark } from "react-icons/io5";
+import { IoIosMail } from "react-icons/io";
+import { RiMedalLine } from "react-icons/ri";
 import data from "../lib/data.json";
 
 export const Navbar = () => {
@@ -22,7 +25,42 @@ export const Navbar = () => {
 
   return (
     <nav className="w-full bg-[#1e1e1e]/70 backdrop-blur-md shadow-md fixed top-0 left-0 z-50 font-atpinko">
-      <div className="max-w-full mx-auto px-6 flex items-center justify-between h-28">
+      {/* contenedor superior: usa flex-wrap para que los items se agreguen en nuevas filas en móvil */}
+      <div className="px-6 flex flex-wrap items-center bg-[#1e1e1e]/80 shadow gap-4 justify-center topnavbar">
+            <div className="flex items-center text-center min-w-[168px] gap-2 flex-1 md:flex-none">
+              <RiMedalLine size={28} color="#9fe300" className="topnavbaricon"/>
+              <span className="text-xs leading-tight font-atpinko text-[#9fe300]">
+                Class A General Contractor
+                <br />
+                <span className="text-xs text-white white font-atpinko">Licensed - Insured - Bonded</span>
+              </span>
+            </div>
+            <div className="flex items-center text-center min-w-[148px] gap-2 flex-1 md:flex-none">
+              <IoShieldCheckmark size={28} color="#9fe300" className="topnavbaricon"/>
+              <span className="text-xs leading-tight font-atpinko text-[#9fe300]">
+                Trusted Professionals
+                <br />
+                <span className="text-xs text-white font-atpinko">Trained and Experienced</span>
+              </span>
+            </div>
+            <div className="flex items-center justify-center text-center min-w-[96px] gap-2 flex-1 md:flex-none">
+              <FaPhoneAlt size={28} color="#9fe300" className="topnavbaricon"/>
+              <span className="text-xs leading-tight font-atpinko text-[#9fe300]">
+                Call Us
+                <span className="block text-white font-medium font-atpinko">(804) 554-2525</span>
+              </span>
+            </div>
+            <div className="flex items-center text-center  gap-2 flex-1 md:flex-none">
+              <IoIosMail size={30} color="#9fe300" className="topnavbaricon"/>
+              <span className="text-xs leading-tight font-atpinko text-[#9fe300]">
+                Email Us
+                <br />
+                <span className="block text-white font-medium font-atpinko">info@mascontractors.com</span>
+              </span>
+            </div>
+      </div>      
+      {/* empuja la barra principal un poco para separar de la tira superior */}
+      <div className="max-w-full mx-auto px-6 flex items-center justify-between h-28 mt-2">
         <Link href="/" className="flex-shrink-0">
           <Image
             src={isMobile ? "/IMG_0271_SM.png" : "/IMG_0271.png"}
@@ -63,7 +101,7 @@ export const Navbar = () => {
             />
           </svg>
         </button>
-      </div>
+      </div>      
       {/* Mobile links */}
       {open && (
         <div className="md:hidden px-6 pb-4 flex flex-col space-y-2 bg-[#1e1e1e]/90 shadow">

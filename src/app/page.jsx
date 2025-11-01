@@ -9,10 +9,10 @@ export default function Home() {
     <>
       <Fade delay="10">
         <div className="bg-hero">
-          <div className="lg:w-5/6 px-5 py-4 mt-5 mx-auto ">
+          <div className="lg:w-5/6 px-5 py-4 mt-6 mx-auto ">
             <div className="hero-content m-auto text-center">
               <Slide direction="up" delay="4" triggerOnce>
-                <p className="hero-title-logo mx-auto text-[#9fe300]">Transforming Spaces<span className="text-white">,</span></p>
+                <p className="hero-title-logo title-mt mx-auto text-[#9fe300]">Transforming Spaces<span className="text-white">,</span></p>
               </Slide>
               <Slide direction="up" delay="8" triggerOnce>
                 <p className="hero-title-logo mx-auto text-white">Building Legacies</p>
