@@ -5,9 +5,13 @@
             "title": "Home"
         },
         {
+            "url": "/gallery",
+            "title": "Gallery"
+        },
+        {
             "url": "/about",
             "title": "About"
-        },
+        },        
         {
             "url": "/contact",
             "title": "Contact"

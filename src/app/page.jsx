@@ -27,7 +27,7 @@ export default function Home() {
               </Slide>
               <Fade delay="50" triggerOnce>
                 <div className="flex justify-center">
-                  <Link href="/contact">
+                  <Link href="/contact#email">
                     <button className="my-9 hero-button font-contrax transition duration-300 ease-in-out">
                       Get a quote !
                     </button>
@@ -35,11 +35,11 @@ export default function Home() {
                 </div>
               </Fade>
             </div>
-            <div className="lg:w-5/6 px-5 py-4 mt-7 mx-auto">
-              <p className="text-5xl text-center mb-4 text-white font-contrax">
+            <Fade delay="50" triggerOnce>
+              <p className="hero-title-logo mx-auto text-white text-center">
                 Comercial & Residencial
               </p>
-            </div>
+            </Fade>
           </div>
         </div>
         <div className="lg:w-5/6 px-5 py-4 mx-auto">
@@ -145,7 +145,7 @@ export default function Home() {
                 <br /><br />
                 At MAS Contractors, we believe in transparency and personalized service from the very first contact. Let us help you plan your project with confidence and clarity.
               </p>
-              <Link href="/contact">
+              <Link href="/contact#email">
                 <button className="mt-6 hero-button font-contrax bg-[#9fe300] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:text-[#9fe300] transition duration-300 ease-in-out">
                   Request Your Free Estimate
                 </button>
@@ -186,7 +186,7 @@ export default function Home() {
               <p className="text-lg font-atpinko text-white mb-2">
                 Collaboration is at the heart of every successful project. We work closely with our clients, listening to their needs and incorporating their feedback at every stage. By fostering open communication and teamwork, we ensure that every project reflects the unique vision and requirements of our clients, resulting in spaces that truly resonate with their purpose and aspirations.
                 <br /><br />
-                At MAS Contractors, we believe that the best results come from working together. Our collaborative approach not only enhances creativity and innovation but also builds lasting relationships based on trust and mutual respect. Join us in creating spaces that inspire and endure. 
+                At MAS Contractors, we believe that the best results come from working together. Our collaborative approach not only enhances creativity and innovation but also builds lasting relationships based on trust and mutual respect. Join us in creating spaces that inspire and endure.
               </p>
             </div>
           </div>
@@ -200,9 +200,11 @@ export default function Home() {
             <p className="text-lg font-atpinko text-white mb-2">
               As contractors, we understand that every project is unique, and we are committed to delivering tailored solutions that meet your specific needs and exceed your expectations.
             </p>
-            <button className="my-9 hero-button font-contrax bg-[#9fe300] transition duration-300 ease-in-out">
-              Get a quote !
-            </button>
+            <Link href="/contact#email">
+              <button className="my-9 hero-button font-contrax bg-[#9fe300] transition duration-300 ease-in-out">
+                Get a quote !
+              </button>
+            </Link>
           </div>
         </div>
       </Fade>

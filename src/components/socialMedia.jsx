@@ -13,7 +13,7 @@ const socialIcons = {
 
 export const SocialMediaBar = () => {
   return (
-    <div className="fixed top-1/2 left-0 -translate-y-1/2 z-50 flex flex-col items-center bg-[#1e1e1e]/70 p-5 rounded-r-3xl lg:flex space-y-4">
+    <div className="fixed top-2/3 left-0 -translate-y-1/2 z-50 flex flex-col items-center bg-[#1e1e1e]/70 p-1 rounded-r-3xl lg:flex space-y-4">
       {data.social_media.map((social_media, index) => {
         const Icon = socialIcons[social_media.name];
         return (

@@ -10,11 +10,11 @@ export const Footer = () => {
     <>
       <footer className="body-font bg-[#1e1e1e] border-t-2 border-[#515151]">
         <Fade delay={50} >
-          <div className="py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between lg:px-24">
+          <div className="py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between px-16">
             {/* Secciones */}
-            <div className="flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-24">
+            <div className="flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-24 px-4">
               {/* Commercial */}
-              <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
+              <div className="w-full sm:w-1/2 lg:w-1/3">
                 <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Commercial Services</p>
                 <ul className="space-y-2">
                   {data.commercial.map((commercial, index) => (
@@ -25,7 +25,7 @@ export const Footer = () => {
                 </ul>
               </div>
               {/* Residential */}
-              <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
+              <div className="w-full sm:w-1/2 lg:w-1/3">
                 <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Residential Services</p>
                 <ul className="space-y-2">
                   {data.residential.map((residential, index) => (
@@ -36,7 +36,7 @@ export const Footer = () => {
                 </ul>
               </div>
               {/* Connect */}
-              <div className="w-full sm:w-1/2 lg:w-1/3 px-16">
+              <div className="w-full sm:w-1/2 lg:w-1/3">
                 <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Connect</p>
                 <ul className="space-y-2">
                   {data.social_media.map((social_media, index) => (
@@ -52,24 +52,22 @@ export const Footer = () => {
                 </ul>
               </div>
             </div>
+          </div>
+          {/* Copyright */}
+          <div className="flex flex-row justify-between py-6 border-t border-[#515151]">
+            <p className="text-[#9fe300] text-sm font-atpinko px-4">
+              © 2024 - 2025 Mas Contractors LLC <br /> All Rights Reserved
+            </p>            
             {/* Logo */}
-            <div className="flex-shrink-0 flex justify-center lg:justify-start mb-8 lg:mb-0 mt-10">
-              <Link href="/" className="flex title-font font-medium items-center justify-center">
+              <Link href="/" className="flex title-font font-medium items-center justify-end px-4">
                 <Image
                   src="/IMG_0271.png"
                   alt="Logo"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                   className="object-contain mx-auto"
                 />
               </Link>
-            </div>
-          </div>
-          {/* Copyright */}
-          <div className="text-center py-6 border-t border-[#515151]">
-            <p className="text-[#9fe300] text-sm font-atpinko">
-              © 2024 - 2025 MasContractorsLLC <br /> All Rights Reserved
-            </p>
           </div>
         </Fade>
       </footer>

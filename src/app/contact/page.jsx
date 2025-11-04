@@ -33,7 +33,7 @@ export default function contact() {
                 <br />
                 <li>
                   <a className="text-white font-atpinko">
-                    +1 (804) 
+                    +1 (804) 833-4609
                   </a>
                 </li>
                 <li>
@@ -118,7 +118,9 @@ export default function contact() {
             </div>
           </div>
         </div>
+      <section id="email">
         <Contact />
+      </section>
         <Mapa />
       </Fade>
     </>
