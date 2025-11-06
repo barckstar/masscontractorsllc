@@ -173,7 +173,7 @@ export default function about() {
               {/* Call to Action */}
               <Fade delay="50" triggerOnce>
                 <div className="flex justify-center">
-                  <Link href="/contact">
+                  <Link href="/contact#email">
                     <button className="my-9 hero-button font-contrax">
                       {data.about.buttonText}
                     </button>

@@ -10,9 +10,9 @@ export const Footer = () => {
     <>
       <footer className="body-font bg-[#1e1e1e] border-t-2 border-[#515151]">
         <Fade delay={50} >
-          <div className="py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between px-16">
+          <div className="py-16 mx-auto flex flex-col lg:flex-row lg:flex-nowrap flex-wrap justify-between lg:text-center px-16 gap-y-12 gap-x-8">
             {/* Secciones */}
-            <div className="flex flex-wrap justify-center lg:justify-between text-center lg:text-left gap-y-24 px-4">
+            
               {/* Commercial */}
               <div className="w-full sm:w-1/2 lg:w-1/3">
                 <p className="text-[#9fe300] font-contrax text-3xl mb-4 footer-title">Commercial Services</p>
@@ -50,16 +50,15 @@ export const Footer = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
             </div>
           </div>
           {/* Copyright */}
-          <div className="flex flex-row justify-between py-6 border-t border-[#515151]">
-            <p className="text-[#9fe300] text-sm font-atpinko px-4">
+          <div className="flex flex-col justify-between py-6 border-t border-[#515151] px-32 lg:flex-row">
+            <p className="text-[#9fe300] text-sm font-atpinko">
               © 2024 - 2025 Mas Contractors LLC <br /> All Rights Reserved
             </p>            
             {/* Logo */}
-              <Link href="/" className="flex title-font font-medium items-center justify-end px-4">
+              <Link href="/" className="flex title-font font-medium items-center justify-end flex-shrink-0">
                 <Image
                   src="/IMG_0271.png"
                   alt="Logo"

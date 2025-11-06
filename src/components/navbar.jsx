@@ -46,8 +46,9 @@ export const Navbar = () => {
             <div className="flex items-center justify-center text-center min-w-[96px] gap-2 flex-1 md:flex-none">
               <FaPhoneAlt size={28} color="#9fe300" className="topnavbaricon"/>
               <span className="text-sm leading-tight font-atpinko text-[#9fe300]">
-                Call Us
-                <span className="block text-white font-medium font-atpinko">(804) 554-2525</span>
+                Office Number
+                <br />
+                <span className="block text-white font-medium font-atpinko">(804) 833-4600</span>
               </span>
             </div>
             <Link href="/contact#email">

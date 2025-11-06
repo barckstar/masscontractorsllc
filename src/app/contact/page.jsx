@@ -33,7 +33,7 @@ export default function contact() {
                 <br />
                 <li>
                   <a className="text-white font-atpinko">
-                    +1 (804) 833-4609
+                    +1 (804) 833-4600
                   </a>
                 </li>
                 <li>
