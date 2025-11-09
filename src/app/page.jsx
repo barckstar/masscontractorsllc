@@ -172,7 +172,7 @@ export default function Home() {
           <div className="bg-[#1e1e1e] p-8 flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3 flex justify-center mb-6 md:mb-0">
               <Image
-                src="/work.jpg"
+                src="/work.png"
                 alt="Free Estimate"
                 width={500}
                 height={500}
