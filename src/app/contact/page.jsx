@@ -58,7 +58,7 @@ export default function contact() {
                 <br />
                 <li>
                   <p className="text-white font-atpinko">
-                    411 Branchway Rd Suite 218 N. Chesterfield, VA 23236
+                    411 Branchway Rd Suite 107 N. Chesterfield, VA 23236
                   </p>
                 </li>
               </nav>

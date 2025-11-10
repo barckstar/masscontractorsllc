@@ -49,6 +49,7 @@ export const Navbar = () => {
                 Office Number
                 <br />
                 <span className="block text-white font-medium font-atpinko">(804) 833-4600</span>
+                <span className="block text-white font-medium font-atpinko">(540) 376-4453</span>
               </span>
             </div>
             <Link href="/contact#email">
