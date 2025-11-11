@@ -10,7 +10,7 @@ import { BiCalendar } from "react-icons/bi";
 export default function contact() {
   return (
     <>
-      <Fade delay="10">        
+      <Fade delay="10">
         <div className="lg:w-5/6 px-5 py-4 text-center mx-auto">
           <h1 className="font-contrax text-5xl font-medium text-[#9fe300] mt-40">
             Contact <span className="text-white">Us</span>
@@ -30,20 +30,25 @@ export default function contact() {
                     Office Number
                   </p>
                 </li>
-                <br />
                 <li>
                   <a className="text-white font-atpinko">
                     +1 (804) 833-4600
                   </a>
+                </li>
+                <br />
+                <li>
+                  <p className="text-white font-contrax text-xl font-bold text-[#9fe300]">
+                    Cell Phone
+                  </p>
                 </li>
                 <li>
                   <a className="text-white font-atpinko">
                     +1 (540) 376-4453
                   </a>
                 </li>
-              </nav>  
+              </nav>
             </div>
-            <div className="flex flex-col justify-center lg:w-1/4 md:w-1/2 w-full px-4 mx-auto">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <BiSolidStore
                 size={60}
                 color="#9fe300"
@@ -58,7 +63,7 @@ export default function contact() {
                 <br />
                 <li>
                   <p className="text-white font-atpinko">
-                    411 Branchway Rd Suite 107 N. Chesterfield, VA 23236
+                    411 Branchway Rd Suite 107, North Chesterfield, VA 23236
                   </p>
                 </li>
               </nav>
@@ -118,9 +123,9 @@ export default function contact() {
             </div>
           </div>
         </div>
-      <section id="email">
-        <Contact />
-      </section>
+        <section id="email">
+          <Contact />
+        </section>
         <Mapa />
       </Fade>
     </>
