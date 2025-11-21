@@ -1,19 +1,74 @@
 "use client";
+import { useState } from 'react';
+import LightGallery from 'lightgallery/react';
+import { motion } from 'framer-motion';
 
-export default function gallery() {
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+// import plugins
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
+import galleryData from '../../data/gallery.json';
+
+export default function Gallery() {
+  const onInit = () => {
+    console.log('lightGallery has been initialized');
+  };
+
   return (
-    <>
-      <div className="lg:w-5/6 px-5 py-4 text-center mx-auto">
-        <h1 className="font-contrax text-5xl font-medium text-[#9fe300] mt-40">
-          Gallery
+    <section className="bg-[#1e1e1e] text-white py-20">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-16"
+      >
+        <h1 className="font-contrax text-5xl md:text-7xl font-medium text-[#9fe300] mb-4 tracking-wider mt-40 md:mt-20 ">
+          GALLERY
         </h1>
-      </div>
-      <div className="px-5 w-5/6 py-4 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <p className="text-white font-atpinko text-lg mx-auto mb-20">
-          Our gallery is currently being updated. Please check back soon to see
-          our latest projects and work samples.
+        <div className="w-24 h-1 bg-[#9fe300] mx-auto rounded-full shadow-[0_0_10px_#9fe300]"></div>
+        <p className="mt-6 text-gray-400 text-lg font-atpinko tracking-wide">
+          Explore our finest craftsmanship
         </p>
+      </motion.div>
+      <div className="container mx-auto px-4">
+        {/* Gallery Grid */}
+        <LightGallery
+          onInit={onInit}
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+          elementClassNames="columns-1 md:columns-2 lg:columns-4 gap-5 space-y-5"
+        >
+          {galleryData.map((image, index) => (
+            <motion.a
+              key={index}
+              href={image.src}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index % 3 * 0.1 }}
+              className="block break-inside-avoid group relative overflow-hidden rounded-xl border border-transparent hover:border-[#9fe300] transition-all duration-300 cursor-pointer"
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  alt={image.alt}
+                  src={image.src}
+                  className="w-full h-auto transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                  loading="lazy"
+                />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                </div>
+              </div>
+            </motion.a>
+          ))}
+        </LightGallery>
       </div>
-    </>
+    </section>
   );
 }

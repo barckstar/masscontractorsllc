@@ -6,7 +6,7 @@ const Mapa = () => {
       <section className="body-font pb-0">
         <div className="w-full pt-10 mx-auto">
           <div className="flex flex-wrap mx-auto items-center justify-center w-full mb-4">
-            <div className="relative w-3/4 h-64 rounded-lg shadow-lg overflow-hidden border-2 border-[#9fe300]" style={{ paddingTop: '35%' }}>
+            <div className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden border-2 border-[#9fe300]" style={{ paddingTop: '35%' }}>
               <div className="absolute top-0 left-0 w-full h-full bg-[#1e1e1e]/60 z-10 pointer-events-none"></div>
               <iframe
                 title='Our Physical Location'
@@ -16,7 +16,7 @@ const Mapa = () => {
                 allowFullScreen=""
                 loading="lazy"
               ></iframe>
-              
+
             </div>
           </div>
         </div>

@@ -6,120 +6,175 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoShieldCheckmark } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import { RiMedalLine } from "react-icons/ri";
+import { motion, AnimatePresence } from "framer-motion";
 import data from "../lib/data.json";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    // Función para actualizar el estado según el ancho de la ventana
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint de Tailwind
+      setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); // Ejecutar al montar
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Auto-slide for mobile top bar
+  useEffect(() => {
+    if (!isMobile) return;
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % 4);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isMobile]);
+
+  const topBarItems = [
+    {
+      icon: <RiMedalLine size={24} color="#9fe300" />,
+      title: "Class A General Contractor",
+      subtitle: "Licensed - Insured - Bonded"
+    },
+    {
+      icon: <IoShieldCheckmark size={24} color="#9fe300" />,
+      title: "Trusted Professionals",
+      subtitle: "Trained and Experienced"
+    },
+    {
+      icon: <FaPhoneAlt size={24} color="#9fe300" />,
+      title: "Office Number",
+      subtitle: "(804) 833-4600 / (540) 376-4453"
+    },
+    {
+      icon: <IoIosMail size={26} color="#9fe300" />,
+      title: "Email Us",
+      subtitle: "info@mascontractors.com",
+      link: "/contact#email"
+    }
+  ];
+
   return (
     <nav className="w-full bg-[#1e1e1e]/70 backdrop-blur-md shadow-md fixed top-0 left-0 z-50 font-atpinko">
-      {/* contenedor superior: usa flex-wrap para que los items se agreguen en nuevas filas en móvil */}
-      <div className="px-6 flex flex-wrap items-center bg-[#1e1e1e]/80 shadow gap-4 justify-end topnavbar">
-            <div className="flex items-center text-center gap-2 flex-1 md:flex-none">
-              <RiMedalLine size={28} color="#9fe300" className="topnavbaricon"/>
-              <span className="text-sm leading-tight font-atpinko text-[#9fe300]">
-                Class A General Contractor
-                <br />
-                <span className="text-sm text-white white font-atpinko">Licensed - Insured - Bonded</span>
-              </span>
+      {/* Top Bar */}
+      <div className="bg-[#1e1e1e]/90 shadow border-b border-white/5 h-16 flex items-center overflow-hidden relative">
+        {/* Desktop View (All items) */}
+        <div className="hidden md:flex w-full justify-end px-6 gap-6">
+          {topBarItems.map((item, index) => (
+            <div key={index} className="flex items-center gap-2">
+              {item.link ? (
+                <Link href={item.link} className="flex items-center gap-2 group">
+                  {item.icon}
+                  <div className="text-left">
+                    <span className="block text-sm text-[#9fe300] leading-tight">{item.title}</span>
+                    <span className="block text-sm text-white font-medium group-hover:text-[#9fe300] transition-colors">{item.subtitle}</span>
+                  </div>
+                </Link>
+              ) : (
+                <>
+                  {item.icon}
+                  <div className="text-left">
+                    <span className="block text-sm text-[#9fe300] leading-tight">{item.title}</span>
+                    <span className="block text-sm text-white font-medium">{item.subtitle}</span>
+                  </div>
+                </>
+              )}
             </div>
-            <div className="flex items-center text-center gap-2 flex-1 md:flex-none">
-              <IoShieldCheckmark size={28} color="#9fe300" className="topnavbaricon"/>
-              <span className="text- leading-tight font-atpinko text-[#9fe300]">
-                Trusted Professionals
-                <br />
-                <span className="text-sm text-white font-atpinko">Trained and Experienced</span>
-              </span>
-            </div>
-            <div className="flex items-center justify-center text-center min-w-[96px] gap-2 flex-1 md:flex-none">
-              <FaPhoneAlt size={28} color="#9fe300" className="topnavbaricon"/>
-              <span className="text-sm leading-tight font-atpinko text-[#9fe300]">
-                Office Number
-                <br />
-                <span className="block text-white font-medium font-atpinko">(804) 833-4600</span>
-                <span className="block text-white font-medium font-atpinko">(540) 376-4453</span>
-              </span>
-            </div>
-            <Link href="/contact#email">
-            <div className="flex items-center text-center  gap-2 flex-1 md:flex-none">
-              <IoIosMail size={30} color="#9fe300" className="topnavbaricon"/>
-              <span className="text-sm leading-tight font-atpinko text-[#9fe300]">
-                Email Us
-                <br />
-                <span className="block text-white font-medium font-atpinko">info@mascontractors.com</span>
-              </span>
-            </div>
-            </Link>
-      </div>      
-      <div className="max-w-full mx-auto px-6 flex items-center justify-between h-16">
+          ))}
+        </div>
+
+        {/* Mobile View (Slider) */}
+        <div className="md:hidden w-full h-full flex items-center justify-center relative">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentSlide}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="flex items-center gap-3 absolute"
+            >
+              {topBarItems[currentSlide].icon}
+              <div className="text-left">
+                <span className="block text-xs text-[#9fe300] font-bold">{topBarItems[currentSlide].title}</span>
+                <span className="block text-xs text-white">{topBarItems[currentSlide].subtitle}</span>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
+
+      {/* Main Navbar */}
+      <div className="max-w-full mx-auto px-6 flex items-center justify-between h-20">
         <Link href="/" className="flex-shrink-0">
           <Image
             src={isMobile ? "/IMG_0271_SM.png" : "/IMG_0271.png"}
             width={isMobile ? 55 : 250}
             height={isMobile ? 25 : 120}
             alt="logo"
+            className="object-contain"
           />
         </Link>
-        {/* Desktop links */}
+
+        {/* Desktop Links */}
         <div className="hidden md:flex space-x-8">
           {data.url_navbar.map((link) => (
             <Link
               key={link.title}
               href={link.url}
-              className="text-white text-xl py-1 px-6 bg-transparent hover:text-[#9fe300]"
+              className="text-white text-lg font-medium py-1 px-4 hover:text-[#9fe300] transition-colors relative group"
             >
               {link.title}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#9fe300] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </div>
-        {/* Mobile menu button */}
+
+        {/* Mobile Menu Button */}
         <button
-          className="md:hidden flex items-center px-6"
+          className="md:hidden p-2 text-white hover:text-[#9fe300] transition-colors"
           onClick={() => setOpen(!open)}
-          aria-label="Abrir menú"
+          aria-label="Toggle menu"
         >
-          <svg
-            className="h-8 w-8 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+          {open ? (
+            <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
         </button>
-      </div>      
-      {/* Mobile links */}
-      {open && (
-        <div className="md:hidden px-6 pb-4 flex flex-col space-y-2 bg-[#1e1e1e]/90 shadow">
-          {data.url_navbar.map((link) => (
-            <Link
-              key={link.title}
-              href={link.url}
-              className="text-white font-atpinko text-lg py-2 px-4 rounded hover:shadow-lg hover:text-[#9fe300]"
-              onClick={() => setOpen(false)}
-            >
-              {link.title}
-            </Link>
-          ))}
-        </div>
-      )}
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="md:hidden bg-[#1e1e1e]/95 border-t border-white/10 overflow-hidden"
+          >
+            <div className="px-6 py-4 flex flex-col space-y-4">
+              {data.url_navbar.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.url}
+                  className="text-white text-lg font-atpinko py-2 border-b border-white/5 hover:text-[#9fe300] hover:pl-2 transition-all"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.title}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

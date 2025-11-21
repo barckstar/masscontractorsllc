@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Contrax Heavy';
-  src: url('/fonts/Conthrax-SemiBold.otf') format('opentype');
-  font-weight: 800;
+    font-family: 'Contrax Heavy';
+    src: url('/fonts/Conthrax-SemiBold.otf') format('opentype');
+    font-weight: 800;
 }
 
 @font-face {
-  font-family: 'At Pinko';
-  src: url('/fonts/ATPinko-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'At Pinko';
+    src: url('/fonts/ATPinko-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -34,11 +34,11 @@ a {
 
 
 .font-contrax {
-  font-family: Contrax Heavy !important;
+    font-family: Contrax Heavy !important;
 }
 
 .font-atpinko {
-  font-family: At Pinko !important;
+    font-family: At Pinko !important;
 }
 
 .container {
@@ -94,66 +94,66 @@ a {
     background-color: #1e1e1e;
     color: #9fe300;
     transition: background-color 0.3s ease;
-    box-shadow: 0 0 10px 4px rgba(255,255,255,0.7);
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.7);
 }
 
 .bg-hero {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .bg-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('/img-2.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(1);
-  z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    z-index: 0;
 }
 
 .bg-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.74);
-  z-index: 1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.74);
+    z-index: 1;
 }
 
-.bg-hero > * {
-  position: relative;
-  z-index: 2;
+.bg-hero>* {
+    position: relative;
+    z-index: 2;
 }
 
 .bg-hero2 {
-  position: relative;
-  overflow: hidden;  
-  z-index: 2;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .bg-hero2::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('/img-3.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(1);
-  z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/img-3.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    z-index: 0;
 }
 
 .bg-hero2::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.74);
-  z-index: 1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.74);
+    z-index: 1;
 }
 
-.bg-hero2 > * {
-  position: relative;
-  z-index: 2;
+.bg-hero2>* {
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -215,10 +215,12 @@ a {
     .hero-content {
         margin-top: 15%
     }
-    .topnavbaricon{
+
+    .topnavbaricon {
         display: none;
     }
-    .title-mt{
+
+    .title-mt {
         padding-top: 10px;
     }
 }
@@ -239,8 +241,9 @@ a {
     .img {
         width: 40%;
         height: 40%
-    }    
-    .title-mt{
+    }
+
+    .title-mt {
         padding-top: 20%;
     }
 }
@@ -253,6 +256,7 @@ a {
     .hero-title {
         font-size: 1.5rem
     }
+
     .hero-title-logo {
         font-size: 2.5rem
     }
@@ -260,10 +264,12 @@ a {
     .hero-button {
         padding: 0.75rem
     }
-    .hero-get{
+
+    .hero-get {
         font-size: 1.5rem;
-    }   
-    .title-mt{
+    }
+
+    .title-mt {
         padding-top: 30%;
     }
 }
@@ -284,6 +290,7 @@ a {
     .hero-title-logo {
         font-size: 1.5rem
     }
+
     .hero-content {
         margin-top: 25%
     }

@@ -1,5 +1,5 @@
 "use client"
-import Statistics from "@/components/statistics";
+import Statistics from "@/components/display";
 import ContentView from "@/components/contentView";
 import Data from "@/lib/data.json";
 import { Fade } from "react-awesome-reveal";

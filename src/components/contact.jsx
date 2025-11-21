@@ -47,7 +47,7 @@ function Contact() {
         <section className="text-gray-600 body-font relative">
           <Fade delay={200}>
             <div className="px-5 py-10 flex justify-center">
-              <div className="bg-[#1e1e1e] rounded-lg p-8 flex flex-col w-full md:w-3/4 lg:w-1/2 shadow-2xl">
+              <div className="bg-[#1e1e1e] rounded-lg p-8 flex flex-col w-full shadow-2xl">
                 <h2 className="text-[#9fe300] text-center text-4xl mb-8 font-medium font-contrax">
                   Send a Email
                 </h2>
@@ -171,8 +171,8 @@ function Contact() {
                     <button
                       className={`mt-4 border-0 py-2 px-6 focus:outline-none rounded text-xl font-medium w-full sm:w-11/12 transition-colors duration-300 font-contrax
                         ${isButtonDisabled
-                            ? "bg-gray-700 text-white cursor-not-allowed"
-                            : "bg-[#9fe300] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:text-[#9fe300] cursor-pointer"
+                          ? "bg-gray-700 text-white cursor-not-allowed"
+                          : "bg-[#9fe300] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:text-[#9fe300] cursor-pointer"
                         }`}
                       disabled={isButtonDisabled}
                     >
