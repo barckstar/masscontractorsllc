@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
-import { Fade } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 import data from "@/lib/data.json";
 
 function Contact() {
@@ -43,9 +43,19 @@ function Contact() {
 
   return (
     <>
-      <Fade>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
         <section className="text-gray-600 body-font relative">
-          <Fade delay={200}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
             <div className="px-5 py-10 flex justify-center">
               <div className="bg-[#1e1e1e] rounded-lg p-8 flex flex-col w-full shadow-2xl">
                 <h2 className="text-[#9fe300] text-center text-4xl mb-8 font-medium font-contrax">
@@ -187,9 +197,9 @@ function Contact() {
                 )}
               </div>
             </div>
-          </Fade>
+          </motion.div>
         </section>
-      </Fade>
+      </motion.div>
     </>
   );
 }

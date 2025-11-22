@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 import data from "@/lib/data.json";
 import Link from "next/link";
 
@@ -9,7 +9,12 @@ export const Footer = () => {
   return (
     <>
       <footer className="body-font bg-[#1e1e1e] border-t-2 border-[#515151]">
-        <Fade delay={50} >
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.05, duration: 0.5 }}
+        >
           <div className="py-16 mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center md:text-left">
             {/* Secciones */}
 
@@ -68,7 +73,7 @@ export const Footer = () => {
               />
             </Link>
           </div>
-        </Fade>
+        </motion.div>
       </footer>
     </>
   );

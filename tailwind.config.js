@@ -8,13 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      lineClamp: {
-        2: '3',
-      },
+
       screens: {
         'custom': '1240px',
-        'custom870' : '870px'
-      }      
+        'custom870': '870px'
+      }
     },
   },
   plugins: [],
