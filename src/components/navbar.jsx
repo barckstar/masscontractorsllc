@@ -60,7 +60,7 @@ export const Navbar = () => {
   return (
     <nav className="w-full bg-[#1e1e1e]/70 backdrop-blur-md shadow-md fixed top-0 left-0 z-50 font-atpinko">
       {/* Top Bar */}
-      <div className="bg-[#1e1e1e]/90 shadow border-b border-white/5 size-fit flex items-center overflow-hidden relative">
+      <div className="bg-[#1e1e1e]/90 shadow border-b border-white/5 h-16 flex items-center overflow-hidden relative">
         {/* Desktop View (All items) */}
         <div className="hidden md:flex w-full justify-end px-6 gap-6">
           {topBarItems.map((item, index) => (
@@ -69,16 +69,16 @@ export const Navbar = () => {
                 <Link href={item.link} className="flex items-center gap-2 group">
                   {item.icon}
                   <div className="text-left">
-                    <span className="block text-sm text-[#9fe300] leading-tight">{item.title}</span>
-                    <span className="block text-sm text-white font-medium group-hover:text-[#9fe300] transition-colors">{item.subtitle}</span>
+                    <span className="block text-xs lg:text-sm text-[#9fe300] leading-tight">{item.title}</span>
+                    <span className="block text-xs lg:text-sm text-white font-medium group-hover:text-[#9fe300] transition-colors">{item.subtitle}</span>
                   </div>
                 </Link>
               ) : (
                 <>
                   {item.icon}
                   <div className="text-left">
-                    <span className="block text-sm text-[#9fe300] leading-tight">{item.title}</span>
-                    <span className="block text-sm text-white font-medium">{item.subtitle}</span>
+                    <span className="block text-xs lg:text-sm text-[#9fe300] leading-tight">{item.title}</span>
+                    <span className="block text-xs lg:text-sm text-white font-medium">{item.subtitle}</span>
                   </div>
                 </>
               )}
