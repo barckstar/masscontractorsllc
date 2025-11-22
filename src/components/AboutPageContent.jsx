@@ -26,7 +26,7 @@ export default function AboutPageContent() {
     };
 
     return (
-        <div className="bg-[#1e1e1e] min-h-screen overflow-hidden">
+        <div className="bg-[#1e1e1e] min-h-screen overflow-hidden mt-[50px]">
             {/* 1. Integrated Hero Section */}
             <section className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image with Overlay */}
@@ -62,7 +62,7 @@ export default function AboutPageContent() {
 
             {/* 2. Introduction Section */}
             <section className="py-20 px-6 md:px-16 max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     {/* Text Content */}
                     <motion.div
                         initial="hidden"
@@ -109,31 +109,37 @@ export default function AboutPageContent() {
                             <Image
                                 src="/uniform-1.png"
                                 alt="Team Member"
-                                width={600}
+                                width={640}
                                 height={400}
                                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                         </div>
-
-                        {/* Certifications */}
-                        <div className="bg-[#2a2a2a] p-6 rounded-xl border border-[#9fe300]/30 flex flex-wrap justify-center items-center gap-8">
-                            <div className="text-center">
-                                <div className="bg-white p-3 rounded-lg mb-2 inline-block shadow-lg">
-                                    <Image src="/DPOR.png" alt="DPOR License" width={100} height={50} className="object-contain" />
-                                </div>
-                                <p className="text-white text-xs font-atpinko opacity-70">Licensed & Insured</p>
-                            </div>
-                            <div className="w-px h-16 bg-white/10 hidden sm:block" />
-                            <div className="text-center">
-                                <div className="bg-white p-3 rounded-lg mb-2 inline-block shadow-lg">
-                                    <Image src="/OSHA-Logo.png" alt="OSHA Certified" width={100} height={50} className="object-contain" />
-                                </div>
-                                <p className="text-white text-xs font-atpinko opacity-70">Safety Certified</p>
-                            </div>
-                        </div>
                     </motion.div>
                 </div>
+                {/* Certifications */}
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={fadeInUp}
+                >
+                    <div className="bg-[#2a2a2a] p-6 rounded-xl border border-[#9fe300]/30 flex flex-wrap justify-center mt-10 items-center gap-8">
+                        <div className="text-center">
+                            <div className="bg-white p-3 rounded-lg mb-2 inline-block shadow-lg">
+                                <Image src="/DPOR.png" alt="DPOR License" width={100} height={50} className="object-contain" />
+                            </div>
+                            <p className="text-white text-xs font-atpinko opacity-70">Licensed & Insured</p>
+                        </div>
+                        <div className="w-px h-16 bg-white/10 hidden sm:block" />
+                        <div className="text-center">
+                            <div className="bg-white p-3 rounded-lg mb-2 inline-block shadow-lg">
+                                <Image src="/OSHA-Logo.png" alt="OSHA Certified" width={100} height={50} className="object-contain" />
+                            </div>
+                            <p className="text-white text-xs font-atpinko opacity-70">Safety Certified</p>
+                        </div>
+                    </div>
+                </motion.div>
             </section>
 
             {/* 3. Mission, Vision, Values */}

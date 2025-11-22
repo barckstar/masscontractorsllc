@@ -1,5 +1,4 @@
 "use client";
-import { useState } from 'react';
 import LightGallery from 'lightgallery/react';
 import { motion } from 'framer-motion';
 
@@ -13,6 +12,7 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 import galleryData from '../../data/gallery.json';
+import Image from 'next/image';
 
 export default function Gallery() {
   const onInit = () => {
@@ -36,7 +36,7 @@ export default function Gallery() {
           Explore our finest craftsmanship
         </p>
       </motion.div>
-      <div className="container mx-auto px-4">
+      <div className="mx-auto p-[40px]">
         {/* Gallery Grid */}
         <LightGallery
           onInit={onInit}
@@ -55,9 +55,11 @@ export default function Gallery() {
               className="block break-inside-avoid group relative overflow-hidden rounded-xl border border-transparent hover:border-[#9fe300] transition-all duration-300 cursor-pointer"
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   alt={image.alt}
                   src={image.src}
+                  width={image.width}
+                  height={image.height}
                   className="w-full h-auto transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
                   loading="lazy"
                 />

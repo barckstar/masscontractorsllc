@@ -51,7 +51,7 @@ export default function ContactPageContent() {
     ];
 
     return (
-        <div className="bg-[#1e1e1e] min-h-screen overflow-hidden">
+        <div className="bg-[#1e1e1e] min-h-screen overflow-hidden mt-[50px]">
             {/* 1. Integrated Hero Section */}
             <section className="relative w-full h-[50vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
