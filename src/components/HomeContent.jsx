@@ -69,7 +69,7 @@ export default function HomeContent() {
                             </Link>
                         </div>
                         <h2 className="text-2xl max-[400px]:text-xl md:text-6xl font-contrax text-white mb-4">
-                            <span className="text-[#9fe300]">Comercial & </span>Residencial
+                            <span className="text-[#9fe300]">Commercial & </span>Residential
                         </h2>
                     </motion.div>
                 </div>

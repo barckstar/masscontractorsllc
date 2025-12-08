@@ -11,7 +11,7 @@
         {
             "url": "/about",
             "title": "About"
-        },        
+        },
         {
             "url": "/contact",
             "title": "Contact"
@@ -61,7 +61,7 @@
         },
         {
             "title": "ROOFING",
-            "subTitle": "Superios protection for your home",
+            "subTitle": "Superior protection for your home",
             "text": "We offer comprehensive roofing services, including repairs, replacements, and installations, to ensure your home is protected from the elements. Our team uses high-quality materials and expert craftsmanship to deliver durable and reliable roofing solutions.",
             "img": "/img-13.png"
         },
@@ -120,7 +120,7 @@
         "aboutFooter": "MAS Contractors has completed hundreds of home remodeling and commercial projects in and around the Richmond, VA area.",
         "buttonText": "WORK WITH US !"
     },
-    "contect_services": [
+    "contact_services": [
         {
             "title": "TRIM",
             "title2": "Trim",
@@ -171,7 +171,7 @@
         },
         {
             "title": "HOME ADDITIONS",
-            "title2": "Home Additons",
+            "title2": "Home Additions",
             "description": "Add value to your home with your desired additional space. We take care of all required city permits, plumbing and electrical work. Your dreams will become a reality.",
             "img": "/CustomRoomAdditions.png"
         }
@@ -265,14 +265,14 @@
     ],
     "specialties": [
         {
-            "slug": "comercial_cabinetry",
+            "slug": "commercial_cabinetry",
             "title": "Custom Room Additions",
             "description": "Your room addition will provide you with a lifetime of enjoyment while increasing the value of your home.",
-            "descriptionLarge": "MasConstructor LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MasConstructor LLC today.",
+            "descriptionLarge": "MAS Contractors LLC offers top-quality home renovation services. Whether it's a kitchen update, bathroom modernization, or a complete overhaul, our expert team brings your vision to life. Experience excellence with MAS Contractors LLC today.",
             "descriptionLarge2": "Contact us for a free consultation before making any important decisions, and we will help you navigate through permits and regulations, providing you with tools and expertise so that you can find the best choice for your room addition project.",
             "list": [],
             "image": "/CustomRoomAdditions.png",
-            "link": "/specialties/comercial_cabinetry",
+            "link": "/specialties/commercial_cabinetry",
             "imgCarrusel": [
                 {
                     "img": "/CustomRoomAdditions1.png"

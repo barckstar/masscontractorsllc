@@ -128,10 +128,10 @@ export default function ContactPageContent() {
                                 Tell Us <span className="text-[#9fe300]">About</span> Your Project
                             </h2>
                             <p className="text-white/80 text-lg font-atpinko leading-relaxed max-w-3xl mx-auto">
-                                MAS Contractors is a building and Remodeling Company proud to
+                                MAS Contractors is a building and remodeling company proud to
                                 offer small or large renovation projects. Our range of services
                                 includes Commercial Trim, Room Additions, Porches and Decks,
-                                Kitchen & Bathroom Remodeling Carpentry, Tile, and much more.
+                                Kitchen & Bathroom Remodeling, Carpentry, Tile, and much more.
                             </p>
                         </div>
 

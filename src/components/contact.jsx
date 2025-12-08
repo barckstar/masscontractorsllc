@@ -143,7 +143,7 @@ function Contact() {
                       <option value="default" disabled>
                         Select a subject
                       </option>
-                      {data.contect_services.map((service) => (
+                      {data.contact_services.map((service) => (
                         <option key={service.title} value={service.title2}>
                           {service.title2}
                         </option>
