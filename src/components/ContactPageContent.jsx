@@ -57,7 +57,7 @@ export default function ContactPageContent() {
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/img-9.jpg" // Using another gallery image for variety
-                        alt="Contact MAS Contractors"
+                        alt="Contact MAS Contractors - General Contractor Richmond VA"
                         fill
                         className="object-cover opacity-40"
                         priority

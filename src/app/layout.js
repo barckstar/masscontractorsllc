@@ -3,23 +3,65 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { SocialMediaBar } from "@/components/socialMedia";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Mas Contractors LLC",
-  description: "General Contractor in Richmond, VA.",
+  metadataBase: new URL('https://mascontractorsllc.com'),
+  title: {
+    default: "MAS Contractors | General Contractor in Richmond, VA",
+    template: "%s | MAS Contractors"
+  },
+  description: "Premier General Contractor in Richmond, VA providing commercial and residential construction services. Licensed, insured, and committed to quality.",
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "MAS Contractors LLC",
+    "image": "https://mascontractorsllc.com/logo-3D.png",
+    "@id": "https://mascontractorsllc.com",
+    "url": "https://mascontractorsllc.com",
+    "telephone": "+18048334600",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "411 Branchway Rd Suite 107",
+      "addressLocality": "North Chesterfield",
+      "addressRegion": "VA",
+      "postalCode": "23236",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "16:00"
+    }
+  };
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
         <SocialMediaBar />
-          {children}
+        {children}
         <Footer />
+        <Script
+          id="json-ld-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

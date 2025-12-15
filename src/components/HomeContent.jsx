@@ -32,7 +32,7 @@ export default function HomeContent() {
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/img-2.jpg" // Using a high-quality image
-                        alt="MAS Contractors Hero"
+                        alt="MAS Contractors commercial construction site in Richmond VA with heavy machinery"
                         fill
                         className="object-cover"
                         priority
@@ -112,7 +112,7 @@ export default function HomeContent() {
                         <div className="relative z-10">
                             <Image
                                 src="/logo-3D.png"
-                                alt="MAS Contractors Logo 3D"
+                                alt="MAS Contractors 3D Logo - Premier General Contractor"
                                 width={500}
                                 height={500}
                                 className="w-full max-w-md mx-auto drop-shadow-2xl"
@@ -172,7 +172,7 @@ export default function HomeContent() {
                                 <div className="aspect-[4/3] overflow-hidden relative">
                                     <Image
                                         src={project.img}
-                                        alt={project.title}
+                                        alt={project.alt || project.title}
                                         fill
                                         className="object-cover transform group-hover:scale-110 transition-transform duration-700"
                                     />
@@ -298,7 +298,7 @@ export default function HomeContent() {
                             <div className="relative h-64 w-full rounded-2xl overflow-hidden border-2 border-[#9fe300]/20 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                                 <Image
                                     src="/car.png"
-                                    alt="Free Estimate Visit"
+                                    alt="MAS Contractors fleet vehicle for free estimate site visits"
                                     fill
                                     className="object-cover"
                                 />
@@ -322,7 +322,7 @@ export default function HomeContent() {
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
                                 <Image
                                     src="/work.png"
-                                    alt="Collaborative Excellence"
+                                    alt="MAS Contractors team discussing blueprints and project plans"
                                     width={600}
                                     height={800}
                                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
