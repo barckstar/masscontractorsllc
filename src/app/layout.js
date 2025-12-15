@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
       "postalCode": "23236",
       "addressCountry": "US"
     },
+    "priceRange": "$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
