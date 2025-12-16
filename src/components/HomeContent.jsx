@@ -136,7 +136,7 @@ export default function HomeContent() {
                         <p className="text-gray-300 font-atpinko text-lg mb-8 leading-relaxed">
                             {data.heroAbout.text}
                         </p>
-                        <Link href="/about">
+                        <Link href="/about" aria-label="Read more about MAS Contractors history and mission">
                             <span className="inline-flex items-center gap-2 text-[#9fe300] font-contrax hover:gap-4 transition-all cursor-pointer group">
                                 READ MORE <BiRightArrowAlt size={24} className="group-hover:text-white transition-colors" />
                             </span>
