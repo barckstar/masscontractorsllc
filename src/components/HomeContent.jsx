@@ -36,6 +36,7 @@ export default function HomeContent() {
                         fill
                         className="object-cover"
                         priority
+                        sizes="100vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#1e1e1e]" />
                 </div>
@@ -175,6 +176,7 @@ export default function HomeContent() {
                                         alt={project.alt || project.title}
                                         fill
                                         className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#1e1e1e] to-transparent opacity-80" />
                                 </div>
@@ -301,6 +303,7 @@ export default function HomeContent() {
                                     alt="MAS Contractors fleet vehicle for free estimate site visits"
                                     fill
                                     className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, 33vw"
                                 />
                             </div>
                         </div>

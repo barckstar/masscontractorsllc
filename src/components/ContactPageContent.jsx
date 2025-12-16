@@ -61,6 +61,7 @@ export default function ContactPageContent() {
                         fill
                         className="object-cover opacity-40"
                         priority
+                        sizes="100vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-[#1e1e1e]/80 via-[#1e1e1e]/50 to-[#1e1e1e]" />
                 </div>

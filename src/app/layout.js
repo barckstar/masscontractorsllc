@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { SocialMediaBar } from "@/components/socialMedia";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata = {
   metadataBase: new URL('https://mascontractorsllc.com'),
