@@ -4,6 +4,6 @@ export default function robots() {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://mascontractorsllc.com/sitemap.xml',
+        sitemap: 'https://mascontractors.com/sitemap.xml',
     }
 }

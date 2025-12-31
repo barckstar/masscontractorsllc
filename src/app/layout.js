@@ -8,7 +8,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata = {
-  metadataBase: new URL('https://mascontractorsllc.com'),
+  metadataBase: new URL('https://mascontractors.com'),
   title: {
     default: "MAS Contractors | General Contractor in Richmond, VA",
     template: "%s | MAS Contractors"
@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     "name": "MAS Contractors LLC",
-    "image": "https://mascontractorsllc.com/logo-3D.png",
-    "@id": "https://mascontractorsllc.com",
-    "url": "https://mascontractorsllc.com",
+    "image": "https://mascontractors.com/logo-3D.png",
+    "@id": "https://mascontractors.com",
+    "url": "https://mascontractors.com",
     "telephone": "+18048334600",
     "address": {
       "@type": "PostalAddress",

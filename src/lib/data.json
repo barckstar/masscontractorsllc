@@ -281,7 +281,7 @@
             "descriptionLarge2": "Contact us for a free consultation before making any important decisions, and we will help you navigate through permits and regulations, providing you with tools and expertise so that you can find the best choice for your room addition project.",
             "list": [],
             "image": "/CustomRoomAdditions.png",
-            "link": "/specialties/commercial_cabinetry",
+            "link": "#contact",
             "imgCarrusel": [
                 {
                     "img": "/CustomRoomAdditions1.png"
@@ -324,7 +324,7 @@
                 }
             ],
             "image": "/Tile.png",
-            "link": "/specialties/tile",
+            "link": "#contact",
             "imgCarrusel": [
                 {
                     "img": "/TileGalery1.png"
@@ -382,7 +382,7 @@
                 }
             ],
             "image": "/FinishCarpentry.png",
-            "link": "/specialties/finish_trim_carpentry",
+            "link": "#contact",
             "imgCarrusel": [
                 {
                     "img": "/FinishCarpentryGalery1.png"

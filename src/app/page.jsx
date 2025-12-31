@@ -7,7 +7,7 @@ export const metadata = {
   openGraph: {
     title: "MAS Contractors | Transforming Spaces, Building Legacies",
     description: "Expert general contracting services in Richmond, VA. Quality craftsmanship for commercial and residential projects.",
-    url: "https://mascontractorsllc.com",
+    url: "https://mascontractors.com",
     siteName: "MAS Contractors",
     images: [
       {
