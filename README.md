@@ -1,6 +1,6 @@
 # 🏗️ MAS Contractors LLC - Official Website
 
-![MAS Contractors Logo](IMG_0271.png)
+![MAS Contractors Logo](public/IMG_0271.png)
 
 ## 📌 Descripción del Proyecto
 Este repositorio contiene el sitio web oficial de **MAS Contractors LLC**, una empresa de contratistas generales en Richmond, VA, especializada en servicios de construcción comercial y residencial. El sitio está diseñado para ofrecer una experiencia premium, moderna y altamente optimizada para buscadores (SEO).
