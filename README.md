@@ -64,6 +64,27 @@ Se han realizado mejoras significativas en:
 - **Consolidación de Enlaces:** Corrección de errores 404 provenientes de rutas legacy.
 - **Migración Integral:** Movimiento exitoso del historial de desarrollo de GitLab a GitHub.
 
+---
+
+## ⚙️ Automatización (Scripts)
+
+### Generación de Galería
+El proyecto cuenta con un script de automatización (`scripts/generate-gallery.js`) que gestiona los datos de la galería de proyectos de forma dinámica.
+
+#### ¿Por qué es necesario?
+Next.js requiere conocer las dimensiones (ancho y alto) de las imágenes locales para optimizarlas correctamente (`next/image`). En lugar de escribir estos datos a mano, el script:
+1. Escanea la carpeta `public/gallery`.
+2. Lee las dimensiones reales de cada imagen.
+3. Genera un archivo `src/data/gallery.json` que la aplicación consume.
+
+#### ¿Cómo se usa?
+Este proceso está **totalmente automatizado**. Se ha configurado un script de `prebuild` en el `package.json`:
+- **Build en Vercel/Local:** Cada vez que se ejecuta `npm run build`, el script se activa automáticamente, asegurando que la galería esté siempre actualizada con las últimas fotos subidas.
+- **Manual:** Si deseas regenerar los datos manualmente durante el desarrollo:
+  ```bash
+  npm run generate-gallery
+  ```
+
 
 ---
 © 2026 MAS Contractors LLC. Todos los derechos reservados.

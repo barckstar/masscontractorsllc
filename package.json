@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prebuild": "npm run generate-gallery",
     "start": "next start",
     "lint": "next lint",
     "generate-gallery": "node scripts/generate-gallery.js"
