@@ -64,10 +64,6 @@ Se han realizado mejoras significativas en:
 - **Consolidación de Enlaces:** Corrección de errores 404 provenientes de rutas legacy.
 - **Migración Integral:** Movimiento exitoso del historial de desarrollo de GitLab a GitHub.
 
----
-
-## 📞 Contacto
-Si tienes dudas o necesitas Soporte Técnico sobre este proyecto, contacta a través de [mascontractors.com](https://mascontractors.com/contact).
 
 ---
 © 2026 MAS Contractors LLC. Todos los derechos reservados.
