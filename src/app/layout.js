@@ -14,6 +14,9 @@ export const metadata = {
     template: "%s | MAS Contractors"
   },
   description: "Premier General Contractor in Richmond, VA providing commercial and residential construction services. Licensed, insured, and committed to quality.",
+  alternates: {
+    canonical: 'https://mascontractors.com',
+  },
   twitter: {
     card: 'summary_large_image',
   },
