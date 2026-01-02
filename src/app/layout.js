@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { SocialMediaBar } from "@/components/socialMedia";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <SocialMediaBar />
         {children}
+        <SpeedInsights />
         <Footer />
         <Script
           id="json-ld-schema"
